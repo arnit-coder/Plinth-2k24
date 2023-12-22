@@ -74,12 +74,12 @@ const Login = () => {
           </div>
           <button type='submit' className="loginBtn">Login</button>
           <div className="line">----</div>
-{/*           <div className="signGoogle">
+          <div className="signGoogle">
             <button className="googleBtn" onClick={login}>
               <FcGoogle />
               <a to="/sign-in-with-google">Sign in with Google</a>
             </button>
-          </div> */}
+          </div>
         </div>
       </div>
     </form>
