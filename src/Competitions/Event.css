@@ -1,0 +1,190 @@
+@font-face {
+  font-family: Akira Expanded;
+  src: url(akira_expanded/Akira\ Expanded\ Demo.otf);
+}
+
+@font-face {
+  font-family: poppins;
+  src: url(Poppins/Poppins-Light.ttf);
+}
+
+/* CSS */
+.button-63 {
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 19px 24px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  margin-left: 25%;
+  margin-top: 5%;
+}
+
+.button-63:active,
+.button-63:hover {
+  outline: 0;
+}
+
+@media (min-width: 768px) {
+  .button-63 {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background: #000;
+}
+
+.page1 {
+  min-height: 100vh;
+  width: 100vw;
+  flex-shrink: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.page1 .bottom {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: linear-gradient(180deg, rgba(54, 54, 54, 0) 0%, #000 82.71%);
+  bottom: 0px;
+}
+
+.page1 img {
+  width: 100vw;
+  margin-top: -120px;
+  object-fit: cover;
+  mix-blend-mode: screen;
+}
+
+.page1 h1 {
+  color: #fff;
+  font-family: Akira Expanded;
+  font-size: 14vw;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: -100px;
+  z-index: 3;
+}
+
+.page2 {
+  width: 100vw;
+}
+
+.page2 h1 {
+  color: #fff;
+  font-family: Akira Expanded;
+  font-size: 7vw;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -0%);
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 0px 300px;
+  flex-wrap: wrap;
+}
+
+.card1 {
+  width: 400px;
+  height: 700px;
+  flex-shrink: 0;
+  border-radius: 50px;
+  background: #000;
+  overflow: hidden;
+  margin-top: 200px;
+  position: relative;
+}
+
+.card1 .img {
+  width: 100%;
+  height: 55%;
+  position: relative;
+  overflow: hidden;
+}
+
+.card1 img {
+  width: 100%;
+  transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.card1 .img .grad {
+  height: 50%;
+  width: 100%;
+  background: linear-gradient(179deg, rgba(0, 0, 0, 0) 27.49%, #000 69%);
+  position: absolute;
+  bottom: 0px;
+}
+
+.card1 .day {
+  color: #c65ff6;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  z-index: 13;
+  margin-left: 20px;
+}
+
+.card1 .artist {
+  color: #fff;
+  margin-left: 20px;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.card1 .desc {
+  color: #fff;
+  margin: 0px 20px;
+  text-align: justify;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.card1 .img:hover img{
+  scale: 1.2;
+}

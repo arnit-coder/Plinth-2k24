@@ -1,0 +1,54 @@
+.home {
+  width: 100%;
+  height: 100vh;
+}
+
+.home-img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  mix-blend-mode: screen;
+}
+
+.home-txt{
+  width:33%;
+  height: 15%;
+  margin-left: -66.5%;
+  margin-top: 40vh;
+  position: absolute;
+  z-index: 101;
+  mix-blend-mode: lighten;
+}
+
+.grad{
+  width: 100%;
+  height: 50vh;
+  background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.00) 100%);
+  margin-top: -100vh;
+  position: absolute;
+  z-index: 100;
+}
+
+@media (max-width:864px) and (min-width:565px) {
+  .home-txt{
+    width: 80%;
+    height: 14%;
+    margin-left: -90%;
+  }
+}
+@media (max-width:564px) and (min-width:405px) {
+  .home-txt{
+    width: 80%;
+    height: 10%;
+    margin-left: -90%;
+  }
+}
+@media (max-width:404px){
+  .home-txt{
+    width: 100%;
+    height: 12%;
+    margin-left: -100%;
+    
+  }
+}

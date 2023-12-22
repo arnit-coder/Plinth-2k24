@@ -1,0 +1,86 @@
+@font-face {
+    src: url("akira_expanded/Akira\ Expanded\ Demo.otf");
+    font-family: Akira Expanded;
+  }
+  
+  .profile-main {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #000;
+  }
+  
+  .profile-page1 {
+    height: 120vh;
+    width: 100vw;
+    background-image: url("./Asset/bg.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+  }
+  
+  .profile-page1::after {
+    content: "";
+    height: 60vh;
+    width: 100vw;
+    background: linear-gradient(to top, black, transparent);
+    position: absolute;
+    bottom: 0px;
+  }
+  
+  .profile-page1 h1 {
+    font-family: Akira Expanded;
+    font-size: 200px;
+    font-weight: 800;
+    line-height: 230px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #fff;
+    padding-top: 160px;
+  }
+  
+  .profile-page2 {
+    min-height: 100vh;
+    width: 100vw;
+    padding: 100px 100px;
+  }
+  
+  .profile-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 80px;
+  }
+  
+  .profile-card {
+    height: 500px;
+    width: 420px;
+    border-radius: 20px;
+    border: 2px solid white;
+    padding: 50px 70px 50px 50px;
+    color: white;
+  }
+  
+  .profile-card h2 {
+    font-family: Poppins;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 18px;
+  }
+  
+  .profile-input {
+    width: 284px;
+    height: 32px;
+    top: 15px;
+    border-radius: 8px;
+    padding: 0px 12px;
+    background: #90909080;
+    color: white;
+    display: flex;
+    align-items: center;
+  }
