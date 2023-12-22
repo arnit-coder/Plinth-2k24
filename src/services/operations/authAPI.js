@@ -14,40 +14,35 @@ const {
 } = authEndpoints;
 
 export const LogIN = async (body, navigate) => {
-	const toastId = toast.loading("Loading...");
 	try {
 		const response = await axios.post(LOGIN_API, body);
 		console.log("Authentication Done!");
-		toast.dismiss(toastId);
 		localStorage.setItem("Plinth2k24AdminToken", JSON.stringify(response.data.token));
 		navigate("/");
 		return response;
 	} catch (err) {
 		console.log(err);
+		toast.error(err.response?.data.message)
 		console.log("Error while Login Authentication in Frontend!");
+		return 
 	}
-	toast.dismiss(toastId);
 };
 
 export const SignUP = async (body, navigate) => {
-	const toastId = toast.loading("Loading...");
 	try {
 		const response = await axios.post(SIGNUP_API, body);
 		console.log("Authentication Done!");
-		toast.dismiss(toastId);
 		navigate("/login");
+		toast.success("Signed Up Successfully");
 		return response;
 	} catch (err) {
 		console.log(err);
 		console.log("Error while Signup Authentication in Frontend!");
 	}
-	toast.dismiss(toastId);
 };
 
 export const SendOtp = async (email, navigate) => {
-	const toastId = toast.loading("Loading...");
 	try {
-		console.log(email);
 		const response = await axios.post(SENDOTP_API, {email});
 		console.log("OTP Sent!");
 		if (!response.data.success) {
@@ -60,7 +55,6 @@ export const SendOtp = async (email, navigate) => {
 		console.log("SENDOTP API ERROR............", err);
 		toast.error("Could Not Send OTP");
 	}
-	toast.dismiss(toastId);
 };
 
 export const getResetPasswordToken = async (email, setEmailSent) => {

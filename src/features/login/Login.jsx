@@ -31,16 +31,13 @@ const Login = () => {
     e.preventDefault();
     const data = {email, password};
     const response = await LogIN(data, navigate);
-    setUser(response.data.user)
+    setUser(response?.data.user)
     if(response){
       toast.success("Login Successful!")
       const date = new Date();
       date.setDate(date.getDate() + 30)
       // const token = response.data.userToReturn.token;
       // setCookie("token", token, {path:'/', expires:date});
-    }
-    else{
-      toast.error("Failed Login!")
     }
   }
   return (
