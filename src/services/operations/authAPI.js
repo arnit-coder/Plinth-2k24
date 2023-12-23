@@ -17,7 +17,7 @@ export const LogIN = async (body, navigate) => {
 	try {
 		const response = await axios.post(LOGIN_API, body);
 		console.log("Authentication Done!");
-		localStorage.setItem("Plinth2k24AdminToken", JSON.stringify(response.data.token));
+		localStorage.setItem("token", JSON.stringify(response.data.token));
 		navigate("/");
 		return response;
 	} catch (err) {
