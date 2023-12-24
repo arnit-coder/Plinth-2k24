@@ -43,12 +43,12 @@ function Header() {
           <p style={{paddingTop:"10%"}}>Competitions</p>
         </Link>
       </span>
-      {/* <span>
-        <Link to="/messages">
+      <span>
+        <Link to="/Profile">
           <img className='test' src={message} alt="" />
-          <p>Messages</p>
+          <p>Profile</p>
         </Link>
-      </span> */}
+      </span>
       {/* <span>
         <Link to="/gallery">
           <img className='test' src={gallery} alt="" />

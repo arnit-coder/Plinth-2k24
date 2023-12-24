@@ -4,7 +4,7 @@ import Header from "../Header/Header";
 
 function Profile() {
   return (
-      <div className="profile-main">
+      <div className="profile-main" id="Profile">
         <div className="profile-page1">
             <h1>PROFILE</h1>
         </div>
