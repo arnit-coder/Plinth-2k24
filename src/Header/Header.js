@@ -14,7 +14,7 @@ import users from "./asset/users.svg";
 import document from "./asset/file-text.svg";
 import login from "./asset/icons8-login-100.png"
 import signup from "./asset/icons8-sign-up-64.png";
-
+import ambassador from "./asset/ambassador.png";
 function Header() {
   return (
     <div className="nav-main">
@@ -49,25 +49,24 @@ function Header() {
           <p>Profile</p>
         </Link>
       </span>
-      {/* <span>
-        <Link to="/gallery">
-          <img className='test' src={gallery} alt="" />
-          <p>Gallery</p>
-        </Link>
-      </span> */}
       <span>
         <Link to="/events">
           <img className='test' src={calander} alt="" />
           <p>Events</p>
         </Link>
       </span>
+      <span>
+        <Link to="/campus-ambassador">
+          <img className='test' src={ambassador} alt="" />
+          <p style={{paddingTop:"8%"}}>Ambassador</p>
+        </Link>
+      </span>
       {/* <span>
-        <Link to="/activity">
+        <Link to="/accomodation">
           <img className='test' src={users} alt="" />
-          <p>Activity</p>
+          <p>Gallery</p>
         </Link>
       </span> */}
-
     </div>
   );
 }
