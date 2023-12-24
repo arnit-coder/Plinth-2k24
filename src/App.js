@@ -24,7 +24,6 @@ import Events from "./EventPage/Event";
 import Competitions from "./Competitions/Competitions";
 import { Home } from "./home/home";
 import Campus from "./CampusAmbassador/Campus";
-import Accomodation from "./accomodation/Accomodation.tsx";
 function App() {
   return (
     <UserContextProvider>
@@ -45,7 +44,7 @@ function App() {
         <Route path="/events" element={<Events />} /> 
         <Route path="/competitions" element={<Competitions />} /> 
         <Route path="/campus-ambassador" element={<Campus />} /> 
-        <Route path="/accomodation" element={<Accomodation />} /> 
+
         {/* <Route exact path="/Admin/ViewEvents" element={<ViewEvents />} />  */}
       </Routes>
       {/* <Header />  */}
