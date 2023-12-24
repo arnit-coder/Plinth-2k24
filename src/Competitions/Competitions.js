@@ -1,15 +1,24 @@
 // Event.js
-import React from "react";
+import React, { useState } from "react";
+import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import "react-tabs/style/react-tabs.css";
 import Image from "./bg.jpeg";
-import EventCard from "./EventCard"; // Import EventCard component
+import EventCard from "./EventCard";
 import "./Event.css";
 import Header from "../Header/Header";
 
+// Import images for events
 import img1 from "./img1.jpeg";
 import img2 from "./img2.png";
 import img3 from "./img3.jpeg";
 
 function Competitions() {
+  const [tabIndex, setTabIndex] = useState(0);
+
+  const handleTabSelect = (index) => {
+    setTabIndex(index);
+  };
+
   return (
     <div id="competitions">
       <div className="main">
@@ -19,52 +28,40 @@ function Competitions() {
           <div className="bottom"></div>
         </div>
         <div className="page2">
-          <h1>Lorem</h1>
-          <div className="cards">
-            {/* Use EventCard component and pass values as props */}
-            <EventCard
-              day="Quizzinga"
-              artist="Cryptex"
-              description="Cryptex is an online quiz competition with a format similar to a treasure hunt."
-              image={img1}
-            />
-            <EventCard
-              day="Quizzinga"
-              artist="IPL Auction"
-              description="IPL Auction is a real-life simulation of the auction we witness before every IPL season."
-              image={img2}
-            />
-            <EventCard
-              day="Quizzinga"
-              artist="Brandwagon"
-              description="Brandwagon is Quizzinga's flagship business quiz every year during Plinth."
-              image={img3}
-            />
-            <EventCard
-              day="Cybros"
-              artist="CP DUELS"
-              description="CP DUEL is an in-person 1v1 knockout tournament. As the meaning of duel suggests, this will be a coding combat between 2 individuals, i.e. both the participants will be given the same problem and the first person to solve it wins."
-              image={img1}
-            />
-            <EventCard
-              day="Cybros"
-              artist=" C PEAK"
-              description="C PEAK is a tournament in which contestants are eliminated based on their problem-solving speed"
-              image={img2}
-            />
-            <EventCard
-              day="Cybros"
-              artist=" IUPC"
-              description="The contest will be ICPC style with a 10-minute penalty for each wrong submission and will follow the ICPC format."
-              image={img3}
-            />
-            <EventCard
-              day="Cybros"
-              artist=" ENIGMA"
-              description="This is Cybros' flagship-rated contest. It is a regular one-person competitive programming contest."
-              image={img3}
-            />
-            <EventCard
+          <Tabs selectedIndex={tabIndex} onSelect={handleTabSelect}>
+            <TabList className="custom-tab-list">
+              <Tab>Quizzinga</Tab>
+              <Tab>Cybros</Tab>
+              <Tab>E-Cell</Tab>
+              <Tab>DebSoc</Tab>
+              <Tab>Astronomy</Tab>
+              <Tab>Phoenix</Tab>
+              <Tab>Cipher</Tab>
+              <Tab>ASME LNMIIT</Tab>
+              <Tab>OC Events</Tab>
+            </TabList>
+
+            
+            <TabPanel className="cards">
+             
+              <EventCard day="Quizzinga" artist="Cryptex" description="Cryptex is an online quiz competition with a format similar to a treasure hunt." image={img1} />
+              <EventCard day="Quizzinga" artist="IPL Auction" description="IPL Auction is a real-life simulation of the auction we witness before every IPL season." image={img2} />
+              <EventCard day="Quizzinga" artist="Brandwagon" description="Brandwagon is Quizzinga's flagship business quiz every year during Plinth." image={img3} />
+              
+            </TabPanel>
+
+            <TabPanel className="cards">
+              
+              <EventCard day="Cybros" artist="CP DUELS" description="CP DUEL is an in-person 1v1 knockout tournament..." image={img1} />
+              <EventCard day="Cybros" artist="C PEAK" description="C PEAK is a tournament in which contestants are eliminated based on their problem-solving speed." image={img2} />
+              <EventCard day="Cybros" artist="IUPC" description="The contest will be ICPC style with a 10-minute penalty for each wrong submission and will follow the ICPC format." image={img3} />
+              <EventCard day="Cybros" artist="ENIGMA" description="This is Cybros' flagship-rated contest. It is a regular one-person competitive programming contest." image={img3} />
+             
+            </TabPanel>
+
+            <TabPanel className="cards">
+             
+              <EventCard
               day="E-Cell"
               artist="  Job Fair"
               description="Embark on a journey of boundless possibilities during our dynamic 2-day job fair, an unparalleled realm of professional excellence."
@@ -82,7 +79,12 @@ function Competitions() {
               description="AceTheCase is the ultimate case study competition where participating teams conduct a comprehensive analysis of an opted unicorn company. "
               image={img3}
             />
-            <EventCard
+             
+            </TabPanel>
+
+            <TabPanel className="cards">
+             
+              <EventCard
               day="DebSoc"
               artist=" Model United Nations"
               description="At a MUN conference, delegates(students) will each represent a nation/organization to solve world problems by working with other delegates."
@@ -100,7 +102,12 @@ function Competitions() {
               description="You'll be presented with a random opinion to which you'll have to convince the chair with argumentation to adhere to your thoughts on the topic."
               image={img3}
             />
-            <EventCard
+              
+            </TabPanel>
+
+            <TabPanel className="cards">
+             
+              <EventCard
               day=" Astronomy"
               artist="Odin's Eye"
               description="Odin’s Eye is an astronomy-themed treasure hunt; the faster you solve the mind boggling riddles, the closer you get to the finishing line."
@@ -139,7 +146,12 @@ function Competitions() {
               description=""
               image={img3}
             />
-            <EventCard
+             
+            </TabPanel>
+
+            <TabPanel className="cards">
+              
+              <EventCard
               day="Phoenix"
               artist=" RoboWar"
               description="Robot Combat Competition where participants battle each other for the coveted Robowars Champion Title."
@@ -181,14 +193,23 @@ function Competitions() {
               description="The Exhibition event offers you an amazing opportunity to show off your ideas and innovations !! Stay tuned for more updates."
               image={img3}
             />
+             
+            </TabPanel>
 
-            <EventCard
+            <TabPanel className="cards">
+              
+              <EventCard
               day="Cipher"
               artist=" LNM HACKS 6.0"
               description="LNMHacks 6.0 will be a 48-hour hackathon with a wide range of tracks."
               image={img3}
             />
-            <EventCard
+             
+            </TabPanel>
+
+            <TabPanel className="cards">
+             
+              <EventCard
               day="ASME LNMIIT"
               artist=" Drone Race"
               description="Teams have to design and build a wireless remote-controlled flying platform to complete an obstacle course in minimum time without crashing."
@@ -212,7 +233,12 @@ function Competitions() {
               description="Embark on an electrifying adventure at our college-wide treasure hunt event!"
               image={img3}
             />
-            <EventCard
+             
+            </TabPanel>
+
+            <TabPanel className="cards">
+            
+              <EventCard
               day="OC Events"
               artist="  GoKarting"
               description="Go-karting is an adrenaline-pumping motorsport that offers a thrilling experience for participants of all ages."
@@ -236,12 +262,11 @@ function Competitions() {
               description="A real time crime scene is created that needs to be observed by the participants and then solve the mystery lying ahead."
               image={img3}
             />
-
-            {/* Add more EventCard components for other events */}
-          </div>
+             
+            </TabPanel>
+          </Tabs>
         </div>
       </div>
-
     </div>
   );
 }
