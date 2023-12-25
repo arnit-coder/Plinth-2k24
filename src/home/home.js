@@ -9,9 +9,8 @@ export const Home = () => {
       <img src="/home.jpeg" className="home-img" />
       <img src="/hometxt.png" className="home-txt"></img>
       <div className="grad"></div>
-      <button className="button-x">REGISTER</button>
-      <div className="ctd"><Countdown /></div>
-      <Header />
+      <div className="btn-p"><div className="button-p"><button className="button-x">REGISTER</button></div></div>
+      <div className="ctd-p"><div className="ctd"><Countdown /></div></div>
     </div>
   );
 };
