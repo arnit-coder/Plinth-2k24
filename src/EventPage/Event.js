@@ -4,6 +4,8 @@ import Image from "./bg.jpeg";
 import EventCard from "./EventCard"; // Import EventCard component
 import "./Event.css";
 import Header from "../Header/Header";
+import { Link } from "react-router-dom";
+import Day2 from "./Day2/Day2";
 
 import img1 from "./img1.jpeg";
 import img2 from "./img2.png";
@@ -28,12 +30,14 @@ function Event() {
               description="RHYTM DIVINE's captivating performance on the plinth mesmerized the crowd with its infectious beats, creating a rhythmic, unforgettable experience."
               image={img1}
             />
+            <Link to='/Day2'>
             <EventCard
               day="DAY 2"
               artist="MOHD. IRFAN"
               description="Mohammed Irfan's Plinth performance wowed the audience with his enchanting voice and stage charisma, leaving a lasting impression."
               image={img2}
             />
+            </Link>
             <EventCard
               day="DAY 2"
               artist="STEBIN BEN"

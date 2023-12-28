@@ -1,0 +1,64 @@
+/* Day2.css */
+
+@font-face {
+   font-family: poppins;
+   src: url('../Poppins/Poppins-Medium.ttf');
+}
+
+.day2-container {
+   position: relative;
+   height: 100vh;
+   overflow: hidden;
+ }
+ 
+ .day2-img {
+
+   position: absolute;
+   width: 70%;
+   height: 100%;
+   right: 0;
+   object-fit: cover;
+   mask-image: linear-gradient(to right, transparent, black 20%);
+
+ }
+ 
+
+ .content-box {
+   position: absolute;
+   padding: 20px;
+   top: 30%;
+   left: 10%;
+
+   color: #fff;
+   width: 30%;
+   
+   max-width: 450px;
+   z-index: 100;
+ 
+
+ }
+ 
+ .title {
+   font-size: 32px;
+   color: #8d1f8d; 
+   font-family: poppins;
+   
+ }
+ 
+ .subtitle {
+   font-size: 60px;
+   font-weight: 800;
+   text-align: left;
+   margin-top: 10px;
+   font-family: poppins;
+ }
+ 
+ .content {
+   margin-top: 22px;
+   line-height: 1.8;
+   letter-spacing: .6px;
+   font-family: poppins;
+
+  
+ }
+ 

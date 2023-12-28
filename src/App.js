@@ -10,8 +10,8 @@ import {
   // Link,
   Routes,
 } from "react-router-dom";
-
 import Login from "./features/login/Login";
+import Day2 from "./EventPage/Day2/Day2";
 import { Toaster } from "react-hot-toast";
 import ForgotPassword from "./features/login/ForgotPassword";
 import UpdatePassword from "./features/login/UpdatePassword";
@@ -23,6 +23,7 @@ import Header from "./Header/Header";
 import Events from "./EventPage/Event";
 import Competitions from "./Competitions/Competitions";
 import { Home } from "./home/home";
+
 import Campus from "./CampusAmbassador/Campus";
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
       <Header />
       <Routes>
         {/* <Route path="/" element={<Profile />} /> */}
+        <Route path="/Day2" element={<Day2 />} />
         <Route path="/" element={<Home />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
