@@ -15,7 +15,7 @@
   width:33%;
   height: 15%;
   margin-left: -66.5%;
-  margin-top: 40vh;
+  margin-top: 30vh;
   position: absolute;
   z-index: 101;
   mix-blend-mode: lighten;
@@ -83,4 +83,46 @@
   color: white;
   margin-left: 44.5%;
   margin-top: -2%;
+}
+
+.button-x {
+  transition: all .5s ease;
+  color: #fff;
+  border: 3px solid rgba(255, 255, 255, 0.26);
+  font-family:'Montserrat', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+  font-size: 17px;
+  background-color : transparent;
+  backdrop-filter: blur(80px);
+  -webkit-backdrop-filter: blur(80px);
+  padding: 12% 45%;
+  outline: none;
+  border-radius: 4px;
+}
+.button-x:hover {
+  scale: 1.2;
+}
+
+.btn-p{
+  display: flex;
+  justify-content: center;
+}
+
+.button-p{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top:50%;
+}
+
+.ctd-p{
+  display: flex;
+  justify-content: center;
+}
+
+.ctd{
+  position: absolute;
+  top:62%;
 }

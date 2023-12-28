@@ -15,6 +15,7 @@ import document from "./asset/file-text.svg";
 import login from "./asset/icons8-login-100.png"
 import signup from "./asset/icons8-sign-up-64.png";
 import ambassador from "./asset/ambassador.png";
+import room from "./asset/room.png";
 function Header() {
   return (
     <div className="nav-main">
@@ -61,12 +62,12 @@ function Header() {
           <p style={{paddingTop:"8%"}}>Ambassador</p>
         </Link>
       </span>
-      {/* <span>
+      <span>
         <Link to="/accomodation">
-          <img className='test' src={users} alt="" />
-          <p>Gallery</p>
+          <img className='test' src={room} alt="" />
+          <p style={{paddingTop:"10%"}}>Accomodation</p>
         </Link>
-      </span> */}
+      </span>
     </div>
   );
 }

@@ -1,0 +1,73 @@
+.acx h1{
+    font-family: Akira Expanded;
+    font-size: 400%;
+    font-weight: 800;
+    line-height: 150%;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
+    margin-top: 5%;
+}
+
+@media (max-width:800px) {
+    .acx h1{
+        font-size: 100%;
+    }
+}
+
+.acx p {
+    color: #FFF;
+    text-align: justify;
+    font-family: Poppins;
+    font-size: 150%;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2%;
+}
+
+.p1{
+    font-weight: 1000 !important;
+    font-size: 175% !important;
+}
+
+.p1 ul{
+    list-style-position: outside;
+}
+
+.button-63 {
+    align-items: center;
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    font-family: Phantomsans, sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    line-height: 1em;
+    padding: 1%;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+    width: 20%;
+    margin-left: 40%;
+  }
+@media (max-width:600px) {
+    .button-63{
+        margin-left: 35%;
+    }
+    
+}
+  .xx{
+    background-color: transparent !important;
+    color: black !important;
+    border-color: transparent !important;
+  }
