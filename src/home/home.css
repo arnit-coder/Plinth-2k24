@@ -3,6 +3,10 @@
   height: 100vh;
 }
 
+
+
+
+
 .home-img {
   width: 100%;
   height: 100%;
@@ -17,7 +21,7 @@
   margin-left: -66.5%;
   margin-top: 30vh;
   position: absolute;
-  z-index: 101;
+  z-index: 100000;
   mix-blend-mode: lighten;
 }
 
@@ -108,21 +112,52 @@
 .btn-p{
   display: flex;
   justify-content: center;
+  margin: 10% 0%;
+  
 }
 
 .button-p{
   display: flex;
   justify-content: center;
   position: absolute;
-  top:50%;
+  /* top:50%; */
+  top: 50%;
 }
+
+/* .countdown 
+{
+  height: 60%;
+  border: 2px solid pink;
+} */
 
 .ctd-p{
   display: flex;
   justify-content: center;
+  /* margin: 10% 0%; */
 }
 
 .ctd{
   position: absolute;
   top:62%;
+}
+
+@media screen and (max-width: 1000px)
+{
+  .button-p 
+  {
+    top: 45%;
+  }
+}
+
+@media screen and (max-width: 800px)
+{
+  .button-p 
+  {
+    top: 50%;
+  }
+
+  .ctd 
+  {
+    top: 80%;
+  }
 }

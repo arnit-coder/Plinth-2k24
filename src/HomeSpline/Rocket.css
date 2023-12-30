@@ -1,0 +1,121 @@
+/* Rocket.css */
+
+
+
+
+.splinemodel{
+  width: 100%;
+  height: 100vh;
+  /* position: absolute; */
+  z-index: -1;
+}
+
+.main{
+  width: 100%;
+  height: 90vh;
+  position: relative;
+  /* display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; */
+}
+
+.heading{
+  position: absolute;
+  top: calc(45% - 98px); 
+  left: calc(50% - 360px);
+  z-index: 10;
+  color: aliceblue;
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image 
+{
+
+ width: 721px;
+ height: 196px;
+ background-color: transparent;
+ margin-bottom: 20%;
+   /* height: 500px; */
+}
+
+@media screen and (max-width: 1000px)
+{
+  .image
+  {
+    width: 600px;
+    height: 163px;
+  }
+
+  .heading
+  {
+    top: calc(45% - 81px); 
+    left: calc(50% - 300px);
+  }
+}
+/* 
+@media screen and (max-width: 800px)
+{
+  .image
+  {
+    width: 500px;
+    height: 130px;
+  }
+
+  .heading
+  {
+    top: calc(70% - 75px); 
+    left: calc(50% - 250px);
+  }
+} */
+
+@media screen and (max-width: 800px)
+{
+  .image
+  {
+    width: 400px;
+    height: 97px;
+  }
+  .heading
+  {
+    top: calc(40% - 48.5px); 
+    left: calc(50% - 200px);
+  }
+}
+
+@media screen and (max-width: 600px)
+{
+  .image
+  {
+    width: 350px;
+    height: 85px;
+
+  }
+
+  .heading
+  {
+    top: calc(50% - 43px); 
+    left: calc(50% - 195px);
+  }
+}
+
+@media screen and (max-width: 540px)
+{
+  .image
+  {
+    width: 300px;
+    height: 73px;
+  }
+
+  .heading
+  {
+    top: calc(50% - 37px); 
+    left: calc(50% - 150px);
+  }
+}
+
