@@ -22,6 +22,8 @@ import Footer from "./Footer/Footer";
 import Header from "./Header/Header";
 import Events from "./EventPage/Event";
 import Competitions from "./Competitions/Competitions";
+import LnmHacks from "./lnmhacks/LnmHacks";
+
 import { Home } from "./home/home";
 import Preloader from "./Preloader/Preloader";
 
@@ -50,6 +52,8 @@ function App() {
         <Route path="/competitions" element={<Competitions />} /> 
         <Route path="/campus-ambassador" element={<Campus />} /> 
         <Route path="/accomodation" element={<Accomodation />} />
+        <Route path="/lnm-hacks" element={<LnmHacks />} />
+
         {/* <Route exact path="/Admin/ViewEvents" element={<ViewEvents />} />  */}
       </Routes>
       {/* <Header />  */}

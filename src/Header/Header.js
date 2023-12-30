@@ -68,6 +68,12 @@ function Header() {
           <p style={{paddingTop:"10%"}}>Accomodation</p>
         </Link>
       </span>
+      <span>
+        <Link to="/lnm-hacks">
+          <img className='test' src={ambassador} alt="" />
+          <p style={{paddingTop:"10%"}}>Lnm Hacks</p>
+        </Link>
+      </span>
     </div>
   );
 }

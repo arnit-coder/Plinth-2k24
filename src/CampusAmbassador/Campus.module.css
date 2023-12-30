@@ -66,9 +66,21 @@
 {
     width: 450px;
     height: 450px;
-    border-radius: 15px;
+    border-radius: 36px;
     margin-top: 15px;
+    box-shadow: 10px 10px 20px #fff, -10px -10px 20px #fff,
+    10px -10px 20px #fff, -10px 10px 20px #fff;
+  animation: moveUpDown 2s ease-in-out infinite alternate; /* Adjust the duration as needed */
 }
+@keyframes moveUpDown {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(30px);
+    }
+  }
 
 .dataHeader 
 {
