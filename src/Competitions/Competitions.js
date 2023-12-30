@@ -3,7 +3,7 @@
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import Image from "./bg.jpeg";
-import EventCard from "./EventCard";
+import EventCard from "./CompiCard";
 
 import "./compi.css";
 

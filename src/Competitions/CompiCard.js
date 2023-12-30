@@ -7,7 +7,7 @@ import "./Event.css";
 
 const EventCard = ({ day, artist, description, image }) => {
   return (
-    <div className="card1">
+    <div className="card2">
       <div className="img">
         <img src={image} alt="" />
         <div className="grad"></div>
