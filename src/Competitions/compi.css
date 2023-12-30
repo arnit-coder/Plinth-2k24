@@ -204,13 +204,7 @@
     position: relative;
   }
   
-  .cards a {
-    width: calc(50% - 20px); /* Adjust width calculation for two cards in a row with gap */
-    text-decoration: none; /* Remove underline from links */
-    color: inherit; /* Inherit text color from parent */
-    box-sizing: border-box; /* Include padding and border in the width calculation */
-    display: block; /* Make the link a block-level element */
-  }
+  
   
   @media (max-width: 768px) {
     .mobv {
