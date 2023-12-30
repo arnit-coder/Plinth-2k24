@@ -1,7 +1,9 @@
 // EventCard.js
 import React from "react";
 import PropTypes from "prop-types";
+
 import "./Event.css";
+
 
 const EventCard = ({ day, artist, description, image }) => {
   return (

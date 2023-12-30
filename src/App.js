@@ -23,6 +23,7 @@ import Header from "./Header/Header";
 import Events from "./EventPage/Event";
 import Competitions from "./Competitions/Competitions";
 import { Home } from "./home/home";
+import Preloader from "./Preloader/Preloader";
 
 import Campus from "./CampusAmbassador/Campus";
 import Accomodation from "./accomodation/accomodation";
@@ -31,6 +32,7 @@ function App() {
     <UserContextProvider>
       <Toaster />
 
+      <Preloader />
       <Header />
       <Routes>
         {/* <Route path="/" element={<Profile />} /> */}

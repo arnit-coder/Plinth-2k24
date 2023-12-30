@@ -4,7 +4,9 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import Image from "./bg.jpeg";
 import EventCard from "./EventCard";
-import "./Event.css";
+
+import "./compi.css";
+
 import Header from "../Header/Header";
 import Cube from "../Cube/Cube";
 import { useEffect, useMemo, useState } from "react";
