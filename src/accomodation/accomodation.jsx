@@ -133,10 +133,10 @@ const [init, setInit] = useState(false);
             <p></p>
         {/*chk */}
         <div style={{marginTop:"10%",textAlign:"center"}}>
-        <input type="checkbox" name="option-1" id="option-1" /> <label for="option-1">I hereby agree to abide by the terms and conditions as provided.</label>
+        <input type="checkbox" name="option-1" id="option-1" className="checkb" /> <label for="option-1" className="chb">I hereby agree to abide by the terms and conditions as provided.</label>
     </div>
     
-    <div style={{marginTop:"1%",textAlign:"center"}} className="button-63">
+    <div style={{marginTop:"1%",textAlign:"center"}} className="button-63acc">
         <input className="xx" type="submit" value="Submit" onClick={navigateComp}/> 
     </div>
     <Particles
