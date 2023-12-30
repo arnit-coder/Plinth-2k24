@@ -27,6 +27,10 @@
     padding-right: 10%;
     padding-top: 2%;
 }
+.acx {
+    position: absolute;
+    z-index: 1;
+}
 
 .p1{
     font-weight: 1000 !important;

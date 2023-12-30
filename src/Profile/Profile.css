@@ -8,6 +8,8 @@
     width: 100%;
     box-sizing: border-box;
     background-color: #000;
+    z-index: 5;
+    position: absolute;
   }
   
   .profile-page1 {
