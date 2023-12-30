@@ -187,16 +187,16 @@
     justify-content: center;
     align-items: flex-start;
     align-content: flex-start;
-    gap: 20px; /* Adjust the gap as needed */
+    gap: 30px; /* Adjust the gap as needed */
     flex-wrap: wrap;
-    margin-top: 200px;
+    margin-top: 10px;
     margin-left: 7%;
   }
   
   .card2 {
     width: calc(30% - 20px); /* Adjust width to include gap */
     height: 700px;
-    margin: 10%;
+    margin: 5%;
     flex-shrink: 0;
     border-radius: 50px;
     background: #000;

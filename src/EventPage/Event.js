@@ -13,6 +13,7 @@ import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
 // import { loadBasic } from "@tsparticles/basic"; // if you are going to use `loadBasic`, install the "@tsparticles/basic" package too.
 import img1 from "./img1.jpeg";
+import Cube from '../Cube/Cube'
 import img2 from "./img2.png";
 import img3 from "./img3.jpeg";
 
@@ -108,11 +109,29 @@ function Event() {
     }),
     [],
   );
+  const cubeStyle = {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+  };
   return (
     <div id="events">
       <div className="main">
         <div className="page1">
-          <img src={Image} alt="" />
+        <div style={{ ...cubeStyle, top: '15%', left: '10%', zIndex: '1' }}>
+        <Cube size="50px" color="red" />
+      </div>
+
+      {/* Top-right corner */}
+      <div className="mobv c2" style={{ ...cubeStyle, top: '15%', right: '10%', left: 'auto', zIndex: '1' }}>
+        <Cube size="50px" color="green" />
+      </div>
+
+      {/* Bottom-left corner */}
+      <div className="mobv c3" style={{ ...cubeStyle, bottom: '15%', left: '40%', top: 'auto', zIndex: '1' }}>
+        <Cube size="50px" color="blue" />
+      </div>
+          {/* <img src={Image} alt="" /> */}
           <h1>EVENTS</h1>
           <div className="bottom"></div>
         </div>

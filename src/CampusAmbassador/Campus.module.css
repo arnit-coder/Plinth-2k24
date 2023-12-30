@@ -17,12 +17,15 @@
 
 .headingDiv 
 {
-    color: white;
+    font-family: Akira Expanded;
+    font-size: 400%;
+    font-weight: 800;
+    line-height: 200%;
+    letter-spacing: 0em;
     text-align: center;
-    font-size: 2rem;
-    width: 900px
+    color: white;
+    margin-top: 5%;
 }
-
 .description1 
 {
     width: 80%;
