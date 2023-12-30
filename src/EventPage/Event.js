@@ -117,7 +117,7 @@ function Event() {
   return (
     <div id="events">
       <div className="main">
-        <div className="page1">
+        <div className="epg">
         <div style={{ ...cubeStyle, top: '15%', left: '10%', zIndex: '1' }}>
         <Cube size="50px" color="red" />
       </div>
@@ -135,11 +135,12 @@ function Event() {
           <h1>EVENTS</h1>
           <div className="bottom"></div>
         </div>
-        <div className="page2">
+        <div className="epg2">
           <h1>Pronites</h1>
 
-          {/* First row of EventCards */}
-          <div className="cards">
+          {/* First row of Eventecard */}
+          <div  className="proh">
+          <div className="ecard">
             <Link to="/Day2">
               <EventCard
                 day="DAY 1"
@@ -159,8 +160,8 @@ function Event() {
             {/* Add more EventCard components for the first row */}
           </div>
 
-          {/* Second row of EventCards */}
-          <div className="cards">
+          {/* Second row of Eventecard */}
+          <div className="ecard">
             <Link to="/Day2">
               <EventCard
                 day="DAY 2"
@@ -178,6 +179,7 @@ function Event() {
               />
             </Link>
             {/* Add more EventCard components for the second row */}
+          </div>
           </div>
         </div>
       </div>

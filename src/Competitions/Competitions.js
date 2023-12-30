@@ -145,7 +145,7 @@ function Competitions() {
 
       
           <h1 style={{ fontSize: "7.5vw" }}>COMPETITIONS</h1>
-          <div className="bottom"></div>
+          {/* <div className="bottom"></div> */}
         </div>
         <div className="page2">
           <Tabs selectedIndex={tabIndex} onSelect={handleTabSelect}>

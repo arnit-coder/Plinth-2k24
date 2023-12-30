@@ -8,6 +8,111 @@
   src: url(Poppins/Poppins-Light.ttf);
 }
 
+/* CSS */
+.button-63 {
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 19px 24px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  margin-left: 25%;
+  margin-top: 5%;
+}
+
+/* Event.css */
+/* Add these styles or update existing styles */
+
+.custom-tab-panel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.custom-tab-panel > div {
+  flex-basis: calc(30% - 10px);
+  margin-bottom: 10px;
+}
+
+
+/* Event.css */
+/* Add these styles or update existing styles */
+
+.custom-tab-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  /*background-color: #f5f5f5;  Background color for the tab list */
+  /* Border at the bottom of the tab list */
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.custom-tab-list .react-tabs__tab {
+  flex-basis: calc(30% - 20px);
+  margin-bottom: 10px;
+  padding: 8px 12px; /* Smaller padding */
+  font-size: 14px; /* Smaller font size */
+  background-color: transparent; /* Transparent background */
+  color: #FFFFFF; /* Default text color */
+  border: 2px solid #fff; /* White outline border */
+  border-radius: 16px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.custom-tab-list .react-tabs__tab.react-tabs__tab--selected {
+  background-color: #fff; /* Selected tab background color */
+  color: #000; /* Selected tab text color */
+  border-color: #fff; /* White outline border for the selected tab */
+}
+
+.custom-tab-list .react-tabs__tab:hover {
+  background-color: #fff; /* Background color on hover */
+  color: #000; /* Text color on hover */
+}
+
+
+#tsparticles {
+  position: absolute;
+  z-index: -1;
+}
+
+.button-63:active,
+.button-63:hover {
+  outline: 0;
+}
+
+
+
+body {
+  overflow-x: hidden;
+}
+
+@media (min-width: 768px) {
+  .button-63 {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
 * {
   margin: 0px;
   padding: 0px;
@@ -21,15 +126,16 @@ body {
   background: #000;
 }
 
-.page1 {
+.epg {
   min-height: 100vh;
   width: 100vw;
   flex-shrink: 0;
-  overflow: hidden;
+  
   position: relative;
+  background: linear-gradient(to top, black, transparent);
 }
 
-.page1 .bottom {
+.epg .bottom {
   height: 100%;
   width: 100%;
   position: absolute;
@@ -37,14 +143,14 @@ body {
   bottom: 0px;
 }
 
-.page1 img {
+.epg img {
   width: 100vw;
   margin-top: -120px;
   object-fit: cover;
   mix-blend-mode: screen;
 }
 
-.page1 h1 {
+.epg h1 {
   color: #fff;
   font-family: Akira Expanded;
   font-size: 7.5vw;
@@ -59,11 +165,13 @@ body {
   z-index: 3;
 }
 
-.page2 {
+.epg2 {
+  margin-top: 10%;
   width: 100vw;
+  margin-left: 0%;
 }
 
-.page2 h1 {
+.epg2 h1 {
   color: #fff;
   font-family: Akira Expanded;
   font-size: 7vw;
@@ -72,27 +180,56 @@ body {
   line-height: normal;
   position: absolute;
   left: 50%;
+  bottom: -50%;
   transform: translate(-50%, -0%);
 }
 
-.cards {
+.ecard {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  align-content: flex-start;
-  gap: 0px 300px;
+  /* align-items: flex-start;
+  align-content: flex-start; */
+  gap: 20px; /* Adjust the gap as needed */
   flex-wrap: wrap;
+  /* margin-top: 200px; */
+  /* margin-left: 15%; */
+  gap: 10%;
 }
 
 .card1 {
-  width: 400px;
-  height: 500px;
+  width: calc(100% - 20px); /* Adjust width to include gap */
+  height: 800px;
   flex-shrink: 0;
   border-radius: 50px;
   background: #000;
   overflow: hidden;
-  margin-top: 200px;
   position: relative;
+}
+
+.ecard a {
+  width: calc(35% - 20px); /* Adjust width calculation for two ecard in a row with gap */
+  text-decoration: none; /* Remove underline from links */
+  color: inherit; /* Inherit text color from parent */
+  box-sizing: border-box; /* Include padding and border in the width calculation */
+  display: block; /* Make the link a block-level element */
+}
+
+@media (max-width: 768px) {
+  .mobv {
+    display: none;
+  }
+   .card1 {
+    width: 100%;
+    right: -4%;
+    height: 500px;
+   }
+   .ecard a {
+    width: 100%;
+   }
+   .custom-tab-list .react-tabs__tab {
+    flex-basis: calc(50% - 20px);
+    font-size: 10px;
+   }
 }
 
 .card1 .img {
@@ -151,3 +288,132 @@ body {
   scale: 1.2;
 }
 
+.c2 .cube {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  transform-style: preserve-3d;
+  animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotateX(-30deg) rotateY(0deg);
+  }
+  100% {
+    transform: rotateX(-30deg) rotateY(360deg);
+  }
+}
+
+.c2 .cube div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+}
+
+.c2 .cube div span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#151515, #800080); /* Dark Purple: #800080 */
+  transform: rotateY(calc(90deg * var(--i))) translateZ(150px);
+}
+
+.c2 .top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  background: #222;
+  transform: rotateX(90deg) translateZ(150px);
+}
+
+.c2 .top::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  background: #800080; /* Dark Purple: #800080 */
+  transform: translateZ(-380px);
+  filter: blur(20px);
+  box-shadow: 0 0 120px rgba(128, 0, 128, 0.2), /* Dark Purple: #800080 */
+    0 0 200px rgba(128, 0, 128, 0.4),
+    0 0 300px rgba(128, 0, 128, 0.6),
+    0 0 400px rgba(128, 0, 128, 0.8),
+    0 0 500px rgba(128, 0, 128, 1);
+}
+
+.c3 .cube {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  transform-style: preserve-3d;
+  animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotateX(-30deg) rotateY(0deg);
+  }
+  100% {
+    transform: rotateX(-30deg) rotateY(360deg);
+  }
+}
+
+.c3 .cube div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+}
+
+.c3 .cube div span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#151515, #00008b); /* Dark Blue: #00008b */
+  transform: rotateY(calc(90deg * var(--i))) translateZ(150px);
+}
+
+.c3 .top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  background: #222;
+  transform: rotateX(90deg) translateZ(150px);
+}
+
+.c3 .top::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  background: #00008b; /* Dark Blue: #00008b */
+  transform: translateZ(-380px);
+  filter: blur(20px);
+  box-shadow: 0 0 120px rgba(0, 0, 139, 0.2), /* Dark Blue: #00008b */
+    0 0 200px rgba(0, 0, 139, 0.4),
+    0 0 300px rgba(0, 0, 139, 0.6),
+    0 0 400px rgba(0, 0, 139, 0.8),
+    0 0 500px rgba(0, 0, 139, 1);
+}
+
+.proh {
+  margin-top: 30%;
+}

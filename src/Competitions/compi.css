@@ -63,6 +63,7 @@
     /* Border at the bottom of the tab list */
     margin-left: 15%;
     margin-right: 15%;
+    margin-bottom: 10%;
   }
   
   .custom-tab-list .react-tabs__tab {
@@ -130,7 +131,7 @@
     min-height: 100vh;
     width: 100vw;
     flex-shrink: 0;
-    overflow: hidden;
+    overflow: visible !important;
     position: relative;
     background: linear-gradient(to top, black, transparent);
   }
@@ -187,21 +188,22 @@
     justify-content: center;
     align-items: flex-start;
     align-content: flex-start;
-    gap: 30px; /* Adjust the gap as needed */
+    gap: 10%; /* Adjust the gap as needed */
     flex-wrap: wrap;
-    margin-top: 10px;
-    margin-left: 7%;
+    
+    
   }
   
   .card2 {
-    width: calc(30% - 20px); /* Adjust width to include gap */
-    height: 700px;
-    margin: 5%;
+    width: calc(35% - 20px); /* Adjust width to include gap */
+    height: 800px;
+    /* margin: 5%; */
     flex-shrink: 0;
     border-radius: 50px;
     background: #000;
     overflow: hidden;
     position: relative;
+    gap: 20%;
   }
   
   
