@@ -65,7 +65,7 @@ function Header() {
       <span>
         <Link to="/accomodation">
           <img className='test' src={room} alt="" />
-          <p style={{paddingTop:"10%"}}>Accomodation</p>
+          <p style={{paddingTop:"10%"}}>Accommodation</p>
         </Link>
       </span>
       <span>

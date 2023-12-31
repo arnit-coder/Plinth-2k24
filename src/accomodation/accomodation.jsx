@@ -106,7 +106,7 @@ const [init, setInit] = useState(false);
   );
     return (
         <div className="acx">
-            <h1>ACCOMODATION</h1>
+            <h1>ACCOMMODATION</h1>
             <p>Plinth, a tech-driven event, offers accommodation passes and Pronite Passes to blend technology with an enjoyable atmosphere.
                 The event aims to attract a large crowd and provides secure, comfortable accommodations. The organizers also offer a diverse cafeteria with various cuisines.
                 Accommodation charges are INR 999 per candidate for 3 days (19th Jan 7 AM - 21th Jan 10 AM) and INR 400 for a single day, with a maximum of 3 nights allowed.
