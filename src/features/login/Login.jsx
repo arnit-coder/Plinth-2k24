@@ -44,11 +44,10 @@ const Login = () => {
     <form onSubmit={submitHandler} className="loginContainer" id="login">
       <div className="backgroundImg"></div>
       <img src={login_robot} alt="left robot" />
-      <div className="login_box">
-        <div className="heading">
-          <h2>Login</h2>
-          <span>.</span>
+      <div className="heading">
+          <h2><strong>Login</strong></h2>
         </div>
+      <div className="login_box">
         <div className="emailDiv">
           <input id="email" name="email" type="email" value={email}
             onChange={(e)=>{setEmail(e.target.value)}} placeholder="    Email" />

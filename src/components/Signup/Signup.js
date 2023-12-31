@@ -32,7 +32,7 @@ const Signup = () => {
   return (
     <form onSubmit={submitHandler} className={SignupCss.main} id='signup'>
       <div className={SignupCss.box}>
-        <h1 className={SignupCss.create}>Create new account<span className={SignupCss.dot}>.</span></h1>
+        <h1 className={SignupCss.create}>Create new account</h1>
         <p className={SignupCss.already}>Already a member? <span className={SignupCss.log}>Login</span></p>
 
         <div className={SignupCss.name}>
