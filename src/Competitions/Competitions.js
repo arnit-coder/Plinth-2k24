@@ -4,9 +4,38 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import Image from "./bg.jpeg";
 import EventCard from "./CompiCard";
+import Cryptex from './Cryptex.png'
+import iplauction from './ipl-auction.png'
+import cd from './cd.png'
+import cc from './cc.png'
+import dhoomketu from './dhoomketu.png'
+import astromemia from './astromemia.png'
+import diyglider from './diyglider.jpg'
+import monstertruck from './monstertruck.jpg'
+import starprix from './starpix.png'
+import foxhunt from './foxhunt.jpg'
+import rcplane from './rcplane.jpg'
+import lnmhacks from './lnmhacks.png'
+import bridgethebarrier from './bridgethebarrier.jpg'
+import mazesolver from './maze_solver.png'
+import lnmtechexpo from './LNM TECH EXPO.jpg'
+import motoboat from './Motoboat.png'
+import robo from './ROBO (5).png'
+import robocup from './Robo Cup.png'
+import transporter from './Transporters (3).png'
+import escaperoom from './escaperoom.jpg'
 
+import rcdrone from './rcdrone.jpg'
+import acethecase from './acethecase.png'
+import brahmaand from './brahmaand.png'
+import jobfair from './jobfair.png'
+import whodunit from './whodunit.jpg'
+import enigma from './enigma.png'
+
+import iupc from './IPUC.png'
+import mun from './mun.png'
+import bandwagon from './bandwagon.png'
 import "./compi.css";
-
 import Header from "../Header/Header";
 import Cube from "../Cube/Cube";
 import { useEffect, useMemo, useState } from "react";
@@ -158,24 +187,25 @@ function Competitions() {
               <Tab>Phoenix</Tab>
               <Tab>Cipher</Tab>
               <Tab>ASME LNMIIT</Tab>
+              <Tab>SAE</Tab>
               <Tab>OC Events</Tab>
             </TabList>
 
             
             <TabPanel className="cards">
              
-              <EventCard day="Quizzinga" artist="Cryptex" description="Cryptex is an online quiz competition with a format similar to a treasure hunt." image={img1} />
-              <EventCard day="Quizzinga" artist="IPL Auction" description="IPL Auction is a real-life simulation of the auction we witness before every IPL season." image={img2} />
-              <EventCard day="Quizzinga" artist="Brandwagon" description="Brandwagon is Quizzinga's flagship business quiz every year during Plinth." image={img3} />
+              <EventCard day="Quizzinga" artist="Cryptex" description="Cryptex is an online quiz competition with a format similar to a treasure hunt." image={Cryptex} />
+              <EventCard day="Quizzinga" artist="IPL Auction" description="IPL Auction is a real-life simulation of the auction we witness before every IPL season." image={iplauction} />
+              <EventCard day="Quizzinga" artist="Brandwagon" description="Brandwagon is Quizzinga's flagship business quiz every year during Plinth." image={bandwagon} />
               
             </TabPanel>
 
             <TabPanel className="cards">
               
-              <EventCard day="Cybros" artist="CP DUELS" description="CP DUEL is an in-person 1v1 knockout tournament..." image={img1} />
-              <EventCard day="Cybros" artist="C PEAK" description="C PEAK is a tournament in which contestants are eliminated based on their problem-solving speed." image={img2} />
-              <EventCard day="Cybros" artist="IUPC" description="The contest will be ICPC style with a 10-minute penalty for each wrong submission and will follow the ICPC format." image={img3} />
-              <EventCard day="Cybros" artist="ENIGMA" description="This is Cybros' flagship-rated contest. It is a regular one-person competitive programming contest." image={img3} />
+              <EventCard day="Cybros" artist="CP DUELS" description="CP DUEL is an in-person 1v1 knockout tournament..." image={cd} />
+              <EventCard day="Cybros" artist="Coding Cascade" description="In the Code Cascade event, a team comprising three participants collaborates to create a sequence of code." image={cc} />
+              <EventCard day="Cybros" artist="IUPC" description="The contest will be ICPC style with a 10-minute penalty for each wrong submission and will follow the ICPC format." image={iupc} />
+              <EventCard day="Cybros" artist="ENIGMA" description="This is Cybros' flagship-rated contest. It is a regular one-person competitive programming contest." image={enigma} />
              
             </TabPanel>
 
@@ -185,7 +215,7 @@ function Competitions() {
               day="E-Cell"
               artist="  Job Fair"
               description="Embark on a journey of boundless possibilities during our dynamic 2-day job fair, an unparalleled realm of professional excellence."
-              image={img3}
+              image={jobfair}
             />
             <EventCard
               day="E-Cell"
@@ -197,7 +227,7 @@ function Competitions() {
               day="E-Cell"
               artist=" ACE THE CASE"
               description="AceTheCase is the ultimate case study competition where participating teams conduct a comprehensive analysis of an opted unicorn company. "
-              image={img3}
+              image={acethecase}
             />
              
             </TabPanel>
@@ -208,7 +238,7 @@ function Competitions() {
               day="DebSoc"
               artist=" Model United Nations"
               description="At a MUN conference, delegates(students) will each represent a nation/organization to solve world problems by working with other delegates."
-              image={img3}
+              image={mun}
             />
             <EventCard
               day="DebSoc"
@@ -231,7 +261,7 @@ function Competitions() {
               day=" Astronomy"
               artist="Odin's Eye"
               description="Odin’s Eye is an astronomy-themed treasure hunt; the faster you solve the mind boggling riddles, the closer you get to the finishing line."
-              image={img3}
+              image={astromemia}
             />
             <EventCard
               day="Astronomy"
@@ -239,20 +269,20 @@ function Competitions() {
               "
               description="The Astronomy club presents a partial online event Brahmaand where teams will have to submit a well-researched and cited presentation based on their ideas.
               "
-              image={img3}
+              image={brahmaand}
             />
             <EventCard
               day="Astronomy"
               artist=" Dhoomketu - Telescopic Sky Gazing"
               description="The events are designed in a way that there is something for everybody.
               "
-              image={img3}
+              image={dhoomketu}
             />
             <EventCard
               day="Astronomy"
               artist="StarPix"
               description="It is an online event in which you have to send us photographs of the night sky you took yourself, coupled with your original and creative touch, which displays deep-sky objects, solar system objects, or an Astro-landscape."
-              image={img3}
+              image={starprix}
             />
             <EventCard
               day="Astronomy"
@@ -260,58 +290,58 @@ function Competitions() {
               description=""
               image={img3}
             />
-            <EventCard
+            {/* <EventCard
               day="Astronomy"
               artist=" ISRO Scientist Talk"
               description=""
               image={img3}
-            />
+            /> */}
              
             </TabPanel>
 
             <TabPanel className="cards">
               
-              <EventCard
+              {/* <EventCard
               day="Phoenix"
               artist=" RoboWar"
               description="Robot Combat Competition where participants battle each other for the coveted Robowars Champion Title."
-              image={img3}
-            />
+              image={robo}
+            /> */}
             <EventCard
               day="Phoenix"
               artist=" Maze Solver"
               description="Teams must create an autonomous robot that can navigate a maze by following a black line and keeping track of directions."
-              image={img3}
+              image={mazesolver}
             />
             <EventCard
               day="Phoenix"
               artist=" Robo Soccer"
               description="That means it will be a 2v2 match. Initially, both the bots of each team should be on their side of the half."
-              image={img3}
+              image={robocup}
             />
             <EventCard
               day="Phoenix"
               artist=" Robo Race"
               description="Teams must create a manually operated bot that can move on difficult terrain and complete the designed track below-mentioned elements."
-              image={img3}
+              image={robo}
             />
             <EventCard
               day="Phoenix"
               artist=" Transporter"
               description="Teams must create a manually operated bot that can perform simple tasks such as grasping objects and placing them in target zones to complete the course while avoiding the obstacles in its way."
-              image={img3}
+              image={transporter}
             />
             <EventCard
               day="Phoenix"
               artist="  Boat Race"
               description="Design and build a manually controlled boat to sail through the obstacles in the arena and complete the race task before the other boat."
-              image={img3}
+              image={motoboat}
             />
             <EventCard
               day="Phoenix"
               artist=" Tech Exhibition"
               description="The Exhibition event offers you an amazing opportunity to show off your ideas and innovations !! Stay tuned for more updates."
-              image={img3}
+              image={lnmtechexpo}
             />
              
             </TabPanel>
@@ -322,7 +352,7 @@ function Competitions() {
               day="Cipher"
               artist=" LNM HACKS 6.0"
               description="LNMHacks 6.0 will be a 48-hour hackathon with a wide range of tracks."
-              image={img3}
+              image={lnmhacks}
             />
              
             </TabPanel>
@@ -333,13 +363,13 @@ function Competitions() {
               day="ASME LNMIIT"
               artist=" Drone Race"
               description="Teams have to design and build a wireless remote-controlled flying platform to complete an obstacle course in minimum time without crashing."
-              image={img3}
+              image={rcdrone}
             />
             <EventCard
               day="ASME LNMIIT"
               artist=" RC Plane"
               description="Build your RC Plane which is aerodynamically sound and within the specified dimensions to achieve a successful flight."
-              image={img3}
+              image={rcplane}
             />
             <EventCard
               day="ASME LNMIIT"
@@ -349,11 +379,39 @@ function Competitions() {
             />
             <EventCard
               day="ASME LNMIIT"
-              artist="Fox Hunt"
-              description="Embark on an electrifying adventure at our college-wide treasure hunt event!"
-              image={img3}
+              artist=" Bridge The Barrier"
+              description="Bridge the Barrier is an exhilarating and intellectually stimulating event that challenges participants to unleash their creativity, engineering prowess, and teamwork skills"
+              image={bridgethebarrier}
+            />
+            <EventCard
+              day="ASME LNMIIT"
+              artist=" MachinaMaze Challenge"
+              description="Welcome to 'Re-Engineering,' where innovation meets the clock. In this high-energy challenge, teams decipher cryptic clues to piece together scattered machine parts within a tight timeframe."
+              image={monstertruck}
+            />
+            
+            <EventCard
+              day="ASME LNMIIT"
+              artist="Escape Room"
+              description="Midnight Chronicles promises an unforgettable and discreet murder mystery adventure, challenging participants' detective skills and strategic thinking."
+              image={escaperoom}
             />
              
+             <EventCard
+              day="ASME LNMIIT"
+              artist="DIY Glider Challenge"
+              description="The DIY Glider Challenge is an exhilarating and hands-on event that seamlessly blends creativity, engineering, and friendly competition."
+              image={diyglider}
+            />
+            </TabPanel>
+
+            <TabPanel className="cards">
+            <EventCard
+              day="ASME LNMIIT"
+              artist="Fox Hunt"
+              description="Embark on an electrifying adventure at our college-wide treasure hunt event!"
+              image={foxhunt}
+            />
             </TabPanel>
 
             <TabPanel className="cards">
@@ -380,7 +438,7 @@ function Competitions() {
               day="OC Events"
               artist="Who Dun It"
               description="A real time crime scene is created that needs to be observed by the participants and then solve the mystery lying ahead."
-              image={img3}
+              image={whodunit}
             />
              
             </TabPanel>

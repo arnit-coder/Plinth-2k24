@@ -200,7 +200,7 @@
     /* margin: 5%; */
     flex-shrink: 0;
     border-radius: 50px;
-    background: #000;
+    background: black;
     overflow: hidden;
     position: relative;
     gap: 20%;
@@ -231,6 +231,8 @@
     height: 55%;
     position: relative;
     overflow: hidden;
+    border-radius: 50px;
+
   }
   
   .card2 img {
@@ -238,15 +240,16 @@
     transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
   }
   
-  .card2 .img .grad {
+  /* .card2 .img .grad {
     height: 50%;
     width: 100%;
     background: linear-gradient(179deg, rgba(0, 0, 0, 0) 27.49%, #000 69%);
     position: absolute;
     bottom: 0px;
-  }
+  } */
   
   .card2 .day {
+    margin-top: 20px;
     color: #c65ff6;
     font-family: Poppins;
     font-size: 14px;
