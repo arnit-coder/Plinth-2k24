@@ -1,0 +1,291 @@
+.main{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    background: url('./bkg1.jpg'), lightgray 50%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.box{
+    width: 35%;
+    margin-left: 7.5rem;
+    margin-top: 5rem;
+    line-height: 2.5rem;
+}
+
+.create{
+    color: #FFF;
+    font-size: 3.7rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.already{
+    color: #C9C9C9;
+    font-size: 1.5rem;
+    font-weight: 400;
+    white-space: nowrap;
+    margin-bottom: 2rem;
+}
+
+.log{
+    display: inline-flex;
+    color: #BC44FF;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.log:hover{
+    cursor: pointer;
+}
+
+.name{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.inputContainer2{
+    position: relative;
+    width: 45%;
+}
+
+.first{
+    border-radius: 0.8125rem;
+    background: #F4F4F4;
+    box-shadow: 0px 5px 4px 2px rgba(0, 0, 0, 0.25) inset;
+    font-size: 1.15rem;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    padding-left: 0.2rem;
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo1{
+    color: rgb(81, 79, 79);
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    height: 1.7rem;
+    width: 1.7rem;
+}
+
+.inputContainer1{
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+
+.email{
+    border-radius: 0.8125rem;
+    background: #F4F4F4;
+    box-shadow: 0px 5px 4px 2px rgba(0, 0, 0, 0.25) inset;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    font-size: 1.15rem;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.logo2{
+    color: rgb(81, 79, 79);
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    height: 1.7rem;
+    width: 1.7rem;
+}
+
+.account{
+    border-radius: 0.8125rem;
+    background: #7C00C1;
+    color: #FFF;
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 0.6rem;
+    font-weight: 650;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    white-space: nowrap;
+}
+.account:hover{
+    cursor: pointer;
+}
+
+.line{
+    width: 40%;
+    height: 0.8px;
+    border-radius: 6.25rem;
+    background: #FFF;
+    margin-bottom: 1.5rem;
+    margin-left: 30%;
+}
+
+.sign{
+    border-radius: 0.8125rem;
+    background: #FFF;
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 0.6rem;
+    font-weight: 650;
+    width: 100%;
+    white-space: nowrap;
+}
+.sign:hover{
+    cursor: pointer;
+}
+
+
+.logo3{
+    position: absolute;
+    top: 0.6rem;
+    right: 0.6rem;
+    height: 1.7rem;
+    width: 1.7rem;
+}
+
+@media (min-width: 1025px) and (max-width: 1280px){ 
+    .box{
+        margin-top: 3rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){ 
+    .dot{
+        font-size: 3rem;
+    }
+    .inputContainer2{
+        flex-wrap: wrap;
+    }
+    .create{
+        font-size: 2.5rem;
+    }
+    .already{
+        font-size: 1.2rem;
+    }
+    .box{
+        margin-top: 2rem;
+    }
+    .log{
+        font-size: 1.2rem;
+    }
+    .sign{
+        font-size: 1.2rem;
+    }
+    .name{
+        flex-wrap: wrap;
+        margin-bottom: 0;
+    }
+    .inputContainer2{
+        width: 100%;
+        padding-bottom: 2rem;
+    }
+    .first{
+        width: 98%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) { 
+    .main{
+        background: rgba(0, 0, 0, 0.65) url('./bkg.png');
+        background-blend-mode: darken;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .dot{
+        font-size: 2.5rem;
+    }
+    .inputContainer2{
+        flex-wrap: wrap;
+    }
+    .create{
+        font-size: 2.2rem;
+    }
+    .already{
+        font-size: 1.1rem;
+    }
+    .box{
+        margin-top: 2rem;
+    }
+    .log{
+        font-size: 1.1rem;
+    }
+    .sign{
+        font-size: 1.1rem;
+        text-align: left;
+    }
+    .name{
+        flex-wrap: wrap;
+        margin-bottom: 0;
+    }
+    .inputContainer2{
+        width: 100%;
+        padding-bottom: 2rem;
+    }
+    .first{
+        width: 98%;
+    }
+    .box{
+        width: 45%;
+    }
+    .account{
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .main{
+        background: rgba(0, 0, 0, 0.65) url('./bkg.png');
+        background-blend-mode: darken;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        justify-content: center;
+    }
+    .dot{
+        font-size: 2rem;
+    }
+    .inputContainer2{
+        flex-wrap: wrap;
+    }
+    .create{
+        font-size: 1.9rem;
+        left: -22%;
+        position: relative;
+    }
+    .already{
+        font-size: 1.1rem;
+    }
+    .box{
+        margin-top: 1.8rem;
+        margin-left: 2rem;
+    }
+    .log{
+        font-size: 1.1rem;
+    }
+    .sign{
+        font-size: 1rem;
+        text-align: left;
+    }
+    .name{
+        flex-wrap: wrap;
+        margin-bottom: 0;
+    }
+    .inputContainer2{
+        width: 100%;
+        padding-bottom: 2rem;
+    }
+    .first{
+        width: 98%;
+    }
+    .box{
+        width: 55%;
+    }
+    .account{
+        font-size: 1.1rem;
+    }
+}

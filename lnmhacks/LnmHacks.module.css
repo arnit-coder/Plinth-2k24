@@ -1,0 +1,224 @@
+.main 
+{
+    padding: 40px 0px;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    align-items: center;
+    font-weight: bolder;
+    position: absolute;
+    z-index: 1;
+}
+
+.headingDiv 
+{
+    font-family: Akira Expanded;
+    font-size: 400%;
+    font-weight: 800;
+    line-height: 200%;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
+    margin-top: 5%;
+}
+.description1 
+{
+    width: 80%;
+    color: white;
+    font-weight: normal;
+    font-size: 25px;
+    margin: 10px 0px;
+}
+
+.benefits 
+{
+    width: 80%;
+    min-height: 70vh;
+    height: auto;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.benefitsHeading
+{
+  color: white;
+  width: 80%;
+  font-size: 2rem;
+}
+
+.data 
+{
+    width: 50%;
+    font-size: 25px;
+}
+
+
+
+.image 
+{
+    width: 450px;
+    height: 450px;
+    border-radius: 36px;
+    /* margin-top: 15px; */
+    box-shadow: 10px 10px 20px 	RGB(201, 107, 246), -10px -10px 20px RGB(201, 107, 246),
+    10px -10px 20px RGB(201, 107, 246), -10px 10px 20px RGB(201, 107, 246);
+  animation: moveUpDown 2s ease-in-out infinite alternate; /* Adjust the duration as needed */
+}
+
+.f{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ff{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes moveUpDown {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(30px);
+    }
+  }
+
+.dataHeader 
+{
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.ul 
+{
+    padding: 0;
+}
+
+.button 
+{
+    width: 280px;
+    height: 60px;
+    background-color: #D90950;
+    border-radius: 15px ;
+    color: aliceblue;
+    font-size: 15px;
+}
+
+.buttonDiv 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-bottom: 20px;
+    color: white;
+    margin-top: 20%;
+}
+
+@media screen and (max-width: 1000px)
+{
+    .headingDiv
+    {
+        width: 90%;
+        font-size: 1.5rem;
+    }
+
+    .description1
+    {
+        font-size: 1.5rem;
+    }
+
+    .dataHeader
+    {
+        font-size: 1.5rem;
+    }
+
+    .data 
+    {
+        margin-right: 10px;
+    }
+
+    .image 
+    {
+       width: 350px;
+       height: 350px;
+       margin: 10% 0;
+    }
+}
+
+@media screen and (max-width: 800px)
+{
+
+    .benefits
+    {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .benefitsHeading
+{
+  text-align: center;
+}
+
+.data
+{
+    width: 100%;
+    margin: 0;
+}
+
+.benefitsHeading
+{
+    width: 100%;
+}
+
+.buttonDiv{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.dataHeader{
+    padding-left: 15%;
+}
+
+}
+
+@media screen and (max-width: 500px)
+{
+
+    .headingDiv
+    {
+        font-size: 1.25rem;
+        margin-left: 7.5%;
+    }
+    .description1
+    {
+        width: 93%;
+        font-size: 1rem;
+    }
+
+    .dataHeader
+    {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .data 
+    {
+        width: 95%;
+    }
+}
