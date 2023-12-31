@@ -11,7 +11,7 @@ import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSl
 function Accomodation() {
 const navigate = useNavigate()
 const navigateComp = () =>{
-    navigate("/competitions")
+    navigate("https://forms.gle/9b7rTXZWKuE57krB6")
 }
 const [init, setInit] = useState(false);
 
@@ -106,7 +106,7 @@ const [init, setInit] = useState(false);
   );
     return (
         <div className="acx">
-            <h1>ACCOMMODATION</h1>
+            <h1>ACCOMODATION</h1>
             <p>Plinth, a tech-driven event, offers accommodation passes and Pronite Passes to blend technology with an enjoyable atmosphere.
                 The event aims to attract a large crowd and provides secure, comfortable accommodations. The organizers also offer a diverse cafeteria with various cuisines.
                 Accommodation charges are INR 999 per candidate for 3 days (19th Jan 7 AM - 21th Jan 10 AM) and INR 400 for a single day, with a maximum of 3 nights allowed.
@@ -137,7 +137,10 @@ const [init, setInit] = useState(false);
     </div>
     
     <div style={{marginTop:"1%",textAlign:"center"}} className="button-63acc">
-        <input className="xx" type="submit" value="Submit" onClick={navigateComp}/> 
+        <button className="xx" type="submit" value="Submit">
+          <a href="https://forms.gle/9b7rTXZWKuE57krB6">Submit</a>
+          
+          </button> 
     </div>
     <Particles
         id="tsparticles"
