@@ -106,7 +106,7 @@ function LnmHacks() {
                 <div className={HackCSS.headingDiv}>
                 <h1>LNM HACKS</h1>
             </div>
-            <p className={HackCSS.dataHeader}>LNMIIT is hosting its 6th annual flagship hackathon, LNM-hacks 6.0, a 72-hour event focusing on blockchain and the web3 ecosystem. The event offers multiple tracks for hackers to build solutions to industry problems. Winning teams receive prizes, mentorship, and incubation opportunities. Participants can showcase their skills to potential employers and investors. Bounties on coding various optimum solutions will be presented to winners. The event will take place from January 19-21, 2019.</p>
+            <p className={HackCSS.dataHeader}>LNMIIT is hosting its 6th annual flagship hackathon, LNM-hacks 6.0, a 72-hour event focusing on blockchain and the web3 ecosystem. The event offers multiple tracks for hackers to build solutions to industry problems. Winning teams receive prizes, mentorship, and incubation opportunities. Participants can showcase their skills to potential employers and investors. Bounties on coding various optimum solutions will be presented to winners. The event will take place from January 19-21, 2024</p>
                 </div>
                 <div className="ff">
                 <div className="f">

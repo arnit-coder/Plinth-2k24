@@ -44,12 +44,12 @@ function Header() {
           <p style={{paddingTop:"10%"}}>Competitions</p>
         </Link>
       </span>
-      <span>
+      {/* <span>
         <Link to="/Profile">
           <img className='test' src={message} alt="" />
           <p>Profile</p>
         </Link>
-      </span>
+      </span> */}
       <span>
         <Link to="/events">
           <img className='test' src={calander} alt="" />
@@ -74,12 +74,12 @@ function Header() {
           <p style={{paddingTop:"6%"}}>LnmHacks</p>
         </Link>
       </span>
-      <span>
+      {/* <span>
         <Link to="/our-team">
           <img className='test' src={ambassador} alt="" />
           <p style={{paddingTop:"6%"}}>OurTeam</p>
         </Link>
-      </span>
+      </span> */}
     </div>
   );
 }
