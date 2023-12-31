@@ -71,7 +71,13 @@ function Header() {
       <span>
         <Link to="/lnm-hacks">
           <img className='test' src={ambassador} alt="" />
-          <p style={{paddingTop:"10%"}}>Lnm Hacks</p>
+          <p style={{paddingTop:"6%"}}>LnmHacks</p>
+        </Link>
+      </span>
+      <span>
+        <Link to="/our-team">
+          <img className='test' src={ambassador} alt="" />
+          <p style={{paddingTop:"6%"}}>OurTeam</p>
         </Link>
       </span>
     </div>

@@ -29,6 +29,7 @@ import Preloader from "./Preloader/Preloader";
 
 import Campus from "./CampusAmbassador/Campus";
 import Accomodation from "./accomodation/accomodation";
+import OurTeam from "./OurTeam/OurTeam";
 function App() {
   return (
     <UserContextProvider>
@@ -53,7 +54,7 @@ function App() {
         <Route path="/campus-ambassador" element={<Campus />} /> 
         <Route path="/accomodation" element={<Accomodation />} />
         <Route path="/lnm-hacks" element={<LnmHacks />} />
-
+        <Route path="/our-team" element={<OurTeam />} />
         {/* <Route exact path="/Admin/ViewEvents" element={<ViewEvents />} />  */}
       </Routes>
       {/* <Header />  */}
