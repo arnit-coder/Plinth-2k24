@@ -70,12 +70,12 @@ function Header() {
           <p>Profile</p>
         </Link>
       </span> */}
-      <span>
+      {/* <span>
         <Link to="/events">
           <img className="test" src={calander} alt="" />
           <p>Events</p>
         </Link>
-      </span>
+      </span> */}
       
       <span>
         <Link to="/campus-ambassador">

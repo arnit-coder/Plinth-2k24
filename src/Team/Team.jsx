@@ -11,7 +11,7 @@ import Particles, { initParticlesEngine } from "@tsparticles/react";
 // import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
 import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
 // import { loadBasic } from "@tsparticles/basic"; // if you are going to use `loadBasic`, install the "@tsparticles/basic" package too.
-
+import ParticleComponent from '../Particle/ParticleComponent';
 const Team = () => {
     const cubeStyle = {
         position: 'absolute',
@@ -388,82 +388,27 @@ const Team = () => {
         insta:"",
         linkedin:""
     },
+    {
+        image:img1,
+        namex:"Aditya Raj",
+        role:"Fest Head",
+        phone:"+91 123456789",
+        mail:"",
+        insta:"",
+        linkedin:""
+    },
+    {
+        image:img1,
+        namex:"Ashutosh Jha",
+        role:"Fest Head",
+        phone:"+91 123456789",
+        mail:"",
+        insta:"",
+        linkedin:""
+    },
 
 ];
-const particlesLoaded = (container) => {
-    console.log(container);
-  };
 
-  const options = useMemo(
-    () => ({
-      background: {
-        color: {
-          value: "#00000",
-        },
-      },
-      fpsLimit: 120,
-      interactivity: {
-        events: {
-          onClick: {
-            enable: false,
-            mode: "push",
-          },
-          onHover: {
-            enable: true,
-            mode: "repulse",
-          },
-        },
-        modes: {
-          push: {
-            quantity: 4,
-          },
-          repulse: {
-            distance: 200,
-            duration: 0.4,
-          },
-        },
-      },
-      particles: {
-        color: {
-          value: "#ffffff",
-        },
-        links: {
-          color: "#ffffff",
-          distance: 150,
-          enable: true,
-          opacity: 0.5,
-          width: 1,
-        },
-        move: {
-          direction: "none",
-          enable: true,
-          outModes: {
-            default: "bounce",
-          },
-          random: false,
-          speed: 3,
-          straight: false,
-        },
-        number: {
-          density: {
-            enable: true,
-          },
-          value: 80,
-        },
-        opacity: {
-          value: 0.5,
-        },
-        shape: {
-          type: "circle",
-        },
-        size: {
-          value: { min: 1, max: 5 },
-        },
-      },
-      detectRetina: true,
-    }),
-    [],
-  );
 
 return (
     <div className='main' id='Team'>
@@ -492,6 +437,22 @@ return (
         <div className="team-section">
          
           {TeamData.slice(0, 3).map((member, index) => (
+            <TeamCard
+              key={index}
+              image={member.image}
+              namex={member.namex}
+              role={member.role}
+              phone={member.phone}
+              mail={member.mail}
+            />
+          ))}
+        </div>
+        </div>
+        <div className='team-m'>
+        <h2>Fest Heads</h2>
+        <div className="team-section">
+          
+          {TeamData.slice(41, 43).map((member, index) => (
             <TeamCard
               key={index}
               image={member.image}
@@ -651,14 +612,12 @@ return (
           ))}
         </div>
         </div>
+        {/* UI/UX (1 card) */}
+        
 
         
       </div>
-      <Particles
-        id="tsparticles"
-        particlesLoaded={particlesLoaded}
-        options={options}
-      />
+      <ParticleComponent />
     </div>
   );
 };
