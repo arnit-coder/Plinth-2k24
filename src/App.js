@@ -26,7 +26,7 @@ import LnmHacks from "./lnmhacks/LnmHacks";
 import Team from "./Team/Team"
 import { Home } from "./home/home";
 import Preloader from "./Preloader/Preloader";
-
+import AboutUs from "./aboutUs/AboutUs";
 import Campus from "./CampusAmbassador/Campus";
 import Accomodation from "./accomodation/accomodation";
 
@@ -42,7 +42,7 @@ function App() {
         <Route path="/Day2" element={<Day2 />} />
         <Route path="/" element={<><Home /></>} />
         <Route path="/Team" element={<Team />} />
-      
+        <Route path="/about" element={<AboutUs />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
         <Route exact path="/Admin" element={<Admin />} />

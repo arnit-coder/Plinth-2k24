@@ -1,0 +1,30 @@
+/* NeonArrow.css */
+.neon-arrow-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .neon-arrow {
+    width: 20px;
+    height: 20px;
+    border: solid #ffffff;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+    margin: 5px;
+    animation: neon-pulse 1.5s infinite;
+  }
+  
+  @keyframes neon-pulse {
+    0% {
+      box-shadow: 0 0 5px 5px rgba(255, 182, 193, 0.7);
+    }
+    50% {
+      box-shadow: 0 0 20px 10px rgba(255, 182, 193, 0.7);
+    }
+    100% {
+      box-shadow: 0 0 5px 5px rgba(255, 182, 193, 0.7);
+    }
+  }
+  

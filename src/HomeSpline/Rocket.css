@@ -25,7 +25,7 @@
 }
 .heading{
   position: absolute;
-  top: calc(45% - 98px); 
+  top: calc(29% - 98px); 
   left: calc(50% - 360px);
   z-index: 10;
   color: aliceblue;
@@ -47,6 +47,7 @@
    /* height: 500px; */
 }
 
+
 @media screen and (max-width: 1000px)
 {
   .image
@@ -57,7 +58,7 @@
 
   .heading
   {
-    top: calc(45% - 81px); 
+    top: calc(29% - 81px); 
     left: calc(50% - 300px);
   }
 }
@@ -86,7 +87,7 @@
   }
   .heading
   {
-    top: calc(40% - 48.5px); 
+    top: calc(35% - 48.5px); 
     left: calc(50% - 200px);
   }
 }
@@ -102,7 +103,7 @@
 
   .heading
   {
-    top: calc(50% - 43px); 
+    top: calc(35% - 43px); 
     left: calc(50% - 195px);
   }
 }
@@ -117,7 +118,7 @@
 
   .heading
   {
-    top: calc(50% - 37px); 
+    top: calc(35% - 37px); 
     left: calc(50% - 150px);
   }
 }

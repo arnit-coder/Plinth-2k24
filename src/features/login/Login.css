@@ -6,6 +6,20 @@ body{
   font-family: Poppins;
 }
 
+.heading{
+  position: absolute;
+  top: 10% !important; 
+  left: 67% !important;
+  z-index: 10;
+  color: aliceblue;
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
 .loginContainer{
   width: 100vw;
   height: 99.5vh;
@@ -126,11 +140,18 @@ line-height: normal;
 padding-left: 0.5rem;
 }
 .googleBtn{
-  width: 100%;
-height: 4.5625rem;
-border-radius: 0.8125rem;
-background: #FFF;
+  border-radius: 0.8125rem;
+    background: #FFF;
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 0.6rem;
+    font-weight: 650;
+    width: 100%;
+    white-space: nowrap;
 }
+
+
+
 .emailIcon{
   position: absolute;
 color: #3C3C3C;
@@ -241,6 +262,7 @@ img {
   gap: 2rem;
   left: 15%;
 }
+
 
 .login_box .heading {
   display: flex;

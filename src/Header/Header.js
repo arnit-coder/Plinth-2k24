@@ -35,8 +35,54 @@ function Header() {
           <p>Home</p>
         </Link>
       </span>
+      
+      <span>
+        <Link to="/competitions">
+          <img className="test" src={document} alt="" />
+          <p style={{ paddingTop: "10%" }}>Competitions</p>
+        </Link>
+      </span>
+      {/* <span>
+        <Link to="/Profile">
+          <img className='test' src={message} alt="" />
+          <p>Profile</p>
+        </Link>
+      </span> */}
+      {/* <span>
+        <Link to="/events">
+          <img className="test" src={calander} alt="" />
+          <p>Events</p>
+        </Link>
+      </span> */}
+      <span>
+        <Link to="/lnm-hacks">
+          <img className="test" src={ambassador} alt="" />
+          <p style={{ paddingTop: "6%" }}>LnmHacks</p>
+        </Link>
+      </span>
+      <span>
+        <Link to="/campus-ambassador">
+          <img className="test" src={ambassador} alt="" />
+          <p style={{ paddingTop: "8%" }}>Ambassador</p>
+        </Link>
+      </span>
+      <span>
+        <Link to="/accomodation">
+          <img className="test" src={room} alt="" />
+          <p style={{ paddingTop: "10%" }}>Accommodation</p>
+        </Link>
+      </span>
+      
+      
+      <span>
+        <Link to="/Team">
+          <img className='test' src={ambassador} alt="" />
+          <p style={{paddingTop:"8%"}}>OurTeam</p>
+        </Link>
+      </span>
+
       {user.user ? (
-        <div>
+        <div style={{position:"absolute",bottom:"0"}}>
           <span>
             <Link to="/login">
               <img className="test" src={login} alt="" />
@@ -58,50 +104,6 @@ function Header() {
           </div >
         </span >
       )}
-      <span>
-        <Link to="/competitions">
-          <img className="test" src={document} alt="" />
-          <p style={{ paddingTop: "10%" }}>Competitions</p>
-        </Link>
-      </span>
-      {/* <span>
-        <Link to="/Profile">
-          <img className='test' src={message} alt="" />
-          <p>Profile</p>
-        </Link>
-      </span> */}
-      {/* <span>
-        <Link to="/events">
-          <img className="test" src={calander} alt="" />
-          <p>Events</p>
-        </Link>
-      </span> */}
-      
-      <span>
-        <Link to="/campus-ambassador">
-          <img className="test" src={ambassador} alt="" />
-          <p style={{ paddingTop: "8%" }}>Ambassador</p>
-        </Link>
-      </span>
-      <span>
-        <Link to="/accomodation">
-          <img className="test" src={room} alt="" />
-          <p style={{ paddingTop: "10%" }}>Accommodation</p>
-        </Link>
-      </span>
-      <span>
-        <Link to="/lnm-hacks">
-          <img className="test" src={ambassador} alt="" />
-          <p style={{ paddingTop: "6%" }}>LnmHacks</p>
-        </Link>
-      </span>
-      
-      <span>
-        <Link to="/Team">
-          <img className='test' src={ambassador} alt="" />
-          <p style={{paddingTop:"8%"}}>Our Team</p>
-        </Link>
-      </span>
     </div>
   );
 }

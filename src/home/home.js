@@ -1,20 +1,48 @@
+// Your main component (e.g., Home.js)
+import React, { useState } from 'react';
 import Header from "../Header/Header";
 import "./home.css";
 import Countdown from "./countdown";
 import HomeSpline from "../HomeSpline/HomeSpline";
+import AboutUs from '../aboutUs/AboutUs';
+import ArrowPic from './arrow.png'
+
 export const Home = () => {
-  
+  const [showArrow, setShowArrow] = useState(false);
+
+  React.useEffect(() => {
+    document.body.style.overflow = 'hidden';
+
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, []);
+
+  const handleMouseEnter = () => {
+    setShowArrow(true);
+  };
+
+  const handleMouseLeave = () => {
+    setShowArrow(false);
+  };
+
+ 
+
   return (
-    
-<>
+    <>
       <HomeSpline />
-      {/* <img src="/home.jpeg" className="home-img" />*/}
-      {/* <img src="/hometxt.png" className="home-txt"></img>  */}
-      {/* <div className="grad"></div> */}
-      <div className="countdown">
-      {/* <div className="btn-p"><div className="button-p"><button className="button-x">REGISTER</button></div></div>
-      <div className="ctd-p"><div className="ctd"><Countdown /></div></div> */}
+      <div className="home" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+        <div className="countdown">
+          {/* Your countdown and other components go here */}
+        </div>
+        <div className="scrollToAbout">
+          {/* {showArrow && <NeonArrow  />} */}
+         {/* <button className='arrow'>
+          {/* <img src={ArrowPic} />
+         </button> */}
+        </div> 
       </div>
-      </>
+  
+    </>
   );
 };

@@ -1,0 +1,307 @@
+.body{
+    text-align: center;
+    /* color: white; */
+   
+}
+
+
+
+
+@font-face {
+    font-family: top;
+    src: url(./assets/Akira\ Expanded\ Demo.otf);
+}
+@font-face {
+    font-family: content;
+    src: url(./assets/Roquen\ DEMO.otf);
+}
+
+
+.topHeading{
+    margin-top: 5%;
+    font-size: 96px;
+   margin-bottom: 4%;
+    color: white;
+    font-weight: 800;
+    text-align: center;
+    font-family: top;
+}
+
+.content{
+    font-family: content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.content-text1{
+    font-size: 75px;
+    color: white;
+    font-weight: 800;
+    margin-left: 15%;
+}
+
+.content-text2{
+    font-size: 32px;
+    font-weight: 400;
+    color: white;
+    margin-left: 15%;
+    margin-top: 5%;
+}
+.content-image img{
+    margin-left: 0;
+    margin-top:10%;
+    align-self: flex-end;
+    width: 100%;
+    /* overflow: hidden; */
+}
+
+.content2{
+    font-family: content;
+    margin-top: 12%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.content2 .text2{
+    margin-top: 5%;
+    margin-right: 10%;
+}
+.content2-text1{
+    font-size: 75px;
+    color: white;
+    font-weight: 800;
+}
+
+.content2-text2{
+    font-size: 32px;
+    font-weight: 400;
+    color: white;
+
+    margin-top: 5%;
+}
+
+.content2-image img{
+    margin-left: 0;
+    margin-top:20%;
+    align-self: flex-end;
+    width: 100%;
+    /* margin-left: 8%; */
+    overflow: hidden;
+
+}
+
+.content3{
+    font-family: content;
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.text3{
+    margin-top: 5%;
+}
+
+
+.content3-text1{
+    font-size: 75px;
+    color: white;
+    font-weight: 800;
+    margin-left: 15%;
+}
+
+.text2
+{
+    text-align: right;
+    width: 50%;
+}
+
+.content3-text2{
+    font-size: 32px;
+    font-weight: 400;
+    color: white;
+    margin-left: 15%;
+    margin-top: 5%;
+}
+.content3-image img{
+    margin-left: 0;
+    margin-top:30%;
+    align-self: flex-end;
+    width: 100%;
+    overflow: hidden;
+}
+
+.content-image 
+{
+
+}
+
+/* .scroll-section {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px; 
+  } */
+
+
+  .about-us-container {
+    overflow-x: hidden;
+  }
+
+  @media screen and (max-width: 1050px)
+  {
+    .content-text1 
+    {
+        font-size: 50px;
+    }
+
+    .content-text2
+    {
+        font-size: 20px;
+    }
+
+  
+
+    .content2-text1 
+    {
+        font-size: 50px;
+    }
+
+    .content2-text2
+    {
+        font-size: 20px;
+    }
+
+    .content3-text1 
+    {
+        font-size: 50px;
+    }
+
+    .content3-text2
+    {
+        font-size: 20px;
+    }
+  }
+
+  @media screen and (max-width: 800px)
+  {
+   .content-image 
+   {
+    width: 500px;
+   }
+
+   .content2-image 
+   {
+    width: 500px;
+   }
+
+   .topHeading 
+   {
+    font-size: 70px;
+   }
+
+   .content3-image 
+   {
+    width: 500px;
+   }
+  }
+
+  @media screen and (max-width: 700px)
+  {
+   .content-image 
+   {
+    display: none;
+   }
+
+   .content2-image 
+   {
+    display: none;
+   }
+
+   .topHeading 
+   {
+    font-size: 50px;
+   }
+
+   .content3-image 
+   {
+    display: none;
+   }
+
+   .text2 
+   {
+    width: 100%;
+   }
+
+   .content2 
+   {
+    width: 100%;
+   }
+
+   .content2-text1
+   {
+    width: 100%;
+   }
+
+   .content2-text2
+   {
+    width: 100%;
+   }
+
+
+  }
+
+  @media screen and (max-width: 400px)
+  {
+    .content-text1
+    {
+     font-size: 30px;
+    }
+
+    .topHeading 
+    {
+        font-size: 30px ;
+    }
+ 
+    .content-text2
+    {
+     font-size: 15px;
+    }
+
+    .content2-text1
+    {
+     font-size: 30px;
+    }
+ 
+    .content2-text2
+    {
+     font-size: 15px;
+    }
+
+    .content2-text1
+    {
+    font-size: 25px;
+    }
+ 
+    .content2-text2
+    {
+     font-size: 15px;
+    }
+
+    .content3-text1
+    {
+    font-size: 25px;
+    }
+ 
+    .content3-text2
+    {
+     font-size: 15px;
+    }
+  }
+  
