@@ -75,7 +75,7 @@ function Event() {
         links: {
           color: "#ffffff",
           distance: 150,
-          enable: true,
+          enable: false,
           opacity: 0.5,
           width: 1,
         },
@@ -99,10 +99,10 @@ function Event() {
           value: 0.5,
         },
         shape: {
-          type: "circle",
+          type: "star",
         },
         size: {
-          value: { min: 1, max: 5 },
+          value: { min: 5, max: 10 },
         },
       },
       detectRetina: true,

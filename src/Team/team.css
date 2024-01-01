@@ -1,0 +1,108 @@
+/* Card.css */
+.card {
+    width: 22%;
+    height: 400px;
+    display: grid;
+    grid-template-rows: 210px 300px 0px;
+    grid-template-areas: "image" "text" "stats";
+    border-radius: 18px;
+    background: #1d1d1d;
+    color: white;
+    -webkit-box-shadow: -3px 4px 41px 18px rgba(62,199,190,0.68);
+    -moz-box-shadow: -3px 4px 41px 18px rgba(62,199,190,0.68);
+    box-shadow: -3px 1px 20px 4px rgba(62,199,190,0.68); 
+    font-family: New Rocker;
+    text-align: justify;
+    cursor: pointer;
+    margin: 2rem;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    gap: 2rem;
+  }
+  
+  
+  .card .card-image {
+    grid-area: image;
+    background: beige;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+    width: 100%;
+  }
+  
+  .card .card-text {
+    grid-area: text;
+    margin: 2rem 0.5rem 1rem 0.5rem;
+    transform: translateZ(30px);
+  }
+  
+  .card .card-text .date {
+    color: rgb(255, 7, 110);
+    font-size: 13px;
+  }
+  
+  .card .card-text p {
+    color: grey;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  
+  .card .card-text h2 {
+    margin-top: 0px;
+    font-size: 28px;
+  }
+  
+  .card-text a{
+  
+    padding: 10px 20px;
+    border-radius: 32px;
+    text-decoration: none;
+    border: 1px solid #1BF6F6;
+    transition: background-color 0.3s ease;
+    font-family: Mabry Pro;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    background: linear-gradient(90deg, #FFF 4.15%, #00FFE0 90.91%);
+    background-clip: text;
+    margin-top: 2rem;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .card-text a.register:hover {
+    background: linear-gradient(90deg, #FFF 0%, #1BC1F6 100%);
+    -webkit-text-fill-color: black;
+  
+  }
+  
+  .card-text a.register .arrow {
+    color: rgb(110, 188, 214); 
+  }
+  
+  .card-text a.register:hover .arrow {
+    color: black; 
+  }
+  .desc {
+    color: #ffffff;
+    font-family: "Scope One-Regular", Helvetica;
+    font-size: 25px;
+    font-weight: 400;
+    left: 0;
+    letter-spacing: 7.5px;
+    line-height: normal;
+    opacity: 0.8;
+    text-align: center;
+    top: 0;
+  }
+  
+  .team-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    /* min-height: 100vh;  */
+    padding-right: 0rem;
+    background: black;
+    margin-left: 8%;
+  }
+  

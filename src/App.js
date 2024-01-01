@@ -23,7 +23,7 @@ import Header from "./Header/Header";
 import Events from "./EventPage/Event";
 import Competitions from "./Competitions/Competitions";
 import LnmHacks from "./lnmhacks/LnmHacks";
-
+import Team from "./Team/Team"
 import { Home } from "./home/home";
 import Preloader from "./Preloader/Preloader";
 
@@ -39,7 +39,9 @@ function App() {
       <Routes>
         {/* <Route path="/" element={<Profile />} /> */}
         <Route path="/Day2" element={<Day2 />} />
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<><Home /></>} />
+        <Route path="/Team" element={<Team />} />
+      
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
         <Route exact path="/Admin" element={<Admin />} />

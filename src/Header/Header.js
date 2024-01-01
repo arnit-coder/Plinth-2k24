@@ -56,6 +56,7 @@ function Header() {
           <p>Events</p>
         </Link>
       </span>
+      
       <span>
         <Link to="/campus-ambassador">
           <img className='test' src={ambassador} alt="" />
@@ -72,6 +73,12 @@ function Header() {
         <Link to="/lnm-hacks">
           <img className='test' src={ambassador} alt="" />
           <p style={{paddingTop:"10%"}}>Lnm Hacks</p>
+        </Link>
+      </span>
+      <span>
+        <Link to="/Team">
+          <img className='test' src={ambassador} alt="" />
+          <p style={{paddingTop:"8%"}}>Our Team</p>
         </Link>
       </span>
     </div>
