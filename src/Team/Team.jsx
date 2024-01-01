@@ -315,8 +315,7 @@ const Team = () => {
         mail:"",
         insta:"",
         linkedin:""
-    },
-    
+    }, 
     {
         image:img1,
         namex:"Swaraj Layek",
