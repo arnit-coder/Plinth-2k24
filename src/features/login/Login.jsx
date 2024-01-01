@@ -12,6 +12,7 @@ import { LogIN } from "../../services/operations/authAPI";
 import UserContext from "../../ContextApi/UserContext";
 
 const Login = () => {
+  const users = useContext(UserContext);
   const navigate = useNavigate();
   const {user, setUser} = useContext(UserContext);
   const [email, setEmail] = useState("");
@@ -20,7 +21,7 @@ const Login = () => {
     try {
       const accessToken = tokenResponse.access_token;
       console.log(accessToken);
-      await signinGoogle(accessToken);
+      await signinGoogle(accessToken,navigate,users);
   
     } catch (error) {
       toast.error("error while signing in with google");
@@ -30,7 +31,7 @@ const Login = () => {
   const submitHandler = async (e) => {
     e.preventDefault();
     const data = {email, password};
-    const response = await LogIN(data, navigate);
+    const response = await LogIN(data, navigate,users);
     setUser(response?.data.user)
     if(response){
       toast.success("Login Successful!")
@@ -71,10 +72,10 @@ const Login = () => {
           <button type='submit' className="loginBtn">Login</button>
           <div className="line">----</div>
           <div className="signGoogle">
-            <button className="googleBtn" onClick={login}>
+            <div className="googleBtn" onClick={login}>
               <FcGoogle />
               <a to="/sign-in-with-google">Sign in with Google</a>
-            </button>
+            </div>
           </div>
         </div>
       </div>
