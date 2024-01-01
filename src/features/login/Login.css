@@ -135,14 +135,14 @@ background: #FFF;
   position: absolute;
 color: #3C3C3C;
   font-size: 2rem;
-  top: 17%;
+  top: 4%;
   left: 92%;
 }
 .eyeIcon{
   position: absolute;
 color:#3C3C3C;
   font-size: 2rem;
-  top: 48.2%;
+  top: 30%;
   left: 92%;
 
 }
@@ -201,12 +201,14 @@ color:#3C3C3C;
 
   .emailIcon {
     font-size: 1.25rem;
-    top: 17%;
+    top: 5%;
+    left:92%;
   }
 
   .eyeIcon {
     font-size: 1.25rem;
-    top: 42.5%;
+    top: 34%;
+    left:92%;
   }
 }
 @media only screen and (max-height: 650px)
@@ -292,13 +294,13 @@ img {
 
 .emailIcon {
   font-size: 1.5rem;
-  top: 35.5%;
+  top: 3%;
   left: 92%;
 }
 
 .eyeIcon {
   font-size: 1.5rem;
-  top: 49.5%;
+  top: 27%;
   left: 92%;
 }
 }

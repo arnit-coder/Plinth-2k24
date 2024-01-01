@@ -125,7 +125,8 @@ const Campus = () => {
             </div>
             <div className={CampusCss.buttonDiv}>
                 <button className={CampusCss.button}>
-                    REGISTER NOW
+                  <a href="https://forms.gle/GUesUrZCZYAa9vhV8">REGISTER NOW</a>
+                    
                 </button>
             </div>
             <Particles

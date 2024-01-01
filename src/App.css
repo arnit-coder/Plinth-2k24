@@ -1,3 +1,10 @@
 a{
     text-decoration: none;
 }
+
+html, body {
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    user-zoom: fixed;
+}

@@ -12,6 +12,7 @@ import { LogIN } from "../../services/operations/authAPI";
 import UserContext from "../../ContextApi/UserContext";
 
 const Login = () => {
+  const users = useContext(UserContext);
   const navigate = useNavigate();
   const {user, setUser} = useContext(UserContext);
   const [email, setEmail] = useState("");
@@ -20,7 +21,7 @@ const Login = () => {
     try {
       const accessToken = tokenResponse.access_token;
       console.log(accessToken);
-      await signinGoogle(accessToken);
+      await signinGoogle(accessToken,navigate,users);
   
     } catch (error) {
       toast.error("error while signing in with google");
@@ -30,7 +31,7 @@ const Login = () => {
   const submitHandler = async (e) => {
     e.preventDefault();
     const data = {email, password};
-    const response = await LogIN(data, navigate);
+    const response = await LogIN(data, navigate,users);
     setUser(response?.data.user)
     if(response){
       toast.success("Login Successful!")
@@ -44,11 +45,10 @@ const Login = () => {
     <form onSubmit={submitHandler} className="loginContainer" id="login">
       <div className="backgroundImg"></div>
       <img src={login_robot} alt="left robot" />
-      <div className="login_box">
-        <div className="heading">
-          <h2>Login</h2>
-          <span>.</span>
+      <div className="heading">
+          <h2><strong>Login</strong></h2>
         </div>
+      <div className="login_box">
         <div className="emailDiv">
           <input id="email" name="email" type="email" value={email}
             onChange={(e)=>{setEmail(e.target.value)}} placeholder="    Email" />
@@ -72,10 +72,10 @@ const Login = () => {
           <button type='submit' className="loginBtn">Login</button>
           <div className="line">----</div>
           <div className="signGoogle">
-            <button className="googleBtn" onClick={login}>
+            <div className="googleBtn" onClick={login}>
               <FcGoogle />
               <a to="/sign-in-with-google">Sign in with Google</a>
-            </button>
+            </div>
           </div>
         </div>
       </div>

@@ -35,6 +35,7 @@ import enigma from './enigma.png'
 import iupc from './IPUC.png'
 import mun from './mun.png'
 import bandwagon from './bandwagon.png'
+import sphagetti from './sphagetti.jpg'
 import "./compi.css";
 import Header from "../Header/Header";
 import Cube from "../Cube/Cube";
@@ -375,7 +376,7 @@ function Competitions() {
               day="ASME LNMIIT"
               artist=" Spaghetti Tower"
               description="It's a fun event lasting up to 20 to 25 mins."
-              image={img3}
+              image={sphagetti}
             />
             <EventCard
               day="ASME LNMIIT"

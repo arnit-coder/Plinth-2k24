@@ -1,6 +1,9 @@
 import axios from "axios";
 import { authEndpoints } from "../apis";
 import { toast } from "react-hot-toast";
+import { jwtDecode } from "jwt-decode";
+import UserContext from "../../ContextApi/UserContext";
+import { useContext } from "react";
 
 const {
 	SENDOTP_API,
@@ -13,11 +16,13 @@ const {
 	LOGIN_GOOGLE_API,
 } = authEndpoints;
 
-export const LogIN = async (body, navigate) => {
+export const LogIN = async (body, navigate,user) => {
 	try {
 		const response = await axios.post(LOGIN_API, body);
 		console.log("Authentication Done!");
 		localStorage.setItem("token", JSON.stringify(response.data.token));
+    const decoded = jwtDecode(response.data.token);
+    user.setUser(decoded);
 		navigate("/");
 		return response;
 	} catch (err) {

@@ -6,11 +6,11 @@
     grid-template-rows: 210px 300px 0px;
     grid-template-areas: "image" "text" "stats";
     border-radius: 18px;
-    background: #1d1d1d;
+    background: black;
     color: white;
-    -webkit-box-shadow: -3px 4px 41px 18px rgba(62,199,190,0.68);
-    -moz-box-shadow: -3px 4px 41px 18px rgba(62,199,190,0.68);
-    box-shadow: -3px 1px 20px 4px rgba(62,199,190,0.68); 
+    -webkit-box-shadow: pink;
+    -moz-box-shadow: pink;
+    box-shadow: -3px 1px 20px 4px purple; 
     font-family: New Rocker;
     text-align: justify;
     cursor: pointer;
@@ -19,7 +19,13 @@
     transform: perspective(1000px);
     gap: 2rem;
   }
+
   
+  
+  .card-text h2 {
+    font-family: 'Akira Expanded';
+
+  }
   
   .card .card-image {
     grid-area: image;
@@ -29,10 +35,20 @@
     background-size: cover;
     width: 100%;
   }
+
+  @media (max-width: 768px) {
+    .card {
+      width: 100%;
+    }
+    .team-container h2 {
+      font-size: 20px !important;
+    }
+  }
   
   .card .card-text {
     grid-area: text;
-    margin: 2rem 0.5rem 1rem 0.5rem;
+    text-align: left;
+    margin: 0rem 0.5rem 1rem 0.5rem;
     transform: translateZ(30px);
   }
   
@@ -42,14 +58,21 @@
   }
   
   .card .card-text p {
-    color: grey;
+    color: white;
     font-size: 14px;
     font-weight: 300;
+    font-family: "Poppins-Medium", Helvetica;
   }
   
   .card .card-text h2 {
     margin-top: 0px;
-    font-size: 28px;
+    font-size: 20px;
+    margin-left: 9px;
+    text-align: left;
+  }
+
+  .desc {
+    margin-top: 1rem;
   }
   
   .card-text a{
@@ -88,10 +111,10 @@
     font-size: 25px;
     font-weight: 400;
     left: 0;
-    letter-spacing: 7.5px;
+    margin-left: 10px;
     line-height: normal;
     opacity: 0.8;
-    text-align: center;
+    text-align: left;
     top: 0;
   }
   
@@ -106,3 +129,84 @@
     margin-left: 8%;
   }
   
+
+  /* Card.css */
+
+/* ... Your existing styles ... */
+
+.team-container {
+  display: flex;
+  justify-content: center; /* Align the heading center horizontally */
+  align-items: center;
+  flex-wrap: wrap;
+  padding-right: 0rem;
+  background: transparent;
+  margin-top: 1%;
+  /* Center the team container horizontally */
+}
+.team-container h2 {
+  text-align: center;
+  color: #FFF;
+  font-size: 50px;
+  margin-top: 5%;
+  font-family: 'Akira Expanded';
+}
+
+
+.con {
+  gap: 3rem;
+}
+.con .card {
+  width: 33%;
+
+}
+
+.ui .card {
+  width: 70%;
+}
+.team-section {
+  text-align: center; /* Center align heading */
+  width: 100%; /* Ensure the entire width of the container is utilized */
+  display: flex; /* Add this property to make cards display side by side */
+  flex-wrap: wrap;
+  justify-content: space-around; 
+  /* Adjust as needed */
+}
+
+.team-m {
+  margin-top: 5%;
+  border-radius: 15px;
+  border: 2px solid white;
+  width: 95%;
+}
+
+/* .card {
+  width: 22%;
+  height: 400px;
+  display: grid;
+  grid-template-rows: 210px 300px 0px;
+  grid-template-areas: "image" "text" "stats";
+  border-radius: 18px;
+  background: black;
+  color: white;
+  -webkit-box-shadow: pink;
+  -moz-box-shadow: pink;
+  box-shadow: -3px 1px 20px 4px #F400A1;
+  font-family: New Rocker;
+  text-align: justify;
+  cursor: pointer;
+  margin: 2rem;
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+  gap: 2rem;
+} */
+
+/* ... Your existing styles ... */
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+}
+
+/* ... Your existing styles ... */

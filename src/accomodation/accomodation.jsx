@@ -11,7 +11,7 @@ import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSl
 function Accomodation() {
 const navigate = useNavigate()
 const navigateComp = () =>{
-    navigate("/competitions")
+    navigate("https://forms.gle/9b7rTXZWKuE57krB6")
 }
 const [init, setInit] = useState(false);
 
@@ -137,7 +137,10 @@ const [init, setInit] = useState(false);
     </div>
     
     <div style={{marginTop:"1%",textAlign:"center"}} className="button-63acc">
-        <input className="xx" type="submit" value="Submit" onClick={navigateComp}/> 
+        <button className="xx" type="submit" value="Submit">
+          <a href="https://forms.gle/9b7rTXZWKuE57krB6">Submit</a>
+          
+          </button> 
     </div>
     <Particles
         id="tsparticles"

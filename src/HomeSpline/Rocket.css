@@ -19,7 +19,10 @@
   flex-direction: column;
   align-items: center; */
 }
-
+.button-x a{
+  text-decoration: none;
+  color: white;
+}
 .heading{
   position: absolute;
   top: calc(45% - 98px); 
