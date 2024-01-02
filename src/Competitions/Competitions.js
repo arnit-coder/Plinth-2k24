@@ -10,6 +10,8 @@ import cd from './cd.png'
 import cc from './cc.png'
 import dhoomketu from './dhoomketu.png'
 import astromemia from './astromemia.png'
+import changemymind from './changemymind'
+import graffitiwall from './graffitiwall.png'
 import diyglider from './diyglider.jpg'
 import monstertruck from './monstertruck.jpg'
 import starprix from './starpix.png'
@@ -157,13 +159,13 @@ function Competitions() {
               day="DebSoc"
               artist=" Graffiti wall"
               description="Graffiti walls give an opportunity to the viewers to put their thoughts via a sheet of paper or drawings on a blank canvas."
-              image={img3}
+              image={graffitiwall}
             />
             <EventCard
               day="DebSoc"
               artist=" Change My Mind"
               description="You'll be presented with a random opinion to which you'll have to convince the chair with argumentation to adhere to your thoughts on the topic."
-              image={img3}
+              image={changemymind}
             />
               
             </TabPanel>
