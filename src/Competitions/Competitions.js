@@ -187,8 +187,7 @@ function Competitions() {
             <EventCard
               day="Astronomy"
               artist=" Dhoomketu - Telescopic Sky Gazing"
-              description="The events are designed in a way that there is something for everybody.
-              "
+              description="The events are designed in a way that there is something for everybody."
               image={dhoomketu}
             />
             <EventCard
