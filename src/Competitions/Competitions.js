@@ -24,7 +24,8 @@ import robo from './ROBO (5).png'
 import robocup from './Robo Cup.png'
 import transporter from './Transporters (3).png'
 import escaperoom from './escaperoom.jpg'
-
+import graffitiwall from './graffitiwall.png'
+import changemymind from './changemymind.png'
 import rcdrone from './rcdrone.jpg'
 import acethecase from './acethecase.png'
 import brahmaand from './brahmaand.png'
@@ -161,14 +162,14 @@ function Competitions() {
               day="DebSoc"
               artist=" Graffiti wall"
               description="Graffiti walls give an opportunity to the viewers to put their thoughts via a sheet of paper or drawings on a blank canvas."
-              image={img3}
+              image={graffitiwall}
               url='graffiti'
             />
             <EventCard
                 day="DebSoc"
               artist=" Change My Mind"
               description="You'll be presented with a random opinion to which you'll have to convince the chair with argumentation to adhere to your thoughts on the topic."
-              image={img3}
+              image={changemymind}
               url='changeMyMind'
             />
               

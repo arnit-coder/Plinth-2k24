@@ -292,7 +292,7 @@ const Team = () => {
     {
         image:img1,
         namex:"Pranjal Mishra",
-        role:"Tech Lead",
+        role:"Tech Head",
         phone:"+91 123456789",
         mail:"",
         insta:"",
@@ -301,7 +301,7 @@ const Team = () => {
     {
         image:img1,
         namex:"Ramsha Iqbal",
-        role:"Tech Lead",
+        role:"Tech Head",
         phone:"+91 123456789",
         mail:"",
         insta:"",
