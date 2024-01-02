@@ -4,6 +4,25 @@ import React from 'react';
 import './team.css';
 import TeamCard from './TeamCard'
 import img1 from "./imageex.jpg"
+import chiragmittal from "./chiragmittal.jpg"
+import aryangupta from './aryangupta.jpg'
+import prajit from './prajit.jpg'
+import ayushbansal from './ayushbansal.jpg'
+import swaraj from './swaraj.jpeg'
+import aryanguptatech from './aryanguptatech.jpeg' 
+import pranav from './pranav.jpg' 
+import arnit from './arnit.jpg'
+import tushar from './tushar.jpg' 
+import deshna from './deshna.jpg'
+import medhansh from './medhansh.jpg'
+import pranjalmishra from './pranjalmishra.jpg'
+import priyank from './priyank.jpg'
+import kumarharsh from './kumarharsh.jpg'
+import adityach from './adityach.jpeg'
+import raj from './raj.jpg'
+import ramsha from './ramsha.jpg'
+import chetali from './chetali.webp'
+import narang from './narang.jpeg'
 import Cube from '../Cube/Cube';
 import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
@@ -92,22 +111,22 @@ const Team = () => {
         linkedin:""
     },
     {
-        image:img1,
+        image:aryangupta,
         namex:"Aryan Gupta",
         role:"Sponsorship Lead",
-        phone:"+91 123456789",
+        phone:"+91 7726031952",
         mail:"",
-        insta:"",
-        linkedin:""
+        insta:"https://www.instagram.com/_a_r_yan__/",
+        linkedin:"https://www.linkedin.com/in/aryan-gupta-a90a67204/"
     },
     {
-        image:img1,
+        image:pranav,
         namex:"Pranav Agarwal",
         role:"PR Head",
-        phone:"+91 123456789",
+        phone:"+91 9106177115",
         mail:"",
-        insta:"",
-        linkedin:""
+        insta:"https://www.instagram.com/pranav.agarwal18/?next=%2F",
+        linkedin:"https://www.linkedin.com/in/pranav-agarwal-535928227/"
     },
     {
         image:img1,
@@ -128,21 +147,21 @@ const Team = () => {
         linkedin:""
     },
     {
-        image:img1,
+        image:chetali,
         namex:"Chetali Goyal",
         role:"PR Lead",
-        phone:"+91 123456789",
+        phone:"+91 7973358356",
         mail:"",
         insta:"",
-        linkedin:""
+        linkedin:"https://www.linkedin.com/in/chetali-goyal-020860227"
     },
     {
-        image:img1,
+        image:priyank,
         namex:"Priyank Saini",
         role:"Creative Head",
-        phone:"+91 123456789",
+        phone:"+91 8689031239",
         mail:"",
-        insta:"",
+        insta:"https://www.instagram.com/priyank___saini?igsh=MXNhMXo1dHZ2dWs5eQ==",
         linkedin:""
     },
     {
@@ -173,21 +192,21 @@ const Team = () => {
         linkedin:""
     },
     {
-        image:img1,
+        image:narang,
         namex:"Aditya Narang",
         role:"Creative Lead",
-        phone:"+91 123456789",
+        phone:"+91 9399056819",
         mail:"",
-        insta:"",
-        linkedin:""
+        insta:"https://www.instagram.com/narang_adi01?igsh=ODA1NTc5OTg5Nw==",
+        linkedin:"https://www.linkedin.com/in/aditya-n-045977253"
     },
     {
-        image:img1,
+        image:prajit,
         namex:"Prajit Kaushik",
         role:"Event Head",
-        phone:"+91 123456789",
+        phone:"+91 9667368656",
         mail:"",
-        insta:"",
+        insta:"https://www.instagram.com/__hunterzz?igsh=Z2J1MjdyOGRscTNz",
         linkedin:""
     },
     {
@@ -209,19 +228,19 @@ const Team = () => {
         linkedin:""
     },
     {
-        image:img1,
+        image:medhansh,
         namex:"Medhansh Sharma",
         role:"Content Head",
-        phone:"+91 123456789",
+        phone:"+91 8209516918",
         mail:"",
         insta:"",
         linkedin:""
     },
     {
-        image:img1,
+        image:deshna,
         namex:"Deshna Thakur",
         role:"Content Head",
-        phone:"+91 123456789",
+        phone:"+91 7339899087",
         mail:"",
         insta:"",
         linkedin:""
@@ -272,7 +291,7 @@ const Team = () => {
         linkedin:""
     },
     {
-        image:img1,
+        image:priyank,
         namex:"Priyank Saini",
         role:"UI/UX Head",
         phone:"+91 123456789",
@@ -281,76 +300,76 @@ const Team = () => {
         linkedin:""
     },
     {
-        image:img1,
+        image:arnit,
         namex:"Arnit Gupta",
         role:"Tech Head",
-        phone:"+91 123456789",
-        mail:"",
-        insta:"",
-        linkedin:""
+        phone:"+91 6367880107",
+        mail:"21ucs029@lnmiit.ac.in",
+        insta:"https://www.instagram.com/arnit04/",
+        linkedin:"https://www.linkedin.com/in/arnit04/"
     },
     {
-        image:img1,
+        image:pranjalmishra,
         namex:"Pranjal Mishra",
         role:"Tech Lead",
-        phone:"+91 123456789",
+        phone:"+91 7651815073",
         mail:"",
-        insta:"",
-        linkedin:""
+        insta:"https://www.instagram.com/pranjal._.mishra/",
+        linkedin:"https://www.linkedin.com/in/pranjal-mishra-063b30225/"
     },
     {
-        image:img1,
+        image:ramsha,
         namex:"Ramsha Iqbal",
         role:"Tech Lead",
-        phone:"+91 123456789",
+        phone:"+91 9555369500",
         mail:"",
-        insta:"",
-        linkedin:""
+        insta:"https://www.instagram.com/_ramsha_iqbal_/",
+        linkedin:"https://www.linkedin.com/in/ramsha-iqbal-332620211/"
     },
     {
         image:img1,
         namex:"Aditya Kumar",
         role:"Frontend Developer",
         phone:"+91 123456789",
-        mail:"",
+        mail:"22ucc056@lnmiit.ac.in",
         insta:"",
         linkedin:""
     }, 
     {
-        image:img1,
+        image:swaraj,
         namex:"Swaraj Layek",
         role:"Frontend Developer",
-        phone:"+91 123456789",
-        mail:"",
-        insta:"",
-        linkedin:""
+        phone:"+91 7810909767",
+        mail:"22ucs216@lnmiit.ac.in",
+        insta:"https://www.instagram.com/swaraj_layek_/",
+        linkedin:"https://www.linkedin.com/in/swaraj-layek/"
     },
     {
         image:img1,
         namex:"Harshit Daga",
         role:"Frontend Developer",
         phone:"+91 123456789",
-        mail:"",
+        mail:"22ucs236@lnmiit.ac.in",
         insta:"",
         linkedin:""
     },
     {
-        image:img1,
+        image:chiragmittal,
         namex:"Chirag Mittal",
         role:"Frontend Developer",
-        phone:"+91 123456789",
-        mail:"",
+        phone:"+91 7206466491",
+        mail:"21ucs053@lnmiit.ac.in",
         insta:"",
-        linkedin:""
+        linkedin:"www.linkedin.com/in/ chirag-71941a2a6"
     },
     {
-        image:img1,
+        image:kumarharsh,
         namex:"Kumar Harsh",
         role:"Frontend Developer",
-        phone:"+91 123456789",
-        mail:"",
+        phone:"+91 9973750456",
+        mail:"22ucc010@lnmiit.ac.in",
         insta:"",
-        linkedin:""
+        linkedin:"https://www.linkedin.com/in/kumarharsh-p"
     },
     {
         image:img1,
@@ -362,50 +381,61 @@ const Team = () => {
         linkedin:""
     },
     {
-        image:img1,
+        image:ayushbansal,
         namex:"Ayush Bansal",
         role:"Frontend Developer",
-        phone:"+91 123456789",
+        phone:"+91 9142588433",
         mail:"",
         insta:"",
         linkedin:""
     },
     {
-        image:img1,
+        image:adityach,
         namex:"Aditya Chaudhary",
         role:"Backend Developer",
-        phone:"+91 123456789",
+        phone:"+91 9116304181",
         mail:"",
-        insta:"",
-        linkedin:""
+        insta:"https://www.instagram.com/_adityathejaat_/",
+        linkedin:"https://www.linkedin.com/in/aditya-chaudhary-763047249/"
     },
     {
-        image:img1,
+        image:tushar,
         namex:"Tushar Sukhwal",
         role:"Backend Developer",
-        phone:"+91 123456789",
+        phone:"+91 7727999881",
         mail:"",
         insta:"",
-        linkedin:""
+        linkedin:"https://www.linkedin.com/in/tushar-sukhwal-57463a251/"
     },
+    //  {
+    //       image:aryanguptatech,
+    //       namex:"Aryan Gupta",
+    //       role:"Tech Advisor",
+    //       phone:"+91 9064280911",
+    //       mail:"",
+    //       insta:"https://www.instagram.com/_a_ryan_gupt_a_",
+    //       linkedin:"https://www.linkedin.com/in/aryanng"
+    //   },
     {
-        image:img1,
-        namex:"Aditya Raj",
-        role:"Fest Head",
-        phone:"+91 123456789",
-        mail:"",
-        insta:"",
-        linkedin:""
-    },
+      image:raj,
+      namex:"Aditya Raj",
+      role:"Fest Head",
+      phone:"+91 7903613803",
+      mail:"",
+      insta:"https://linktr.ee/08adityaraj",
+      linkedin:"https://www.linkedin.com/in/aditya-raj-606b73201/"
+  },
     {
-        image:img1,
-        namex:"Ashutosh Jha",
-        role:"Fest Head",
-        phone:"+91 123456789",
-        mail:"",
-        insta:"",
-        linkedin:""
-    },
+      image:img1,
+      namex:"Ashutosh Jha",
+      role:"Fest Head",
+      phone:"+91 123456789",
+      mail:"",
+      insta:"",
+      linkedin:""
+  },
+    
+    
 
 ];
 
