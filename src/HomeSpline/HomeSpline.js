@@ -46,7 +46,8 @@ const HomeSpline = () => {
       <div className="ctd-p"><div className="ctd"><Countdown />
       </div>
       </div>
-   <Link to='/about'> <button className='downButton'>
+   <Link to='/about'>
+     <button className='downButton'>
           <img className='arrow' src={ArrowPic} />
          </button></Link> 
     </div>

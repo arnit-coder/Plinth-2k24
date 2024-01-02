@@ -8,8 +8,8 @@ body{
 
 .heading{
   position: absolute;
-  top: 10% !important; 
-  left: 67% !important;
+  top: 10% ; 
+  left: 67% ;
   z-index: 10;
   color: aliceblue;
   width: auto;
