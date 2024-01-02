@@ -163,14 +163,12 @@ function Competitions() {
               artist=" Graffiti wall"
               description="Graffiti walls give an opportunity to the viewers to put their thoughts via a sheet of paper or drawings on a blank canvas."
               image={graffitiwall}
-            
             />
             <EventCard
                 day="DebSoc"
               artist=" Change My Mind"
               description="You'll be presented with a random opinion to which you'll have to convince the chair with argumentation to adhere to your thoughts on the topic."
               image={changemymind}
-              
             />
               
             </TabPanel>
