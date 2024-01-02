@@ -47,13 +47,18 @@ align-items: flex-start;
  align-items: center;
 }
 
+.imageDiv{
+   width: 450px;
+   height: 550px;
+}
+
 .image 
 {
    width: 100%;
    height: 100%;
    margin-top: 15px;
-    box-shadow: 10px 10px 20px 	RGB(201, 107, 246), -10px -10px 20px RGB(201, 107, 246),
-    10px -10px 20px RGB(201, 107, 246), -10px 10px 20px RGB(201, 107, 246);
+   box-shadow: 10px 10px 20px 	RGB(201, 107, 246), -10px -10px 20px RGB(201, 107, 246),
+   10px -10px 20px RGB(201, 107, 246), -10px 10px 20px RGB(201, 107, 246);
   animation: moveUpDown 2s ease-in-out infinite alternate;
 }
 .heading{
