@@ -1,25 +1,24 @@
-import React, { useEffect, useState } from 'react';
-import UserContext from './UserContext';
+import React, { useEffect, useState } from "react";
+import UserContext from "./UserContext";
 
-const UserContextProvider = ({children}) => {
+const UserContextProvider = ({ children }) => {
   const [signData, setSignData] = useState(null);
-  const [user, setUser] = useState([]);
-  const [signedIn , setSignedIn] = useState(false);
+  const [user, setUser] = useState(null);
 
   useEffect(() => {
-    if(localStorage.getItem("token")){
-      setUser(JSON.parse(localStorage.getItem("user")))
-      setSignedIn(true);
+    const token = localStorage.getItem("token");
+    if (token) {
+      setSignData(token);
+    } else {
+      setSignData(null);
     }
-  }, [])
-
-
+  }, [user]);
 
   return (
-    <UserContext.Provider value={{signData, setSignData, user, setUser}}>
+    <UserContext.Provider value={{ signData, setSignData, user, setUser }}>
       {children}
     </UserContext.Provider>
   );
-}
+};
 
 export default UserContextProvider;

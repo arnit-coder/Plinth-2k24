@@ -40,8 +40,8 @@ function App() {
       <Header />
       <Routes>
         {/* <Route path="/" element={<Profile />} /> */}
-        <Route path="/Day2" element={<Day2 />} />
         <Route path="/" element={<><Home /></>} />
+        <Route path="/Day2" element={<Day2 />} />
         <Route path="/Team" element={<Team />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/signup" element={<Signup />} />

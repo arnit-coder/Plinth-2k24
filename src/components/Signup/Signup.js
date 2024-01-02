@@ -13,7 +13,7 @@ import UserContext from "../../ContextApi/UserContext";
 
 const Signup = () => {
   const navigate = useNavigate();
-  const users = useContext(UserContext)
+  const users = useContext(UserContext);
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
@@ -21,7 +21,7 @@ const Signup = () => {
   const handleGoogleLoginSuccess = async (tokenResponse) => {
     const accessToken = tokenResponse.access_token;
     console.log(accessToken);
-    await signupGoogle(accessToken, navigate , users);
+    await signupGoogle(accessToken, navigate, users);
   };
   const { setSignData } = useContext(UserContext);
   const signUp = useGoogleLogin({ onSuccess: handleGoogleLoginSuccess });

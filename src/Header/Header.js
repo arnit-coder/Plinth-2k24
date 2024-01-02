@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Link } from "react-router-dom"; // Import Link
+import { Link, useNavigate } from "react-router-dom"; // Import Link
 
 import "./Header.css";
 import logo from "./asset/Plinth 2024 logo 1.svg";
@@ -17,15 +17,16 @@ import signup from "./asset/icons8-sign-up-64.png";
 import ambassador from "./asset/ambassador.png";
 import room from "./asset/room.png";
 import UserContext from "../ContextApi/UserContext";
+import toast from "react-hot-toast";
 function Header() {
-
+  const navigate = useNavigate();
   const user = useContext(UserContext);
   const handleLogout = () => {
     localStorage.removeItem("token");
-    window.location.reload();
     user.setUser(null);
+    toast.success("Logged out successfully");
+    navigate("/");
   };
-
 
   return (
     <div className="nav-main">
@@ -35,7 +36,7 @@ function Header() {
           <p>Home</p>
         </Link>
       </span>
-      
+
       <span>
         <Link to="/competitions">
           <img className="test" src={document} alt="" />
@@ -72,17 +73,16 @@ function Header() {
           <p style={{ paddingTop: "10%" }}>Accommodation</p>
         </Link>
       </span>
-      
-      
+
       <span>
         <Link to="/Team">
-          <img className='test' src={ambassador} alt="" />
-          <p style={{paddingTop:"8%"}}>OurTeam</p>
+          <img className="test" src={ambassador} alt="" />
+          <p style={{ paddingTop: "8%" }}>OurTeam</p>
         </Link>
       </span>
 
-      {user.user ? (
-        <div style={{position:"absolute",bottom:"0"}}>
+      {!user.signData ? (
+        <div style={{ position: "absolute", bottom: "0" }}>
           <span>
             <Link to="/login">
               <img className="test" src={login} alt="" />
@@ -98,11 +98,11 @@ function Header() {
         </div>
       ) : (
         <span onClick={handleLogout}>
-          <div >
-            <img className="test" src={login} alt=""  />
+          <div>
+            <img className="test" src={login} alt="" />
             <p>Logout</p>
-          </div >
-        </span >
+          </div>
+        </span>
       )}
     </div>
   );

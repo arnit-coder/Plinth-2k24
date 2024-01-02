@@ -1,6 +1,6 @@
-import React from 'react';
-import EventContext from './EventContext';
-import all_products from '../Assets/all_products'; // Import all_products
+import React from "react";
+import EventContext from "./EventContext";
+import all_products from "../Assets/all_products"; // Import all_products
 
 const EventContextProvider = (props) => {
   const contextValue = {
