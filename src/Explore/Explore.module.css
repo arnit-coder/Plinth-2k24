@@ -6,15 +6,28 @@
    height: auto;
    padding: 20px;
    display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
+    /* margin-top: 10%;
+   margin-left: 10%; */
+}
+
+.container{
+    width: 100%;
+   min-height: 100vh;
+   height: auto;
+   padding: 20px;
+   display: flex;
    flex-direction: row;
    justify-content: space-evenly;
    align-items: center;
-  margin-top: 10%;
-  margin-left: 10%;
+   /* margin-top: 10%;   */
+   margin-left: 10%; 
 }
-
 .leftDiv 
 {
+    margin-top: 7%;
   min-height: 100vh;
   height: auto;
 width: 50%;
@@ -43,7 +56,14 @@ align-items: flex-start;
     10px -10px 20px RGB(201, 107, 246), -10px 10px 20px RGB(201, 107, 246);
   animation: moveUpDown 2s ease-in-out infinite alternate;
 }
-
+.heading{
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .clubHeading 
 {
    font-size: 2rem;
@@ -112,23 +132,39 @@ align-items: flex-start;
     }
   }
 
-  @media screen and (max-width: 1200px)
+  @media screen and (max-width: 1275px)
   {
    .image
    {
     width: 100%;
     height: 100%;
    }
+
+   .container 
+   {
+      margin-left: 20%;
+   }
+
+
   }
 
 
   
-  @media screen and (max-width: 770px)
+  @media screen and (max-width: 970px)
   {
    .image
    {
     width: 100%;
     height: 100%;
+   }
+
+   .container 
+   {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      /* margin-left: 0; */
+      margin-left: 10%;
    }
 
    .main 
@@ -138,6 +174,8 @@ align-items: flex-start;
       align-items: center;
       /* margin-top: 30%; */
    }
+
+   
 
    .leftDiv 
    {
@@ -154,7 +192,7 @@ align-items: flex-start;
   {
    .main 
    {
-      /* margin-top: 40%; */
+     margin-left: 10%;
    }
   }
 

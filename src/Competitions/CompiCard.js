@@ -3,6 +3,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import "./Event.css";
+import { Link } from "react-router-dom";
 
 
 const EventCard = ({ day, artist, description, image }) => {
@@ -15,7 +16,7 @@ const EventCard = ({ day, artist, description, image }) => {
       <p className="day">{day}</p>
       <p className="artist">{artist}</p>
       <p className="desc">{description}</p>
-      <button className="button-63">Explore</button>
+      <Link to='/explore'><button className="button-63">Explore</button></Link>
     </div>
   );
 };
