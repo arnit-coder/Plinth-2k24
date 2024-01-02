@@ -29,13 +29,14 @@ import Preloader from "./Preloader/Preloader";
 import AboutUs from "./aboutUs/AboutUs";
 import Campus from "./CampusAmbassador/Campus";
 import Accomodation from "./accomodation/accomodation";
-
+import Explore from './Explore/Explore'
+import Testing from "./Explore/Testing";
 function App() {
   return (
     <UserContextProvider>
       <Toaster />
 
-      <Preloader />
+      {/* <Preloader /> */}
       <Header />
       <Routes>
         {/* <Route path="/" element={<Profile />} /> */}
@@ -56,6 +57,8 @@ function App() {
         <Route path="/campus-ambassador" element={<Campus />} /> 
         <Route path="/accomodation" element={<Accomodation />} />
         <Route path="/lnm-hacks" element={<LnmHacks />} />
+        <Route path="/explore" element={<Explore />} />
+        <Route path="/testExplore" element={<Testing />} />
         {/* <Route path="/our-team" element={<OurTeam />} /> */}
         {/* <Route exact path="/Admin/ViewEvents" element={<ViewEvents />} />  */}
       </Routes>
