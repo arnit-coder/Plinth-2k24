@@ -31,7 +31,7 @@ const Team = () => {
     {
         image:img1,
         namex:"Aakanksha Singh",
-        role:"Assistant General Secretary",
+        role:"Associate General Secretary",
         phone:"+91 123456789",
         mail:"",
         insta:"",
