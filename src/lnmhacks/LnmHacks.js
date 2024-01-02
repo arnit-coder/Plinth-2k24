@@ -23,7 +23,7 @@ function LnmHacks() {
                   <img className={HackCSS.image} src={image} alt="" />
                   <div className={HackCSS.buttonDiv}>
                 <button className={HackCSS.button}>
-                  <a href="https://lnmhacks.xyz/">OUR WEBSITE</a>
+                  <a href="https://lnmhacks.tech/">OUR WEBSITE</a>
                     
                 </button>
             </div>
