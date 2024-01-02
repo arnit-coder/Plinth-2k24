@@ -1,5 +1,5 @@
-import React from 'react'
+import React from "react";
 
-const EventContext = React.createContext()
+const EventContext = React.createContext();
 
 export default EventContext;
