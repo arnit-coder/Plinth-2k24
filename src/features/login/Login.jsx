@@ -44,7 +44,7 @@ const Login = () => {
     <form onSubmit={submitHandler} className="loginContainer" id="login">
       <div className="backgroundImg"></div>
       <img src={login_robot} alt="left robot" />
-      <div className="heading">
+      <div className="heading_login">
         <h2>
           <strong>Login</strong>
         </h2>
