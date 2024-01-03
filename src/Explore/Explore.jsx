@@ -5,7 +5,7 @@ import { Link, useLocation } from 'react-router-dom';
 const Explore = () => {
     const location=useLocation();
     const props=location.state
-  const { artist, day, badaDescription, pricepool, image, rulebook } = props;
+  const { artist, day, badaDescription, pricepool, image, rulebook, googleform } = props;
     // console.log(props)
   return (
     <div className={ExploreCss.main}>
@@ -19,13 +19,13 @@ const Explore = () => {
       </div>
       <div className={ExploreCss.container}>
         <div className={ExploreCss.leftDiv}>
-          <div className={ExploreCss.description}>
+          <div className={ExploreCss.badaDescription}>
             {badaDescription}
           </div>
           <div className={ExploreCss.pricepoolDiv}>
             <h6 className={ExploreCss.pricepool}>PRICE POOL - {pricepool}</h6>
           </div>
-          <button className={ExploreCss.register}>TEAM REGISTER</button>
+          <button className={ExploreCss.register}> <a href={googleform}>REGISTER</a></button>
         </div>
         <div className={ExploreCss.rightDiv}>
           <div className={ExploreCss.imageDiv}>

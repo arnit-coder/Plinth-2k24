@@ -5,20 +5,21 @@ import { useNavigate,Link } from "react-router-dom";
 import Explore from '../Explore/Explore.jsx';
 
 
-const EventCard = ({ day, artist, description, image, url }) => {
+const EventCard = ({ day, artist, description, image, googleform, badaDescription,rulebook, pricepool }) => {
   const [clicked, setClicked] = useState(false);
   const navigate = useNavigate();
 
   const handleClick = () => {
      ("/explore")
     const propsTosend={
+      googleform:googleform,
       day:day,
       artist:artist,
-      badaDescription:  description,
+      badaDescription:badaDescription,
       image:image,
       // eventUrl:url
-      pricepool: 'TBA',
-      rulebook: 'www.google.com'
+      pricepool: pricepool,
+      rulebook: rulebook
     }
     navigate('/explore', {
       state: propsTosend
