@@ -2,17 +2,15 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    margin: 0 -8px 0 -8px;
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
     border: 1px solid white;
     transition: all .5s ease;
     border-radius: 20px;
-}
-
-.countdown-wrapper:hover{
-    scale:1.2;
 }
 
 .time-section {
