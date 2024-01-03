@@ -9,9 +9,13 @@ import aryangupta from './aryangupta.jpg'
 import prajit from './prajit.jpg'
 import ayushbansal from './ayushbansal.jpg'
 import swaraj from './swaraj.jpeg'
+import adityakumar from './adityakumar.jpg'
 import aryanguptatech from './aryanguptatech.jpeg' 
 import pranav from './pranav.jpg' 
 import arnit from './arnit.jpg'
+import harshitdaga from './harshitdaga.jpg'
+import mitali from './mitali.jpg'
+
 import tushar from './tushar.jpg' 
 import deshna from './deshna.jpg'
 import medhansh from './medhansh.jpg'
@@ -327,13 +331,13 @@ const Team = () => {
         linkedin:"https://www.linkedin.com/in/ramsha-iqbal-332620211/"
     },
     {
-        image:img1,
+        image:adityakumar,
         namex:"Aditya Kumar",
         role:"Frontend Developer",
-        phone:"+91 123456789",
+        phone:"+91 8240423970",
         mail:"22ucc056@lnmiit.ac.in",
-        insta:"",
-        linkedin:""
+        insta:"https://www.instagram.com/adi_rocks_007",
+        linkedin:"https://www.linkedin.com/in/aditya-kumar007"
     }, 
     {
         image:swaraj,
@@ -345,13 +349,13 @@ const Team = () => {
         linkedin:"https://www.linkedin.com/in/swaraj-layek/"
     },
     {
-        image:img1,
+        image:harshitdaga,
         namex:"Harshit Daga",
         role:"Frontend Developer",
-        phone:"+91 123456789",
+        phone:"+91 9331959900",
         mail:"22ucs236@lnmiit.ac.in",
-        insta:"",
-        linkedin:""
+        insta:"https://www.instagram.com/harshitdaga03/",
+        linkedin:"https://www.linkedin.com/in/harshit-daga-54a816203/"
     },
     {
         image:chiragmittal,
@@ -372,13 +376,13 @@ const Team = () => {
         linkedin:"https://www.linkedin.com/in/kumarharsh-p"
     },
     {
-        image:img1,
+        image:mitali,
         namex:"Mitali Manya",
         role:"Frontend Developer",
-        phone:"+91 123456789",
+        phone:"+91 7023761771",
         mail:"",
         insta:"",
-        linkedin:""
+        linkedin:"https://www.linkedin.com/in/mitali-manya-796921251"
     },
     {
         image:ayushbansal,

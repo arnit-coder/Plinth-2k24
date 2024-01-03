@@ -11,6 +11,7 @@ import cc from './cc.png'
 import dhoomketu from './dhoomketu.png'
 import astromemia from './astromemia.png'
 import graffitiwall from './graffitiwall.png'
+import odineye from './odineye.jpg'
 import diyglider from './diyglider.jpg'
 import monstertruck from './monstertruck.jpg'
 import starprix from './starpix.png'
@@ -179,7 +180,7 @@ function Competitions() {
               day=" Astronomy"
               artist="Odin's Eye"
               description="Odin’s Eye is an astronomy-themed treasure hunt; the faster you solve the mind boggling riddles, the closer you get to the finishing line."
-              image={astromemia}
+              image={odineye}
               url='odinsEye'
             />
             <EventCard
