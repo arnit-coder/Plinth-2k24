@@ -4,7 +4,9 @@
    
 }
 
-
+.text {
+    width: 80%;
+}
 
 
 @font-face {
@@ -97,6 +99,7 @@
 
 .content3{
     font-family: content;
+    text-align: justify;
     margin-top: 10%;
     display: flex;
     justify-content: space-between;
@@ -104,11 +107,14 @@
 }
 .text3{
     margin-top: 5%;
+    width: 70%;
+    margin-left: 4%;
 }
 
 
 .content3-text1{
-    font-size: 75px;
+    text-align: left;
+    font-size: 70px;
     color: white;
     font-weight: 800;
     margin-left: 15%;
@@ -135,9 +141,13 @@
     overflow: hidden;
 }
 
+.content3-image {
+    width: 300%;
+}
+
 .content-image 
 {
-
+    width: 160%;
 }
 
 /* .scroll-section {
@@ -259,8 +269,12 @@
 
   @media screen and (max-width: 400px)
   {
+    .content{
+        margin-left: 10%;
+    }
     .content-text1
     {
+        text-align: left;
      font-size: 30px;
     }
 
@@ -271,6 +285,7 @@
  
     .content-text2
     {
+        text-align: left;
      font-size: 15px;
     }
 
@@ -279,13 +294,20 @@
      font-size: 30px;
     }
  
+    .content2{
+        margin-left: 23%;
+        width: 80%;
+        text-align: left;
+    }
     .content2-text2
     {
+        text-align: justify;
      font-size: 15px;
     }
 
     .content2-text1
     {
+        text-align: left;
     font-size: 25px;
     }
  
@@ -294,6 +316,9 @@
      font-size: 15px;
     }
 
+    .content3{
+        margin-left: 12%;
+    }
     .content3-text1
     {
     font-size: 25px;
@@ -304,4 +329,3 @@
      font-size: 15px;
     }
   }
-  
