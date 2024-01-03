@@ -12,6 +12,39 @@
     /* margin-top: 10%;
    margin-left: 10%; */
 }
+.leftDiv {
+   margin-top: 7%;
+   min-height: 100vh;
+   height: auto;
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: flex-start;
+   color: white;
+}
+
+.register,
+.rulebookbutton {
+   width: 350px;
+   height: 70px;
+   border-radius: 15px;
+   font-family: 'Poppins', sans-serif;
+   font-weight: bolder;
+   margin-top: auto; /* Push buttons to the bottom */
+}
+
+.register {
+   margin-right: 10px; /* Adjust the margin based on your design */
+}
+
+.rulebookbutton {
+   margin-left: auto; /* Push the rulebook button to the right */
+}
+
+html, body {
+   overflow-x :hidden;
+}
 
 .container{
     width: 100%;
@@ -21,21 +54,50 @@
    display: flex;
    flex-direction: row;
    justify-content: space-evenly;
-   align-items: center;
+   align-items: stretch;
    /* margin-top: 10%;   */
    margin-left: 10%; 
 }
 .leftDiv 
 {
+   /* ... (existing styles) */
+   position: relative;
+   /* add the following lines */
+   flex-grow: 1;
+   display: flex;
+   flex-direction: column;
+   justify-content:flex-start;
     margin-top: 7%;
   min-height: 100vh;
   height: auto;
 width: 50%;
-display: flex;
-flex-direction: column;
-justify-content: flex-start;
+
 align-items: flex-start;
 color: white;
+}
+
+.register,
+.rulebookbutton {
+    width: 350px;
+    height: 70px;
+    border-radius: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    margin: 5% 0%;
+}
+
+.rulebookbutton {
+    margin-top: 50px; /* Adjust this margin based on your design */
+}
+
+@media screen and (max-width: 450px) {
+    .main {
+        margin-left: 20%;
+    }
+
+    .leftDiv {
+        margin: 0;
+    }
 }
 
 .rightDiv 
@@ -46,6 +108,15 @@ color: white;
  flex-direction: column;
  justify-content: flex-start;
  align-items: center;
+}
+
+.badaDescription {
+   text-align: justify;
+   text-wrap: balance;
+   padding-top: 5%;
+   font-family: "Poppins-Medium", Helvetica;
+font-size: 1.5rem;
+font-weight: 500;
 }
 
 .imageDiv{
@@ -63,7 +134,8 @@ color: white;
   animation: moveUpDown 2s ease-in-out infinite alternate;
 }
 .heading{
-    text-align: center;
+    text-align: justify;
+    text-wrap: balance;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -125,7 +197,8 @@ color: white;
    color: white;
    font-family: 'Poppins', sans-serif;
    font-weight: bolder;
-   margin: 5% 0%;
+   margin-top: auto;
+   
 }
 .register a{
    text-decoration: none;
@@ -230,6 +303,7 @@ color: white;
     width: 350px;
     height: 60px;
     font-weight: 700;
+    margin-top: auto;
   }
 .link{
     color: #AD00FF;

@@ -9,16 +9,19 @@ const Explore = () => {
     // console.log(props)
   return (
     <div className={ExploreCss.main}>
-      <div className={ExploreCss.heading}>
-        <div className={ExploreCss.title}>
-          {artist}
-        </div>
+      
+      <div className={ExploreCss.container}>
+        
+        <div className={ExploreCss.leftDiv}>
+        <div className={ExploreCss.heading}>
         <div className={ExploreCss.clubHeading}>
           {day}
         </div>
+        <div className={ExploreCss.title}>
+          {artist}
+        </div>
+        
       </div>
-      <div className={ExploreCss.container}>
-        <div className={ExploreCss.leftDiv}>
           <div className={ExploreCss.badaDescription}>
             {badaDescription}
           </div>
