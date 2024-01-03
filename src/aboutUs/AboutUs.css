@@ -4,7 +4,9 @@
    
 }
 
-
+.text {
+    width: 80%;
+}
 
 
 @font-face {
@@ -104,6 +106,7 @@
 }
 .text3{
     margin-top: 5%;
+    width: 80%;
 }
 
 
@@ -135,9 +138,13 @@
     overflow: hidden;
 }
 
+.content3-image {
+    width: 200%;
+}
+
 .content-image 
 {
-
+    width: 200%;
 }
 
 /* .scroll-section {
