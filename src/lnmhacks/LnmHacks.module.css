@@ -16,6 +16,9 @@
 }
 
 .button a{
+    font-family: "Poppins-Bold", Helvetica;
+    font-size: 22px;
+    font-weight: 700;
     text-decoration: none;
     color: #fff;
 }
@@ -26,7 +29,7 @@
     font-weight: 800;
     line-height: 200%;
     letter-spacing: 0em;
-    text-align: center;
+    text-align: justify;
     color: white;
     margin-top: 5%;
 }
@@ -103,6 +106,8 @@
 {
     font-size: 25px;
     font-weight: 400;
+    text-align: justify;
+    text-wrap: balance;
 }
 
 .ul 
@@ -112,16 +117,25 @@
 
 .button 
 {
+    
     width: 280px;
     height: 60px;
     background-color: #D90950;
-    border-radius: 15px ;
+    border: 0;
+    border-radius: 15px;
+    border-top: 0.5px solid grey;
+    border-left: 0.5px solid grey;
+    border-bottom: 3.5px solid white;
+    border-right: 3.5px solid white;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
     color: aliceblue;
     font-size: 15px;
 }
 
 .buttonDiv 
 {
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -137,6 +151,7 @@
     {
         width: 90%;
         font-size: 1.5rem;
+        padding-left: 15%;
     }
 
     .description1

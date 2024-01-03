@@ -107,8 +107,6 @@
 }
 .text3{
     margin-top: 5%;
-    width: 70%;
-    margin-left: 4%;
 }
 
 
@@ -141,13 +139,9 @@
     overflow: hidden;
 }
 
-.content3-image {
-    width: 300%;
-}
-
 .content-image 
 {
-    width: 160%;
+
 }
 
 /* .scroll-section {

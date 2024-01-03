@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { Link, useNavigate } from "react-router-dom"; // Import Link
 
 import "./Header.css";
-import logo from "./asset/Plinth 2024 logo 1.svg";
+import logo from "./plinth.png";
 import image from "./asset/image.svg";
 import home from "./asset/home.svg";
 import dashboard from "./asset/layout.svg";
@@ -30,6 +30,12 @@ function Header() {
 
   return (
     <div className="nav-main">
+      <span>
+        <Link to="/">
+          <img className="test" src={logo} alt="" />
+          <p>Plinth'24</p>
+        </Link>
+      </span>
       <span>
         <Link to="/">
           <img className="test" src={home} alt="" />

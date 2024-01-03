@@ -109,7 +109,7 @@ function Competitions() {
 
             <TabPanel className="cards">
 
-              <EventCard day="Quizzinga" artist="Cryptex" description="Cryptex is an online quiz competition with a format similar to a treasure hunt." image={Cryptex} googleform='' badaDescription='Cryptex is an online quiz competition with a format similar to a treasure hunt. Each participant has to register individually and go through all the levels before being crowned as the winner. The questions will be diverse and will include all forms of genres. Questions will be posted on Plinth website, and hints will be posted on the Instagram stories of @quizzingalnm.'
+              <EventCard day="Quizzinga" artist="Cryptex" description="Cryptex is an online quiz competition with a format similar to a treasure hunt." image={Cryptex} googleform='https://cryptexlnm.xyz/' badaDescription='Cryptex is an online quiz competition with a format similar to a treasure hunt. Each participant has to register individually and go through all the levels before being crowned as the winner. The questions will be diverse and will include all forms of genres. Questions will be posted on Plinth website, and hints will be posted on the Instagram stories of @quizzingalnm.'
               rulebook=''
               pricepool='10k' />
 
