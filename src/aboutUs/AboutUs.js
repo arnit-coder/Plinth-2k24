@@ -65,8 +65,8 @@ const AboutUs = () => {
           transition={{ duration: 0.9, ease: [0.17, 0.55, 0.55, 1], delay: 0.5 }}
         >
           <div className='text'>
-            <h1 className='content-text1'>WE CRAFT VIRTUAL <br />REALMS OF <br /> INNOVATION...</h1>
-            <p className='content-text2'>Plinth, the annual Tech-Fest of The LNMIIT,<br /> Jaipur, India's first Web3 based College Tech fest.</p>
+            <h1 className='content-text1'>The LNMIIT's annual Tech-Fest,</h1>
+            <p className='content-text2'>is a three-day event that will explore artificial intelligence and big data. This three-day event will awaken your curiosity and push your intellectual boundaries, with a series of stimulating competitions, mind-bending workshops, and encounters with renowned experts.</p>
           </div>
         </motion.div>
         
@@ -96,8 +96,8 @@ const AboutUs = () => {
           initial={{ opacity: 0, x: -400 }}
           animate={content2InView ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.9, ease: [0.17, 0.55, 0.55, 1], delay: 0.5 }} className='text2'>
-            <h1 className='content2-text1'>CONTENT TEAM<br /> WILL GIVE CONTENT OF MAYBE 2 LINES OR SHAYAD 3.</h1>
-            <p className='content2-text2'>Plinth, the annual Tech-Fest of The LNMIIT,<br /> Jaipur, India's first Web3 based College Tech fest.</p>
+            <h1 className='content2-text1'>INDUSTRY 5.0,</h1>
+            <p className='content2-text2'>Get ready for three days that crackle with excitement as we delve into the revolutionizing world of Industry 5.0. This isn't just a tech fest; it's a portal to the cutting edge, where students from across the nation converge to witness, compete, and ignite their minds in the face of transformative technologies. Through captivating workshops and interactive sessions, you'll gain hands-on experience with cutting-edge technologies and unravel the limitless possibilities of transformative fields.</p>
           </motion.div>
          
       </div>
@@ -111,8 +111,8 @@ const AboutUs = () => {
           transition={{ duration: 0.9, ease: [0.17, 0.55, 0.55, 1], delay: 0.5 }}
         >
           <div className='text3'>
-            <h1 className='content3-text1'>WE CRAFT VIRTUAL <br />REALMS OF <br /> INNOVATION...</h1>
-            <p className='content3-text2'>Plinth, the annual Tech-Fest of The LNMIIT,<br /> Jaipur, India's first Web3 based College Tech fest.</p>
+            <h1 className='content3-text1'>A COGNITIO CASCADE,</h1>
+            <p className='content3-text2'>Plinth 2024 promises to be an unforgettable immersion, a harmonious symphony of science, innovation, and intellectual exploration. Join us as we embark on a mission to rekindle the tech-enthusiasm of our youth. Plinth 2024 is your gateway to the future of technology, where technology is revolutionising the way we live, work, and interact with the world around us. From January 19th to 21st, 2024, we invite you to step into this future with us!</p>
           </div>
         </motion.div>
         <motion.div
