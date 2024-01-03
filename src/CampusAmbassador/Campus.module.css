@@ -58,6 +58,8 @@
 {
     width: 50%;
     font-size: 25px;
+    text-wrap: balance;
+    text-align: justify;
 }
 
 
@@ -95,12 +97,18 @@
 
 .button 
 {
+    font-family: "Poppins-Bold", Helvetica;
+    font-size: 24px;
+    font-weight:700;
     width: 280px;
     height: 60px;
     background-color: #A100FF;
     border-radius: 15px ;
+    border-top: 0.5px solid grey;
+    border-left: 0.5px solid grey;
+    border-bottom: 3.5px solid white;
+    border-right: 3.5px solid white;
     color: aliceblue;
-    font-size: 15px;
 }
 .button a{
     text-decoration: none;
