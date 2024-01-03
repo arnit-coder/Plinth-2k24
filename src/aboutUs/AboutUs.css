@@ -30,6 +30,7 @@
 }
 
 .content{
+    
     font-family: content;
     display: flex;
     justify-content: space-between;
@@ -46,6 +47,7 @@
 }
 
 .content-text2{
+    text-align: justify;
     font-size: 32px;
     font-weight: 400;
     color: white;
@@ -70,6 +72,7 @@
 }
 
 .content2 .text2{
+    text-align: justify;
     margin-top: 5%;
     margin-right: 10%;
 }
@@ -80,6 +83,7 @@
 }
 
 .content2-text2{
+    text-align: justify;
     font-size: 32px;
     font-weight: 400;
     color: white;
