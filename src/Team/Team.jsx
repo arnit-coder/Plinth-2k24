@@ -333,7 +333,7 @@ const Team = () => {
     {
         image:adityakumar,
         namex:"Aditya Kumar",
-        role:"Frontend Developer",
+        role:"Fullstack Developer",
         phone:"+91 8240423970",
         mail:"22ucc056@lnmiit.ac.in",
         insta:"https://www.instagram.com/adi_rocks_007",
@@ -342,7 +342,7 @@ const Team = () => {
     {
         image:swaraj,
         namex:"Swaraj Layek",
-        role:"Frontend Developer",
+        role:"Fullstack Developer",
         phone:"+91 7810909767",
         mail:"22ucs216@lnmiit.ac.in",
         insta:"https://www.instagram.com/swaraj_layek_/",
@@ -351,7 +351,7 @@ const Team = () => {
     {
         image:harshitdaga,
         namex:"Harshit Daga",
-        role:"Frontend Developer",
+        role:"Fullstack Developer",
         phone:"+91 9331959900",
         mail:"22ucs236@lnmiit.ac.in",
         insta:"https://www.instagram.com/harshitdaga03/",
