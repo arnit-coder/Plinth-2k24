@@ -15,6 +15,7 @@ import pranav from './pranav.jpg'
 import arnit from './arnit.jpg'
 import harshitdaga from './harshitdaga.jpg'
 import mitali from './mitali.jpg'
+import shourya from './shouryagupta.jpeg'
 
 import tushar from './tushar.jpg' 
 import deshna from './deshna.jpg'
@@ -438,6 +439,15 @@ const Team = () => {
       insta:"",
       linkedin:""
   },
+  {
+    image:shourya,
+    namex:"Shourya Gupta",
+    role:"UI/UX Designer",
+    phone:"+91 123456789",
+    mail:"22ucs202@lnmiit.ac.in",
+    insta:"https://www.instagram.com/harshitdaga03/",
+    linkedin:"https://www.linkedin.com/in/harshit-daga-54a816203/"
+},
     
     
 
@@ -635,6 +645,19 @@ return (
         <div className="team-section">
           
           {TeamData.slice(28, 29).map((member, index) => (
+            <TeamCard
+              key={index}
+              image={member.image}
+              namex={member.namex}
+              role={member.role}
+              phone={member.phone}
+              mail={member.mail}
+            />
+          ))}
+          
+        </div>
+        <div className='team-section'>
+        {TeamData.slice(43, 44).map((member, index) => (
             <TeamCard
               key={index}
               image={member.image}
