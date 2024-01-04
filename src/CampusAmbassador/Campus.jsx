@@ -12,6 +12,7 @@ const Campus = () => {
     
     return (
         <div className={CampusCss.main}>
+            <div className={CampusCss.main} style={{position: 'relative', zIndex: '1', background: 'transparent'}}>
             <div className={CampusCss.headingDiv}>
                 <h1>CAMPUS AMBASSADOR PROGRAM</h1>
             </div>
@@ -39,6 +40,7 @@ const Campus = () => {
                   <a href="https://forms.gle/GUesUrZCZYAa9vhV8">REGISTER NOW</a>
                     
                 </button>
+            </div>
             </div>
             <ParticleComponent />
         </div>

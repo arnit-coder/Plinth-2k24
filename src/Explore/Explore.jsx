@@ -1,6 +1,7 @@
 import React from 'react';
 import ExploreCss from './Explore.module.css';
 import { Link, useLocation } from 'react-router-dom';
+import ParticleComponent from '../Particle/ParticleComponent';
 
 const Explore = () => {
     const location=useLocation();
@@ -41,6 +42,7 @@ const Explore = () => {
           </button>
         </div>
       </div>
+      <ParticleComponent />
     </div>
   );
 };

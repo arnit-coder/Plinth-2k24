@@ -134,6 +134,12 @@
 
 /* ... Your existing styles ... */
 
+.epg {
+  position: relative;
+  z-index: 1;
+  background: black;
+}
+
 .team-container {
   display: flex;
   justify-content: center; /* Align the heading center horizontally */
@@ -142,6 +148,8 @@
   padding-right: 0rem;
   background: transparent;
   margin-top: 1%;
+  position: relative;
+  z-index: 1;
   /* Center the team container horizontally */
 }
 .team-container h2 {

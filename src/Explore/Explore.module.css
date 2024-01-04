@@ -57,6 +57,8 @@ html, body {
    align-items: stretch;
    /* margin-top: 10%;   */
    margin-left: 10%; 
+   position: relative;
+   z-index: 1;
 }
 .leftDiv 
 {
@@ -198,6 +200,12 @@ font-weight: 500;
    font-family: 'Poppins', sans-serif;
    font-weight: bolder;
    margin-top: auto;
+   border-radius: 15px ;
+   border-top: 0.5px solid grey;
+   border-left: 0.5px solid grey;
+   border-bottom: 3.5px solid white;
+   border-right: 3.5px solid white;
+   color: aliceblue;
    
 }
 .register a{

@@ -94,7 +94,7 @@
   
   #tsparticles {
     position: absolute;
-    z-index: -1;
+    z-index: 0;
   }
   
   .button-63:active,
@@ -133,7 +133,8 @@
     flex-shrink: 0;
     overflow: visible !important;
     position: relative;
-    background: linear-gradient(to top, black, transparent);
+    z-index: 2;
+    background: black;
   }
   #competitions{
     min-height: 100vh;
@@ -173,6 +174,8 @@
   .page2 {
     margin-top: 10%;
     width: 100vw;
+    position: relative;
+    z-index: 1;
   }
   
   .page2 h1 {

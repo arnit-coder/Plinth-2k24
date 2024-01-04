@@ -15,6 +15,7 @@ const navigateComp = () =>{
 }
 
     return (
+        <>
         <div className="acx">
             <h1>ACCOMMODATION</h1>
             <p>Plinth, a tech-driven event, offers accommodation passes and Pronite Passes to blend technology with an enjoyable atmosphere.
@@ -52,8 +53,9 @@ const navigateComp = () =>{
           
           </button> 
     </div>
-    <ParticleComponent />
+    
         </div>
+        <ParticleComponent /></>
 
         
     );
