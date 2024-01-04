@@ -51,7 +51,7 @@ background: rgb(11, 2, 27) 50% / cover no-repeat;
   display: flex;
   flex-direction: column;
   width: 40%;
-  top: 10%;
+  top: 15%;
   gap: 4rem;
   left: 50%;
 }
