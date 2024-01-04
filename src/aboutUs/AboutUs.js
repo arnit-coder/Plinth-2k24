@@ -5,7 +5,7 @@ import { useInView } from 'react-intersection-observer';
 import { motion, useAnimation } from 'framer-motion';
 import './AboutUs.css';
 import image1 from './assets/image 3.png';
-import image2 from './assets/image_4-removebg-preview 1.png';
+import image2 from './assets/IMG_0285.png';
 import image3 from './assets/image_42-removebg-preview 1.png';
 import ArrowPic from "../home/arrow.png";
 

@@ -81,6 +81,7 @@
     text-align: justify;
     margin-top: 5%;
     margin-right: 10%;
+    width: 240%;
 }
 .content2-text1{
     text-align: right;
@@ -102,9 +103,9 @@
     margin-left: 0;
     margin-top:20%;
     align-self: flex-end;
-    width: 90%;
-    /* margin-left: 8%; */
+    margin-left: 8%;
     overflow: hidden;
+    width: 80%;
 
 }
 
@@ -119,6 +120,9 @@
     margin-top: 5%;
     width: 80%;
 }
+.text2{
+    margin-top: 5%;
+}
 
 
 .content3-text1{
@@ -129,11 +133,7 @@
     margin-left: 15%;
 }
 
-.text2
-{
-    text-align: right;
-    width: 53%;
-}
+
 
 .content3-text2{
     text-align: justify;
@@ -159,6 +159,11 @@
 {
     width: 100%;
 }
+.content2-image 
+{
+    width: 200%;
+}
+
 
 /* .scroll-section {
     width: 100%;
@@ -221,7 +226,7 @@
    }
    .content2-image{
     margin-left: 10%;
-    width: 30%;
+    width: 150%;
    }
    .text2{
     margin-left: 5%;
@@ -262,7 +267,7 @@
    }
    .content2-image{
     margin-left: 10%;
-    width: 30%;
+    width: 160%;
    }
    .text2{
     margin-left: 5%;
