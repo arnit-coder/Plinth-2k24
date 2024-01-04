@@ -60,7 +60,7 @@ const AboutUs = () => {
       <div className='content' ref={contentRef}>
         <motion.div
           ref={contentInViewRef}
-          initial={{ opacity: 0, x: 400 }}
+          initial={{ opacity: 0, x: 300 }}
           animate={contentInView ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.9, ease: [0.17, 0.55, 0.55, 1], delay: 0.5 }}
         >
@@ -93,7 +93,7 @@ const AboutUs = () => {
   
 
           <motion.div ref={content2InViewRef}
-          initial={{ opacity: 0, x: -400 }}
+          initial={{ opacity: 0, x: -200 }}
           animate={content2InView ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.9, ease: [0.17, 0.55, 0.55, 1], delay: 0.5 }} className='text2'>
             <h1 className='content2-text1'>INDUSTRY 5.0,</h1>
@@ -106,9 +106,9 @@ const AboutUs = () => {
       <div className='content3' ref={content3Ref}>
         <motion.div
           ref={content3InViewRef}
-          initial={{ opacity: 0, x: 400 }}
+          initial={{ opacity: 0, x: 300 }}
           animate={content3InView ? { opacity: 1, x: 0 } : {}}
-          transition={{ duration: 0.9, ease: [0.17, 0.55, 0.55, 1], delay: 0.5 }}
+          transition={{ duration: 1.1, ease: [0.17, 0.55, 0.55, 1], delay: 0.5 }}
         >
           <div className='text3'>
             <h1 className='content3-text1'>A COGNITIO CASCADE,</h1>
