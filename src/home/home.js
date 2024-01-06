@@ -7,6 +7,7 @@ import HomeSpline from "../HomeSpline/HomeSpline";
 import AboutUs from '../aboutUs/AboutUs';
 import ArrowPic from './arrow.png'
 
+
 export const Home = () => {
   const [showArrow, setShowArrow] = useState(false);
 

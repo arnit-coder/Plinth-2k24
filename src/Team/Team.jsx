@@ -316,20 +316,20 @@ const Team = () => {
     {
         image:pranjalmishra,
         namex:"Pranjal Mishra",
-        role:"Tech Lead",
-        phone:"+91 7651815073",
-        mail:"",
-        insta:"https://www.instagram.com/pranjal._.mishra/",
-        linkedin:"https://www.linkedin.com/in/pranjal-mishra-063b30225/"
+        role:"Tech Head",
+        phone:"+91 123456789",
+        mail:"21UCS156@lnmiit.ac.in",
+        insta:"",
+        linkedin:""
     },
     {
         image:ramsha,
         namex:"Ramsha Iqbal",
-        role:"Tech Lead",
-        phone:"+91 9555369500",
-        mail:"",
-        insta:"https://www.instagram.com/_ramsha_iqbal_/",
-        linkedin:"https://www.linkedin.com/in/ramsha-iqbal-332620211/"
+        role:"Tech Head",
+        phone:"+91 123456789",
+        mail:"21UME042@lnmiit.ac.in",
+        insta:"",
+        linkedin:""
     },
     {
         image:adityakumar,

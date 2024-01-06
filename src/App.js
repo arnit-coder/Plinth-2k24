@@ -37,9 +37,9 @@ function App() {
       <Toaster />
 
       <Preloader />
-      <Header />
       <Routes>
         {/* <Route path="/" element={<Profile />} /> */}
+     
         <Route path="/" element={<><Home /></>} />
         <Route path="/Day2" element={<Day2 />} />
         <Route path="/Team" element={<Team />} />
