@@ -1,8 +1,8 @@
 import "./App.css";
 import Signup from "./components/Signup/Signup";
-
 import AddEvent from "./admin/AddEvent";
 import Admin from "./admin/AdminProfile";
+import { useState , useEffect} from "react";
 import ViewEvents from "./admin/ViewEvents";
 import {
   BrowserRouter as Router,
@@ -31,15 +31,36 @@ import Campus from "./CampusAmbassador/Campus";
 import Accomodation from "./accomodation/accomodation";
 import Explore from './Explore/Explore'
 import Testing from "./Explore/Testing";
+import Navbar from "./Navbar/Navbar";
 function App() {
+  // const [isHome, setisHome]=useState(true);
+  // const path = window.location.pathname;
+
+
+  // if(path==='/'){
+  //   setisHome(false);
+  // }
+
+  // useEffect(() => {
+  //   if (path === "/") {
+  //     setisHome(false);
+  //   }else {
+  //     setisHome(true);
+  // }}, [path]);
+
   return (
     <UserContextProvider>
       <Toaster />
 
-      <Preloader />
-      <Header />
+      <Preloader /> 
+      {/* {isHome && <Header /> } 
+      {isHome && <Navbar /> } */}
       <Routes>
         {/* <Route path="/" element={<Profile />} /> */}
+<<<<<<< Updated upstream
+=======
+     
+>>>>>>> Stashed changes
         <Route path="/" element={<><Home /></>} />
         <Route path="/Day2" element={<Day2 />} />
         <Route path="/Team" element={<Team />} />

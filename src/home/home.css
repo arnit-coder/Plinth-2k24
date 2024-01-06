@@ -210,6 +210,19 @@ border: 0;
   top:62%;
 }
 
+@media screen and (max-width:1270px)
+{
+  .button-p 
+  {
+    top: 40%;
+  }
+
+  .ctd 
+  {
+    top: 55%;
+  }
+}
+
 @media screen and (max-width: 1000px)
 {
   .button-p 

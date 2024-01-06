@@ -36,6 +36,7 @@ import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
 // import { loadBasic } from "@tsparticles/basic"; // if you are going to use `loadBasic`, install the "@tsparticles/basic" package too.
 import ParticleComponent from '../Particle/ParticleComponent';
+// import Header from '../Header/Header';
 const Team = () => {
     const cubeStyle = {
         position: 'absolute',
@@ -316,20 +317,36 @@ const Team = () => {
     {
         image:pranjalmishra,
         namex:"Pranjal Mishra",
+<<<<<<< Updated upstream
         role:"Tech Lead",
         phone:"+91 7651815073",
         mail:"",
         insta:"https://www.instagram.com/pranjal._.mishra/",
         linkedin:"https://www.linkedin.com/in/pranjal-mishra-063b30225/"
+=======
+        role:"Tech Head",
+        phone:"+91 123456789",
+        mail:"21UCS156@lnmiit.ac.in",
+        insta:"",
+        linkedin:""
+>>>>>>> Stashed changes
     },
     {
         image:ramsha,
         namex:"Ramsha Iqbal",
+<<<<<<< Updated upstream
         role:"Tech Lead",
         phone:"+91 9555369500",
         mail:"",
         insta:"https://www.instagram.com/_ramsha_iqbal_/",
         linkedin:"https://www.linkedin.com/in/ramsha-iqbal-332620211/"
+=======
+        role:"Tech Head",
+        phone:"+91 123456789",
+        mail:"21UME042@lnmiit.ac.in",
+        insta:"",
+        linkedin:""
+>>>>>>> Stashed changes
     },
     {
         image:adityakumar,
@@ -455,6 +472,8 @@ const Team = () => {
 
 
 return (
+  <>
+  {/* <Header /> */}
     <div className='main' id='Team'>
         <div className="epg">
         <div style={{ ...cubeStyle, top: '15%', left: '10%', zIndex: '1' }}>
@@ -676,6 +695,7 @@ return (
       </div>
       <ParticleComponent />
     </div>
+    </>
   );
 };
 

@@ -16,7 +16,15 @@ const Login = () => {
   const navigate = useNavigate();
   const { user, setUser } = useContext(UserContext);
   const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  // const [password, setPassword] = useState("");
+
+  const [password, setPassword] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
+
+  const togglePasswordVisibility = () => {
+    setShowPassword(!showPassword);
+  };
+
   const handleGoogleLoginSuccess = async (tokenResponse) => {
     try {
       const accessToken = tokenResponse.access_token;
@@ -63,7 +71,7 @@ const Login = () => {
           />
           <MdOutlineMailOutline className="emailIcon" />
         </div>
-        <div className="passwordDiv">
+        {/* <div className="passwordDiv">
           <input
             type="password"
             id="pass"
@@ -73,10 +81,25 @@ const Login = () => {
               setPassword(e.target.value);
             }}
             required
-            placeholder="    Password"
+            placeholder="Password"
           />
           <AiFillEye className="eyeIcon" />
-          <div />
+          <div /> */}
+
+<div className= "passwordDiv">
+      <input
+        type={showPassword ? 'text' : 'password'}
+        id="pass"
+        name="password"
+        placeholder="Password"
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
+        required
+      />
+       <AiFillEye onClick={togglePasswordVisibility} className="eyeIcon" />
+    </div> 
+
+
           <div className="forgotPassword">
             <Link to="/forgot-password">Forgot Password?</Link>
           </div>
@@ -90,8 +113,16 @@ const Login = () => {
               <a to="/sign-in-with-google">Sign in with Google</a>
             </div>
           </div>
+
+    <div className = "inputContainer1">
+          <div className="sign" onClick={login}>
+            Sign up with Google
+          </div>
+          <FcGoogle className="logo3" />
         </div>
-      </div>
+          
+        </div>
+      {/* </div> */}
     </form>
   );
 };

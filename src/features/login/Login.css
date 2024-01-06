@@ -1,15 +1,13 @@
 body{
   margin: 0rem;
-
   padding: 0;
-
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
 }
 
 .heading_login{
   position: absolute;
-  top: 10% ; 
-  left: 67% ;
+  top: 0% ; 
+  left: 50% ;
   z-index: 10;
   color: aliceblue;
   width: auto;
@@ -45,6 +43,12 @@ background: rgb(11, 2, 27) 50% / cover no-repeat;
   /* object-fit: cover; */
 }
 
+.passwordDiv{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
 .login_box {
   position: absolute;
@@ -153,14 +157,15 @@ padding-left: 0.5rem;
 
 
 .emailIcon{
-  position: absolute;
+  position:absolute;
 color: #3C3C3C;
   font-size: 2rem;
   top: 4%;
   left: 92%;
 }
+
 .eyeIcon{
-  position: absolute;
+  /* position: absolute; */
 color:#3C3C3C;
   font-size: 2rem;
   top: 30%;
