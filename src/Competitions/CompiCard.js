@@ -1,8 +1,9 @@
 // EventCard.js
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-import { useNavigate,Link } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import Explore from '../Explore/Explore.jsx';
+
 
 
 const EventCard = ({ day, artist, description, image, googleform, badaDescription,rulebook, pricepool }) => {

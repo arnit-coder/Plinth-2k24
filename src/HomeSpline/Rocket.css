@@ -3,7 +3,7 @@
 {
   position: absolute;
   top: 7%;
-  right: 15%;
+  right: 20%;
   z-index: 200;
   
 }
@@ -12,8 +12,8 @@
 {
   .navbar-div
 {
-  right: 20%;
-  z-index: 20000000;
+  right: 25%;
+  z-index: 200;
   /* border: 2px solid pink; */
   
 }
@@ -23,7 +23,7 @@
 {
   .navbar-div
 {
-  right: 28%;
+  right: 32%;
   z-index: 20000000;
   /* border: 2px solid pink; */
   
@@ -34,7 +34,7 @@
 {
   .navbar-div
 {
-  right: 50%;
+  right: 55%;
  
   /* border: 2px solid pink; */
   
@@ -44,7 +44,7 @@
 .header-div{
   position: absolute;
   top:0%;
-  right: 25%;
+  right: 30%;
 }
 
 
@@ -234,5 +234,19 @@
   {
     top: calc(35% - 37px); 
     left: calc(50% - 150px);
+  }
+}
+
+@media screen and (max-width: 420px)
+{
+  /* .image
+  {
+    width: 300px;
+    height: 73px;
+  } */
+
+  .navbar-div 
+  {
+    right: 60% ;
   }
 }

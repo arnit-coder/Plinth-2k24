@@ -42,8 +42,9 @@ const Login = () => {
   };
   return (
     <form onSubmit={submitHandler} className="loginContainer" id="login">
-      <div className="backgroundImg"></div>
+      <div className="backgroundImg">
       <img src={login_robot} alt="left robot" />
+      </div>
       <div className="heading_login">
         <h2>
           <strong>Login</strong>

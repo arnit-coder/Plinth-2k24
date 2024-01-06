@@ -33,7 +33,7 @@ function Header() {
     navigate("/");
   };
 
-  const [active,setActive]=useState(true);
+  const [active,setActive]=useState(false);
 
     const handleNavbar=()=>{
       setActive(!active)
@@ -89,14 +89,14 @@ function Header() {
 
   return (
       <div style={mainDivNav}  >
-        <div className="hamburger">
+        <div className="hamburger"  onClick={handleNavbar}>
         <IconButton
       // aria-label='edit'
       border='2px'
       borderColor='white'
-      bg='#212121'
+      bgColor='transparent'
       _hover={{ bg: 'grey' }}
-      onClick={handleNavbar}
+     
 
     >
       {active ? <RxCross1 color='white' /> : <RxHamburgerMenu color='white' />}
@@ -113,8 +113,9 @@ function Header() {
           display="flex"
           flexDirection="column"
           borderRadius="15px"
-          w="200px"
+          w="205px"
           justifyContent="space-between"
+          p={3}
         >
           <ul className="ul" >
             {navLinks.map((link, index) => (

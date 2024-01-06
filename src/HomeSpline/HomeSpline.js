@@ -43,9 +43,9 @@ const HomeSpline = () => {
         <div className='splinemodel' >
         <Spline className='splines' scene="https://prod.spline.design/T0phBXpG8D8N7k4p/scene.splinecode" />
     </div> 
-     {/* <div className='header-div'>
+     <div className='header-div'>
       <Navbar className='header' />
-    </div> */}
+    </div>
     <div className='navbar-div'>
         <Header className='navbar'/>
       </div>

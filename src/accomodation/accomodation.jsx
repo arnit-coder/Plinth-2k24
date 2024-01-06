@@ -7,6 +7,8 @@ import Particles, { initParticlesEngine } from "@tsparticles/react";
 // import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
 import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
 // import { loadBasic } from "@tsparticles/basic"; // if you are going to use `loadBasic`, install the "@tsparticles/basic" package too.
+import Header1 from '../Header/Header'
+
 import ParticleComponent from "../Particle/ParticleComponent";
 function Accomodation() {
 const navigate = useNavigate()
@@ -16,6 +18,9 @@ const navigateComp = () =>{
 
     return (
         <>
+        <div className="Header1">
+            <Header1 />
+        </div>
         <div className="acx">
             <h1>ACCOMMODATION</h1>
             <p>Plinth, a tech-driven event, offers accommodation passes and Pronite Passes to blend technology with an enjoyable atmosphere.

@@ -7,10 +7,21 @@
     font-family: poppins;
     src: url(Poppins/Poppins-Light.ttf);
   }
+
+  .Header1 
+  {
+    position: absolute;
+    top: 10%;
+    right: 20%;
+    z-index: 2000000000;
+    
+  }
+
+
   
   /* CSS */
   .button-63 {
-    align-items: center;
+    align-items: left;
     background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
     border: 0;
     border-radius: 8px;
@@ -24,14 +35,14 @@
     line-height: 1em;
     max-width: 100%;
     min-width: 140px;
-    padding: 19px 24px;
+    /* padding: 19px 24px; */
     text-decoration: none;
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
     white-space: nowrap;
     cursor: pointer;
-    margin-left: 25%;
+    /* margin-left: 25%; */
     margin-top: 5%;
   }
   
@@ -202,6 +213,7 @@
   }
   
   .card2 {
+    border: 5px solid #BC5BEA;
     width: calc(35% - 20px); /* Adjust width to include gap */
     min-height: 100vh;
     height: auto;
@@ -214,6 +226,28 @@
     position: relative;
     gap: 20%;
   }
+
+  @media screen and (max-width: 1100px)
+{
+  .Header1
+{
+  right: 25%;
+  z-index: 20000000;
+  /* border: 2px solid pink; */
+  
+}
+}
+
+@media screen and (max-width: 920px)
+{
+  .Header1
+{
+  right: 30%;
+  z-index: 20000000;
+  /* border: 2px solid pink; */
+  
+}
+}
   
   
   
@@ -245,11 +279,37 @@
     .card2{
       margin-left: 12%;
     }
+
+    .Header1
+    {
+      right: 35%;
+      z-index: 20000000;
+      /* border: 2px solid pink; */
+      
+    }
+}
+
+@media screen and (max-width:400px) {
+  .Header1
+  {
+    right: 70%;
+    z-index: 20000000;
+    /* border: 2px solid pink; */
+    
+  }
 }
 
 @media screen and (max-width:490px) {
   .card2{
     margin-left: 14%;
+  }
+
+  .Header1
+  {
+    right: 55%;
+    z-index: 20000000;
+    /* border: 2px solid pink; */
+    
   }
 }
 

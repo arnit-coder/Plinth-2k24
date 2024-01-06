@@ -7,9 +7,15 @@ import Particles, { initParticlesEngine } from "@tsparticles/react";
 // import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
 import { loadSlim } from "@tsparticles/slim";
 import ParticleComponent from "../Particle/ParticleComponent";
+import Header1 from "../Header/Header";
+
 function LnmHacks() {
 
   return (
+    <>
+     <div className="Header1">
+    <Header1 />
+    </div>
     <div className={HackCSS.main}>
       <div className={HackCSS.benefits}>
         <div className={HackCSS.data}>
@@ -38,7 +44,7 @@ function LnmHacks() {
 
       <ParticleComponent />
     </div>
-
+    </>
   );
 }
 

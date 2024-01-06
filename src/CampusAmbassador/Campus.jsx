@@ -8,9 +8,14 @@ import Particles, { initParticlesEngine } from "@tsparticles/react";
 // import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
 import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
 // import { loadBasic } from "@tsparticles/basic"; // if you are going to use `loadBasic`, install the "@tsparticles/basic" package too.
+import Header1 from '../Header/Header'
 const Campus = () => {
     
     return (
+        <>
+         <div className={CampusCss.Header1}>
+            <Header1 />
+        </div>
         <div className={CampusCss.main}>
             <div className={CampusCss.main} style={{position: 'relative', zIndex: '1', background: 'transparent'}}>
             <div className={CampusCss.headingDiv}>
@@ -44,7 +49,7 @@ const Campus = () => {
             </div>
             <ParticleComponent />
         </div>
-
+        </>
     )
 }
 

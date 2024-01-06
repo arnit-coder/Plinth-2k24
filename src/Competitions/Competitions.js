@@ -52,7 +52,7 @@ import ParticleComponent from "../Particle/ParticleComponent";
 import img1 from "./img1.jpeg";
 import img2 from "./img2.png";
 import img3 from "./img3.jpeg";
-
+import Header1 from "../Header/Header";
 function Competitions() {
   const [tabIndex, setTabIndex] = useState(0);
 
@@ -69,6 +69,10 @@ function Competitions() {
     left: 0,
   };
   return (
+    <>
+    <div className="Header1">
+    <Header1 />
+    </div>
     <div id="competitions">
       <div className="main">
         <div className="page1">
@@ -537,6 +541,7 @@ function Competitions() {
       </div>
       <ParticleComponent />
     </div>
+    </>
   );
 }
 

@@ -10,7 +10,7 @@ import { useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
 import { SendOtp, SignUP } from "../../services/operations/authAPI";
 import UserContext from "../../ContextApi/UserContext";
-
+import Header1 from '../../Header/Header'
 const Signup = () => {
   const navigate = useNavigate();
   const users = useContext(UserContext);
@@ -31,6 +31,12 @@ const Signup = () => {
     await SendOtp(email, navigate);
   };
   return (
+    <>
+    {/* <div className="main"> */}
+
+    <div className="Header1">
+      <Header1 />
+    </div>
     <form onSubmit={submitHandler} className={SignupCss.main} id="signup">
       <div className={SignupCss.box}>
         <h1 className={SignupCss.create}>Create new account</h1>
@@ -104,7 +110,9 @@ const Signup = () => {
         </div>
       </div>
     </form>
+    </>
   );
+  
 };
 
 export default Signup;
