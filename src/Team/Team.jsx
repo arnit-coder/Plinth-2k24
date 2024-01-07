@@ -36,8 +36,7 @@ import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
 // import { loadBasic } from "@tsparticles/basic"; // if you are going to use `loadBasic`, install the "@tsparticles/basic" package too.
 import ParticleComponent from '../Particle/ParticleComponent';
-import Header1 from '../Header/Header'
-
+// import Header from '../Header/Header';
 const Team = () => {
     const cubeStyle = {
         position: 'absolute',
@@ -319,7 +318,7 @@ const Team = () => {
         image:pranjalmishra,
         namex:"Pranjal Mishra",
         role:"Tech Head",
-        phone:"+91 123456789",
+        phone:"+91 7651815073",
         mail:"21UCS156@lnmiit.ac.in",
         insta:"",
         linkedin:""
@@ -328,7 +327,7 @@ const Team = () => {
         image:ramsha,
         namex:"Ramsha Iqbal",
         role:"Tech Head",
-        phone:"+91 123456789",
+        phone:"+91 9555369500",
         mail:"21UME042@lnmiit.ac.in",
         insta:"",
         linkedin:""
@@ -458,9 +457,7 @@ const Team = () => {
 
 return (
   <>
-  <div className="Header1">
-            <Header1 />
-        </div>
+  {/* <Header /> */}
     <div className='main' id='Team'>
         <div className="epg">
         <div style={{ ...cubeStyle, top: '15%', left: '10%', zIndex: '1' }}>
