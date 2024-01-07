@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import preloaderGif from './preloader.gif'; // Replace 'preloader.gif' with the path to your GIF
-
+import preCss from './preloader.module.css';
 const Preloader = () => {
   const [loading, setLoading] = useState(true);
 
@@ -15,7 +15,7 @@ const Preloader = () => {
 
   return (
     <div style={{ display: loading ? 'flex' : 'none', justifyContent: 'center', alignItems: 'center', position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', background: 'black', zIndex: 9999 }}>
-      <img src={preloaderGif} alt="Loading..." style={{ width: '300px', height: '300px' }} />
+      <img className={preCss.image} src={preloaderGif} alt="Loading..."  />
     </div>
   );
 };

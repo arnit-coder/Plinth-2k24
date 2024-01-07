@@ -51,13 +51,13 @@ function Header() {
       
     };
     const navLinks = [
-      { to: "/", text: "HOME", icon: home },
-      { to: "/competitions", text: "COMPETITIONS", icon: document },
-      { to: "/lnm-hacks" , text: "LNM HACKS" , icon: ambassador},
-      { to: "/accomodation" , text: "ACCOMODATION" , icon: room},
-      { to: "/campus-ambassador" , text: "AMBASSADOR" , icon: ambassador},
-      { to: "/Team" , text: "OUR TEAM" , icon: ambassador},
-      { to: "/signup" , text: "SIGN UP" , icon: signup}
+      { to: "/", text: "Home", icon: home },
+      { to: "/competitions", text: "Competitions", icon: document },
+      { to: "/lnm-hacks" , text: "LnmHacks" , icon: ambassador},
+      { to: "/accomodation" , text: "Accomodation" , icon: room},
+      { to: "/campus-ambassador" , text: "Ambassador" , icon: ambassador},
+      { to: "/Team" , text: "Our Team" , icon: ambassador},
+      { to: "/signup" , text: "Sign Up" , icon: signup}
     ];
     
     // const authLinks = user.user ? (
@@ -113,7 +113,7 @@ function Header() {
           display="flex"
           flexDirection="column"
           borderRadius="15px"
-          w="205px"
+          w="220px"
           justifyContent="space-between"
           p={3}
         >

@@ -1,0 +1,16 @@
+.image 
+{
+    z-index: 20000000000000;
+    height: 300px;
+    width: 300px;
+}
+
+@media screen and (max-width: 400px)
+{
+    .image
+    {
+        z-index: 2000000000000000;
+        height: 200px;
+        width: 200px;
+    }
+}

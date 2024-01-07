@@ -12,15 +12,15 @@
   {
     position: absolute;
     top: 10%;
-    right: 20%;
-    z-index: 2000000000;
+    right: 30%;
+    z-index: 0;
     
   }
 
 
   
   /* CSS */
-  .button-63 {
+  .button-63-1 {
     align-items: left;
     background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
     border: 0;
@@ -35,14 +35,14 @@
     line-height: 1em;
     max-width: 100%;
     min-width: 140px;
-    /* padding: 19px 24px; */
+    padding: 19px 24px;
     text-decoration: none;
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
     white-space: nowrap;
     cursor: pointer;
-    /* margin-left: 25%; */
+   /* -left: 28%; margin */
     margin-top: 5%;
   }
   
@@ -108,8 +108,8 @@
     z-index: 0;
   }
   
-  .button-63:active,
-  .button-63:hover {
+  .button-63-1:active,
+  .button-63-1:hover {
     outline: 0;
   }
   
@@ -120,7 +120,7 @@
   }
   
   @media (min-width: 768px) {
-    .button-63 {
+    .button-63-1 {
       font-size: 24px;
       min-width: 196px;
     }
@@ -213,18 +213,20 @@
   }
   
   .card2 {
-    border: 5px solid #BC5BEA;
     width: calc(35% - 20px); /* Adjust width to include gap */
     min-height: 100vh;
+    box-shadow: 0 4px 30px rgba(0,0,0,.1);
+    backdrop-filter: blur(15px);
     height: auto;
     /* padding: 5%; */
     margin-top: 5%;
+    /* background-color: #000; */
     flex-shrink: 0;
     border-radius: 50px;
-    background: transparent;
     overflow: hidden;
     position: relative;
     gap: 20%;
+    border-bottom-left-radius: 0;
   }
 
   @media screen and (max-width: 1100px)
@@ -232,7 +234,6 @@
   .Header1
 {
   right: 25%;
-  z-index: 20000000;
   /* border: 2px solid pink; */
   
 }
@@ -243,7 +244,6 @@
   .Header1
 {
   right: 30%;
-  z-index: 20000000;
   /* border: 2px solid pink; */
   
 }
@@ -259,7 +259,7 @@
       width: 80%;
       height: 500px;
       margin-bottom: 10%;
-      margin-left: 4%;
+      /* margin-left: 4%; */
      }
      .cards a {
       width: 100%;
@@ -272,18 +272,17 @@
   
   @media screen and (max-width:700px) {
       .card2{
-        margin-left: 8%;
+        /* margin-left: 8%; */
       }
   }
   @media screen and (max-width:560px) {
     .card2{
-      margin-left: 12%;
+      /* margin-left: 12%; */
     }
 
     .Header1
     {
       right: 35%;
-      z-index: 20000000;
       /* border: 2px solid pink; */
       
     }
@@ -293,7 +292,6 @@
   .Header1
   {
     right: 70%;
-    z-index: 20000000;
     /* border: 2px solid pink; */
     
   }
@@ -301,13 +299,12 @@
 
 @media screen and (max-width:490px) {
   .card2{
-    margin-left: 14%;
+    /* margin-left: 14%; */
   }
 
   .Header1
   {
     right: 55%;
-    z-index: 20000000;
     /* border: 2px solid pink; */
     
   }

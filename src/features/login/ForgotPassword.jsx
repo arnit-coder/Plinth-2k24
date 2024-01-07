@@ -1,61 +1,64 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import mail_icon from "./images/🦆 icon _gmail_.svg";
+import "./forget.css";
 import { getResetPasswordToken } from "../../services/operations/authAPI";
+import { Link } from "react-router-dom";
 
 const ForgotPassword = () => {
   const [emailSent, setEmailSent] = useState(false);
-  const [email, setEmail] = useState("");
+  const [otpSent, setOtpSent] = useState(false);
+  const [email,setEmail] = useState("") ; 
+
+  const handleSendOTP = () => {
+    console.log("Sending OTP to:", email);
+    setOtpSent(true);
+  };
   const submitHandler = async (event) => {
     event.preventDefault();
     await getResetPasswordToken(email, setEmailSent);
   };
+
   return (
-    <div className="grid min-h-[calc(100vh-3.5rem)] place-items-center">
-      <div className="max-w-[500px] p-4 lg:p-8">
-        <h1 className="text-[1.875rem] font-semibold leading-[2.375rem] text-gray-5">
-          {!emailSent ? "Reset Your Password" : "Check Your Email"}
-        </h1>
-        <p className="my-4 text-[1.125rem] leading-[1.625rem] text-gray-100">
-          {!emailSent
-            ? "Have no fear, we'll email you instructions to reset your password. if you dont have access to your email we can try account recovery"
-            : `We have sent the reset email to ${email}`}
-        </p>
-        <form onSubmit={submitHandler}>
-          {!emailSent && (
-            <label className="w-full">
-              <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-gray-5">
-                Email Address <sup className="text-pink-200">*</sup>
-              </p>
-              <input
-                type="email"
-                required
-                name="email"
-                value={email}
-                onChange={(e) => {
-                  setEmail(e.target.value);
-                }}
-                placeholder="Enter your email address..."
-                style={{
-                  boxShadow: "inset 0px -1px 0px rgba(255, 255, 255, 0.18)",
-                }}
-                className="rounded-[0.5rem] bg-gray-800 p-[12px] w-full text-gray-5"
-              />
-            </label>
-          )}
-          <button
-            type="submit"
-            className="mt-6 w-full rounded-[8px] bg-yellow-50 py-[12px] px-[12px] font-medium text-gray-900"
-          >
-            {!emailSent ? "Submit" : "Resend Email"}
-          </button>
-        </form>
-        <div className="mt-6 flex items-center justify-between">
-          <Link to="/login">
-            <p className="flex items-center gap-x-2 text-gray-5">
-              Back To Login
-            </p>
-          </Link>
+    <div className="forgot-main">
+      <div className="forgot-password-container">
+        <div className="forgot-right-1">
+          <h2>Forgot Password</h2>
+          <div className="forgot-dot">?</div>
         </div>
+        <h6 className="forgot-h6tag">
+          Please enter the OTP sent to your registered email address.
+        </h6>
+        <div className="forgot-input">
+          <input
+            id="email"
+            name="email"
+            type="email"
+            value={email}
+            required
+            onChange={(e) => {
+              setEmail(e.target.value);
+            }}
+            placeholder="Email"
+          />
+          <img src={mail_icon} alt="" />
+        </div>
+
+        <h6 className="forgot-h6tag">
+          An OTP (One Time Password) will be sent.
+        </h6>
+        {!otpSent ? (
+       <Link to='/verifyPass' className="forgot-login-button">   <button type="submit" className="forgot-login-button">
+          Send OTP
+        </button></Link>
+        ) : (
+          <div>
+            {/* <p className="forgot-otp-sent-text">
+              An OTP has been sent to your email address. Please check your
+              inbox and enter the OTP below.
+            </p> */}
+            {/* Include the OTP input and verification logic here */}
+          </div>
+        )}
       </div>
     </div>
   );

@@ -92,11 +92,14 @@
   }
   
   .card .card-image {
-    grid-area: image;
+    grid-area:image;
     background: beige;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    object-fit: cover;
+    object-fit:cover;
+    object-position: center ;
+    
+    /* padding-top: 5%; */
     width: 100%;
   }
 

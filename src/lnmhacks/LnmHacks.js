@@ -13,7 +13,7 @@ function LnmHacks() {
 
   return (
     <>
-     <div className="Header1">
+     <div className={HackCSS.Header1}>
     <Header1 />
     </div>
     <div className={HackCSS.main}>
@@ -34,7 +34,7 @@ function LnmHacks() {
             <img className={HackCSS.image} src={image} alt="" />
             <div className={HackCSS.buttonDiv}>
               <button className={HackCSS.button}>
-                <a href="https://lnmhacks.tech/">OUR WEBSITE</a>
+                <a  className={HackCSS.a}href="https://lnmhacks.tech/">OUR WEBSITE</a>
 
               </button>
             </div>

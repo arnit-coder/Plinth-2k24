@@ -39,7 +39,7 @@ const EventCard = ({ day, artist, description, image, googleform, badaDescriptio
       <p className="day">{day}</p>
       <p className="artist">{artist}</p>
       <p className="desc">{description}</p>
-      <button className="button-63" onClick={handleClick}>Explore
+      <button className="button-63-1" onClick={handleClick}>Explore
       </button>
 
      {/* Render Explore component when the button is clicked */}

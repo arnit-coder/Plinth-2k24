@@ -10,11 +10,11 @@ const VerifyEmail = () => {
   const [otp, setOtp] = useState("");
   const { signData, setUser, user } = useContext(UserContext);
   const navigate = useNavigate();
-  useEffect(() => {
-    if (!signData) {
-      navigate("/signup");
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (!signData) {
+  //     navigate("/signup");
+  //   }
+  // }, []);
   const submitHandler = async (event) => {
     event.preventDefault();
     const { firstName, lastName, email, password } = signData;

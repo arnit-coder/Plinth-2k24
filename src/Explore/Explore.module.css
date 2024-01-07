@@ -24,10 +24,9 @@
    color: white;
 }
 
-.register,
 .rulebookbutton {
-   width: 350px;
-   height: 70px;
+   width: 250px;
+   height: 50px;
    border-radius: 15px;
    font-family: 'Poppins', sans-serif;
    font-weight: bolder;
@@ -80,8 +79,8 @@ color: white;
 
 .register,
 .rulebookbutton {
-    width: 350px;
-    height: 70px;
+   width: 200px;
+   height: 50px;
     border-radius: 15px;
     font-family: 'Poppins', sans-serif;
     font-weight: bolder;
@@ -94,7 +93,7 @@ color: white;
 
 @media screen and (max-width: 450px) {
     .main {
-        margin-left: 20%;
+        /* margin-left: 20%; */
     }
 
     .leftDiv {
@@ -104,12 +103,30 @@ color: white;
 
 .rightDiv 
 {
-    min-width: 100vh;
+  width: 50%;
+  /* border: 2px solid white; */
     height: auto;
+    min-height: 80vh;
  display: flex;
  flex-direction: column;
- justify-content: flex-start;
+ justify-content: center;
  align-items: center;
+}
+@media screen and (max-width: 900px){
+   .rightDiv{
+      /* display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center; */
+   }
+}
+@media screen and (max-width: 400px){
+   .rightDiv{
+      display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+   }
 }
 
 .badaDescription {
@@ -117,13 +134,17 @@ color: white;
    text-wrap: balance;
    padding-top: 5%;
    font-family: "Poppins-Medium", Helvetica;
-font-size: 1.5rem;
+font-size: 2rem;
 font-weight: 500;
 }
 
 .imageDiv{
-   width: 450px;
-   height: 550px;
+   width: 300px;
+   margin-top: 10%;
+   height: 400px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 .image 
@@ -224,15 +245,10 @@ font-weight: 500;
 
   @media screen and (max-width: 1275px)
   {
-   .image
-   {
-    width: 100%;
-    height: 100%;
-   }
 
    .container 
    {
-      margin-left: 20%;
+      /* margin-left: 20%; */
    }
 
 
@@ -242,19 +258,14 @@ font-weight: 500;
   
   @media screen and (max-width: 970px)
   {
-   .image
-   {
-    width: 100%;
-    height: 100%;
-   }
 
    .container 
    {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      /* margin-left: 0; */
-      margin-left: 10%;
+      margin-left: 0;
+      /* margin-left: 10%; */
    }
 
    .main 
@@ -282,24 +293,64 @@ font-weight: 500;
   {
    .main 
    {
-     margin-left: 10%;
+     /* margin-left: 10%; */
+   }
+
+   .rulebookbutton 
+   {
+      width: 200px;
+      height: 30px;
    }
   }
 
   
-  @media screen and (max-width: 450px)
+  @media screen and (max-width: 400px)
   {
+
+   .rightDiv 
+   {
+      min-height: 100vh;
+      height: auto;
+   }
+
+   .register 
+   {
+      /* width: 200px;
+    height: 50px; */
+    margin-top: 40px;
+   }
    .main 
    {
       /* margin-top: 50%; */
-      margin-left: 20%;
+      /* margin-left: 20%; */
    }
 
+    .title 
+    {
+      font-size: 1.5rem;
+    }
+
+    .pricepool 
+    {
+      font-size: 1.5rem;
+    }
    .leftDiv 
    {
       margin: 0;
    }
-   
+
+   .imageDiv 
+   {
+      width: 300px;
+   height: 400px;
+   }
+  }
+
+  .badaDescription 
+  {
+   font-size:22px;
+   font-weight: 400;
+   margin: 20px 0px;
   }
 
   .rulebookbutton{
@@ -307,13 +358,15 @@ font-weight: 500;
     color: #AD00FF;
     border-radius: 15px;
     background-color: #FFFFFF;
-    margin-top: 50px;
+    margin-top: 30%;
     width: 350px;
-    height: 60px;
+   height: 70px;
     font-weight: 700;
     margin-top: auto;
   }
 .link{
+   width: 350px;
+   height: 70px;
     color: #AD00FF;
     font-size: 20px;
     font-family: 'Poppins', sans-serif;

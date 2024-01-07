@@ -10,12 +10,13 @@ import {
   // Link,
   Routes,
 } from "react-router-dom";
-import Login from "./features/login/Login";
+// import Login from './features/login/Login'
+ import Login from "./LoginUpdated/Mittal";
 import Day2 from "./EventPage/Day2/Day2";
 import { Toaster } from "react-hot-toast";
 import ForgotPassword from "./features/login/ForgotPassword";
 import UpdatePassword from "./features/login/UpdatePassword";
-import VerifyEmail from "./components/Signup/VerifyEmail";
+import VerifyEmail from "./verify/Verify";
 import UserContextProvider from "./ContextApi/UserContextProvider";
 import Profile from "./Profile/Profile";
 import Footer from "./Footer/Footer";
@@ -31,6 +32,8 @@ import Campus from "./CampusAmbassador/Campus";
 import Accomodation from "./accomodation/accomodation";
 import Explore from './Explore/Explore'
 import Testing from "./Explore/Testing";
+import MobileOTPForm from "./features/Verify";
+import ChangePassVerify from './changePass/Verify'
 function App() {
   return (
     <UserContextProvider>
@@ -59,6 +62,8 @@ function App() {
         <Route path="/lnm-hacks" element={<LnmHacks />} />
         <Route path="/explore" element={<Explore />} />
         <Route path="/testExplore" element={<Testing />} />
+        {/* <Route path="/verify" element= {<MobileOTPForm />} />
+        <Route path="/verifyPass" element= {<ChangePassVerify />} /> */}
         {/* <Route path="/our-team" element={<OurTeam />} /> */}
         {/* <Route exact path="/Admin/ViewEvents" element={<ViewEvents />} />  */}
       </Routes>

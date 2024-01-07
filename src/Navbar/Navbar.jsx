@@ -39,7 +39,7 @@ const Navbar = () => {
             </Link >
                 </div>
             <div style={{width: 100, height: 23, left: 0, top: 0, position: 'absolute', justifyContent: 'center', alignItems: 'center', display: 'inline-flex'}}>
-                <Link to="/aboutus">
+                <Link to="/about">
                 <div style={{textAlign: 'center', color: 'white', fontSize: 20, fontFamily: 'Poppins', wordWrap: 'break-word'}}>About Us</div>
                 </Link>
             </div>

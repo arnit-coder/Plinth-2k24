@@ -52,9 +52,9 @@ const navigateComp = () =>{
         <input type="checkbox" name="option-1" id="option-1" className="checkb" /> <label for="option-1" className="chb">I hereby agree to abide by the terms and conditions as provided.</label>
     </div>
     
-    <div style={{marginTop:"1%",textAlign:"center",marginBottom:"1%"}} className="button-63acc">
-        <button className="xx" type="submit" value="Submit">
-          <a href="https://forms.gle/9b7rTXZWKuE57krB6">REGISTER NOW!</a>
+    <div className="buttonDiv">
+        <button className="button" type="submit" value="Submit">
+          <a style={{color: "#FFF"}} href="https://forms.gle/9b7rTXZWKuE57krB6">REGISTER NOW!</a>
           
           </button> 
     </div>

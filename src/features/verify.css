@@ -1,0 +1,127 @@
+.verify-main {
+  height: 100vh;
+  width: 100vw;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px 16px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.verify-section {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.verify-right-1 {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.verify-right-1 h2 {
+  color: #fff;
+  text-align: left;
+  font-family: sans-serif;
+  font-size: 5vh;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.verify-right-1 .dot {
+  color: #bc44ff;
+  font-family: Poppins;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.verify-h6tag {
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 40px;
+}
+
+.verify-otp-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.verify-otp-container input {
+  width: 56.5px;
+  height: 67px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border: none;
+  padding-left: 25px;
+  box-shadow: 0px -8px rgb(202, 202, 202);
+}
+
+.verify-login-button {
+  margin-top: 25px;
+  width: 100%;
+  height: 73px;
+  flex-shrink: 0;
+  background: #7c00c1;
+  border: none;
+  border-radius: 13px;
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 750px) {
+  .verify-section {
+    width: 100%;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .verify-h6tag {
+    color: #fff;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 40px;
+  }
+
+  .verify-otp-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+}
