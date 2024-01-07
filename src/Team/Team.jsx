@@ -36,7 +36,8 @@ import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
 // import { loadBasic } from "@tsparticles/basic"; // if you are going to use `loadBasic`, install the "@tsparticles/basic" package too.
 import ParticleComponent from '../Particle/ParticleComponent';
-// import Header from '../Header/Header';
+import Header1 from '../Header/Header';
+
 const Team = () => {
     const cubeStyle = {
         position: 'absolute',
@@ -457,6 +458,7 @@ const Team = () => {
 
 return (
   <>
+  <div className="Header1"><Header1 /></div>
   {/* <Header /> */}
     <div className='main' id='Team'>
         <div className="epg">
