@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import mail_icon from "./images/🦆 icon _gmail_.svg";
+import mail_icon from "./images/gmail1.svg";
 import "./forget.css";
 import { getResetPasswordToken } from "../../services/operations/authAPI";
 import { Link } from "react-router-dom";

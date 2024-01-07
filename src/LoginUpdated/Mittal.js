@@ -1,8 +1,8 @@
 import React, { useContext, useState } from "react";
 import loginRobot from "./images/img1.png";
-import mail_icon from "./images/🦆 icon _gmail_.svg";
-import eye_icon from "./images/🦆 icon _eye_.svg";
-import google_icon from "./images/🦆 icon _google_.svg";
+import mail_icon from "./images/gmail.svg";
+import eye_icon from "./images/eye.svg";
+import google_icon from "./images/google.svg";
 import rectangle from "./images/Rectangle 166 (1).png";
 import "./Mittal.css";
 import { Link } from "react-router-dom";
