@@ -287,8 +287,8 @@
       flex-wrap: wrap;
     }
     .create {
-      font-size: 1.9rem;
-      left: -22%;
+      font-size: 1.6rem;
+      left: 0;
       position: relative;
     }
     .already {
@@ -296,7 +296,7 @@
     }
     .box {
       margin-top: 1.8rem;
-      margin-left: 2rem;
+      margin-left: 0rem;
     }
     .log {
       margin-left:3px; 
@@ -318,7 +318,7 @@
       width: 98%;
     }
     .box {
-      width: 55%;
+      width: 90%;
     }
     .account {
       font-size: 1.1rem;

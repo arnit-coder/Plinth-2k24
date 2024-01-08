@@ -19,7 +19,11 @@
   
 }
 
-
+.bstyle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 @media screen and (max-width: 1100px)
 {
@@ -37,7 +41,7 @@ background: #FA00FF;
   margin-left: 43%;
   justify-content: center;
   align-items: center;
-  width: 100px;
+  width: 150px;
   height: 50px;
 }
 }
@@ -148,7 +152,7 @@ background: #FA00FF;
     border-radius: 20px;
   background: #FA00FF;
     margin-top: 10%;
-    margin-left: 40%;
+    margin-left: 0;
     justify-content: center;
     align-items: center;
     width: 100px;
@@ -268,7 +272,7 @@ background: #FA00FF;
 
     .chb 
     {
-      
+      font-size: 14px;
     }
     
 }
@@ -283,4 +287,10 @@ background: #FA00FF;
     font-size: 24px;
     font-weight:700;
     color: white;
+  }
+
+  @media (max-width:375px) {
+    .buttonDiv{
+      width: 50% !important;
+    }    
   }
