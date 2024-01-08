@@ -11,7 +11,7 @@ const EventCard = ({ day, artist, description, image, googleform, badaDescriptio
   const navigate = useNavigate();
   const swaraj={
       width: "100%",
-      height: "61vh",
+      height: "100%",
       background: "linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 100%)",
       position: "absolute",
       zIndex: "100"
