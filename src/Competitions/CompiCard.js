@@ -9,7 +9,13 @@ import Explore from '../Explore/Explore.jsx';
 const EventCard = ({ day, artist, description, image, googleform, badaDescription,rulebook, pricepool }) => {
   const [clicked, setClicked] = useState(false);
   const navigate = useNavigate();
-
+  const swaraj={
+      width: "100%",
+      height: "61vh",
+      background: "linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 100%)",
+      position: "absolute",
+      zIndex: "100"
+  }
   const handleClick = () => {
      ("/explore")
     const propsTosend={
@@ -33,8 +39,9 @@ const EventCard = ({ day, artist, description, image, googleform, badaDescriptio
   return (
     <div className="card2">
      <div className="img">
+     <div style={swaraj}></div>
         <img src={image} alt="" />
-        <div className="grad"></div>
+        
       </div>
       <p className="day">{day}</p>
       <p className="artist">{artist}</p>
