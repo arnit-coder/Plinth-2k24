@@ -8,6 +8,7 @@ import Spline from '@splinetool/react-spline';
 import "../home/home.css";
 import Countdown from "../home/countdown";
 import ArrowPic from '../home/arrow.png'
+import cognitocascade from '../HomeSpline/cognitocascade.png'
 import Header from '../Header/Header';
 import Navbar from '../Navbar/Navbar';
 // import '../home/home.css'
@@ -50,7 +51,7 @@ const HomeSpline = () => {
         <Header className='navbar'/>
       </div>
     <div className='heading'>
-        <img className='image' src="https://s3-alpha-sig.figma.com/img/658b/6d96/71f4945821d5cf9ce73e341733318574?Expires=1704672000&Signature=cUhs-gADlON5hoayFsqevPNNQiDuzAeo6EmZ4MEcJfXDArg-gHAQ9FBv1LO~gGzr6gZEa7qqn6UfGRBl8XRtrrhulYcuL~18JOsnJ2~wr4FCMS7Q3lISHf6Ya3f1VOLQy3Lxe3b~Z4jS9FJAMNGXePS8H1D6rOKY6maKFTxM8UkgaYp452mG87B4d72AM3UXYx6ydkti6L2th2NEVgNEGM7wEiO9EWsn1iO-iWIgmWmrwffWItqJIlymp5lDnYnvG-acCIyZtEbzwxTH2ZtV05F2Wtb68cSt2cvPt-um4OvMbdECPj16mZlSgBC3UNKfrUlqwQiMKm2jkhvaBEyW8g__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" />
+        <img className='image' src='https://s3-alpha-sig.figma.com/img/658b/6d96/71f4945821d5cf9ce73e341733318574?Expires=1705881600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=iDAq~JpoKk3WjpawatdRrDz4SoPzr7NMpnTTZUc4wP7DDnhrfgNhUHMUdfyeyDgi77Fq0LEfNkBYYVqf0BGDVy2PrplZQb15QkZNMMkxbEx1uZ-SrTGDgRT9zgI-QZD4WVnukUeaHM2PovjHpl5JFKG1cDAcCFF8QrpEwFMG3meiTJS~no6GRWbX47s3nHH3KzEEwqNIunf66Aqd9GWX7R3KzEDR1YjqcsQ2FomOYsyv4JKkKwsSiZvOfDa-PBj78Z~OJ52JOb0BxCVgm9bBwX6MdSvk4YyqM4INXtgwAIte049ZGEAQexZ77uqDf0~xq~qB~-EjebZt7MtacOUJvg__' />
         <div className="btn-p"><div className="button-p"><button className="button-x"><a href='/competitions'>REGISTER</a></button></div></div>
       <div className="ctd-p"><div className="ctd"><Countdown />
       </div>

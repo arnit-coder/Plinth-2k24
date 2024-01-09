@@ -8,6 +8,7 @@ import Cryptex from './Cryptex.png'
 import iplauction from './ipl-auction.png'
 import cd from './cd.png'
 import cc from './cc.png'
+import  qplauctionrulebool from './qplauctionrulebool.pdf'
 import dhoomketu from './dhoomketu.png'
 import astromemia from './astromemia.png'
 import graffitiwall from './graffitiwall.png'
@@ -107,7 +108,7 @@ function Competitions() {
               <Tab>Cipher</Tab>
               <Tab>ASME LNMIIT</Tab>
               <Tab>SAE</Tab>
-              <Tab>OC Events</Tab>
+              {/* <Tab>OC Events</Tab> */}
             </TabList>
 
 
@@ -298,17 +299,7 @@ function Competitions() {
 
             <TabPanel className="cards">
 
-              <EventCard
-                day="Phoenix"
-                artist=" RoboWar"
-                description="Robot Combat Competition where participants battle each other for the coveted Robowars Champion Title."
-                image={robo}
-                badaDescription='Robot Combat Competition where participants battle each other for the coveted Robowars Champion Title. Witness sparks fly as metal crushes metal in the most glorious battles for non-stop entertainment.'
-                googleform='https://docs.google.com/forms/d/e/1FAIpQLScusAMvGYiNitdT6MISctsjXDtQrK2fYZpG4wxihmr6QEZJsg/viewform'
-                rulebook=''
-              pricepool='1 Lakh'
-
-              />
+              
               <EventCard
                 day="Phoenix"
                 artist=" Maze Solver"
@@ -399,6 +390,17 @@ function Competitions() {
 
             <TabPanel className="cards">
 
+            <EventCard
+                day="ASME LNMIIT"
+                artist=" RoboWar"
+                description="Robot Combat Competition where participants battle each other for the coveted Robowars Champion Title."
+                image={robo}
+                badaDescription='Robot Combat Competition where participants battle each other for the coveted Robowars Champion Title. Witness sparks fly as metal crushes metal in the most glorious battles for non-stop entertainment.'
+                googleform='https://docs.google.com/forms/d/e/1FAIpQLScusAMvGYiNitdT6MISctsjXDtQrK2fYZpG4wxihmr6QEZJsg/viewform'
+                rulebook=''
+              pricepool='1 Lakh'
+
+              />
               <EventCard
                 day="ASME LNMIIT"
                 artist=" Drone Race"
@@ -433,7 +435,7 @@ function Competitions() {
                 rulebook=''
               pricepool=''
               />
-              <EventCard
+              {/* <EventCard
                 day="ASME LNMIIT"
                 artist=" MachinaMaze Challenge"
                 description="Welcome to 'Re-Engineering,' where innovation meets the clock. In this high-energy challenge, teams decipher cryptic clues to piece together scattered machine parts within a tight timeframe."
@@ -443,7 +445,7 @@ function Competitions() {
                 googleform=''
                 rulebook=''
               pricepool=''
-              />
+              /> */}
 
               <EventCard
                 day="ASME LNMIIT"
@@ -502,7 +504,7 @@ function Competitions() {
               />
             </TabPanel>
 
-            <TabPanel className="cards">
+            {/* <TabPanel className="cards">
 
             <EventCard
                 day="OC Events"
@@ -535,7 +537,7 @@ function Competitions() {
               />
               
 
-            </TabPanel>
+            </TabPanel> */}
           </Tabs>
         </div>
       </div>

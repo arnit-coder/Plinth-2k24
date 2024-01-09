@@ -7,8 +7,13 @@ import img1 from "./imageex.jpg"
 import chiragmittal from "./chiragmittal.jpg"
 import aryangupta from './aryangupta.jpg'
 import prajit from './prajit.jpg'
+import gungun from './gungun.jpg'
+import nanik from './nanik.jpg'
+import abhay from './abhay.jpg'
 import ayushbansal from './ayushbansal.jpg'
 import swaraj from './swaraj.jpeg'
+import eeshir from './eeshir.jpg'
+import kaustubh from './kaustubh.jpg'
 import adityakumar from './adityakumar.jpg'
 import aryanguptatech from './aryanguptatech.jpeg' 
 import pranav from './pranav.jpg' 
@@ -46,13 +51,13 @@ const Team = () => {
       };
   const TeamData=[
     {
-        image:img1,
+        image:nanik,
         namex:"Nanik Chaturvedi",
         role:"General Secretary",
-        phone:"+91 123456789",
+        phone:"+91 8209393282",
         mail:"",
         insta:"",
-        linkedin:""
+        linkedin:"https://www.linkedin.com/in/nanik-chaturvedi-4b283b247/"
     },
     {
         image:img1,
@@ -64,13 +69,13 @@ const Team = () => {
         linkedin:""
     },
     {
-        image:img1,
+        image:eeshir,
         namex:"Eeshir Gupta",
         role:"Finance Convenor",
-        phone:"+91 123456789",
+        phone:"+91 9252066636",
         mail:"",
-        insta:"",
-        linkedin:""
+        insta:"https://www.instagram.com/eeshir_gupta",
+        linkedin:"https://www.linkedin.com/in/eeshir-gupta-410bb1227/"
     },
     {
         image:img1,
@@ -145,13 +150,13 @@ const Team = () => {
         linkedin:""
     },
     {
-        image:img1,
+        image:abhay,
         namex:"Abhay Deep Choudhary",
         role:"PR Lead",
-        phone:"+91 123456789",
+        phone:"+91 8209049877",
         mail:"",
-        insta:"",
-        linkedin:""
+        insta:"https://www.instagram.com/who.isabhay?igsh=NTYzOWQzNmJjMA==",
+        linkedin:"https://www.linkedin.com/in/abhay-deep-chaudhary-a15750234"
     },
     {
         image:chetali,
@@ -190,13 +195,13 @@ const Team = () => {
         linkedin:""
     },
     {
-        image:img1,
+        image:gungun,
         namex:"Gungun",
         role:"Creative Lead",
-        phone:"+91 123456789",
+        phone:"+91 7976156293",
         mail:"",
         insta:"",
-        linkedin:""
+        linkedin:"https://www.linkedin.com/in/gungun-hinduja21uec055/"
     },
     {
         image:narang,
@@ -217,13 +222,13 @@ const Team = () => {
         linkedin:""
     },
     {
-        image:img1,
+        image:kaustubh,
         namex:"Kaustubh Agarwal",
         role:"Event Head",
-        phone:"+91 123456789",
+        phone:"+91 76072220062",
         mail:"",
-        insta:"",
-        linkedin:""
+        insta:"https://www.instagram.com/a_kaustubh_02?igsh=ZGNjOWZkYTE3MQ== ",
+        linkedin:"https://www.linkedin.com/in/kaushtubh-agrawal-650b40229?"
     },
     {
         image:img1,
