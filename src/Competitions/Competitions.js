@@ -172,7 +172,7 @@ function Competitions() {
                 badaDescription='Embark on a journey of boundless possibilities during our dynamic 2-day job fair, an unparalleled realm of professional excellence. This event seamlessly merges expertise, networking, and opportunities to ignite your career trajectory'
                 googleform='https://docs.google.com/forms/d/e/1FAIpQLSdyVeKgytHPD3VtR8rU-FFrG6IuVnlZ86aUcMML2OFoTmwECQ/viewform'
                 rulebook=''
-              pricepool=''
+              pricepool='None'
               />
               <EventCard
                 day="E-Cell"
@@ -183,7 +183,7 @@ function Competitions() {
                 badaDescription='The virtual stock market simulation is a risk-free competition where participants are allocated a virtual sum of money to invest. The virtual market encompasses numerous companies spanning various sectors and chance to win prize money while enhancing financial literacy.'
                 googleform=''
                 rulebook=''
-              pricepool=''
+              pricepool='None'
               />
               <EventCard
                 day="E-Cell"
@@ -194,7 +194,7 @@ function Competitions() {
                 badaDescription=' AceTheCase is the ultimate case study competition where participating teams conduct a comprehensive analysis of an opted unicorn company. The teams dive deep into various aspects of the selected company, including its overarching vision, the leadership of the founders, revenue-generating methodologies, and intricate market strategies.'
                 googleform=''
                 rulebook=''
-              pricepool=''
+              pricepool='None'
               />
 
             </TabPanel>
@@ -220,7 +220,7 @@ function Competitions() {
                 badaDescription='Graffiti walls gives an opportunity to the viewers to put their thoughts via a sheet of paper or drawings on a blank canvas. The topics for the same will be put up beforehand and will be a showcase of imagination and creative skills.'
                 googleform=''
                 rulebook=''
-              pricepool=''
+              pricepool='None'
               />
               <EventCard
                 day="DebSoc"
@@ -230,7 +230,7 @@ function Competitions() {
                 badaDescription='Change my mind does precisely what the name suggests. You will be presented with a random opinion to which you will have to convince the chair with argumentation to adhere to your thoughts on the topic.'
                 googleform=''
                 rulebook=''
-              pricepool=''
+              pricepool='None'
               />
 
             </TabPanel>
@@ -246,7 +246,7 @@ function Competitions() {
                 badaDescription='Odin’s Eye is an astronomy-themed treasure hunt; the faster you solve the mind boggling riddles, the closer you get to the finishing line. Participants can register themselves in a team of 5-8 players. So, be ready, power-packed with your energy to be the first one to find the treasure. Exciting prizes await the winners. '
                 googleform='https://docs.google.com/forms/d/e/1FAIpQLScmr_gNULSZ_6NusNiG5V8SaLK5PMU2WNxU6DrJMKjR6PT2nA/viewform'
                 rulebook=''
-              pricepool=''
+              pricepool='None'
               />
               <EventCard
                 day="Astronomy"
@@ -257,7 +257,7 @@ function Competitions() {
                 badaDescription='Have you ever wondered if life exists outside our earth? Yes, right? How would you prepare to visit any other celestial body if you ever get a chance to see it? What things would you keep in mind? Plan it Out. To make you ponder on all of these things, The Astronomy club presents a partial online event Brahmaand where teams will have to submit a well-researched and cited presentation based on their ideas. The top entries will be nominated to present their research in front of our Panel of Experts on campus.'
                 googleform='https://docs.google.com/forms/d/e/1FAIpQLScKluATuUXWlliWgZ4jL1Y_W8h_kQWM5CSpNhkSNjaziLu3Bg/viewform'
                 rulebook=''
-              pricepool=''
+              pricepool='None'
               />
               <EventCard
                 day="Astronomy"
@@ -268,7 +268,7 @@ function Competitions() {
                 badaDescription='Can you relax and take a break from the everyday hustle? The Astronomy club brings you the Sky gazing session with many short and exciting events planned, such as telescope handling, discussions on greek-mythology, astrophysics and a lot more. The events are designed in a way that there is something for everybody. Also, on winning an event, you might get some exciting gifts.'
                 googleform=''
                 rulebook=''
-              pricepool=''
+              pricepool='None'
               />
               <EventCard
                 day="Astronomy"
@@ -279,7 +279,7 @@ function Competitions() {
                 badaDescription='It is an online event in which you have to send us photographs of the night sky you took yourself, coupled with your original and creative touch, which displays deep-sky objects, solar system objects, or an Astro-landscape. The competitor who receives the most audience likes and the judges votes wins Astro-merchandise and exciting presents. '
                 googleform='https://docs.google.com/forms/d/e/1FAIpQLSfKE2cQ4u6P_8m31f60Z5UXTVWmtcamdOTK3rg18aLP2118FQ/viewform'
                 rulebook=''
-              pricepool=''
+              pricepool='None'
               />
               {/* <EventCard
                 day="Astronomy"
@@ -383,7 +383,7 @@ function Competitions() {
                 '
                 googleform='https://lnmhacks.tech/'
                 rulebook=''
-              pricepool=''
+              pricepool='None'
               />
 
             </TabPanel>
@@ -433,7 +433,7 @@ function Competitions() {
                 badaDescription='Bridge the Barrier" is an exhilarating and intellectually stimulating event that challenges participants to unleash their creativity, engineering prowess, and teamwork skills. In this event, different teams engage in the design and construction of a bridge using wooden sticks, and the structural integrity is achieved through various types of mechanical joints. The ultimate test of their ingenuity comes when the bridges are subjected to the weight-bearing examination, and the results determine the champions.'
                 googleform=''
                 rulebook=''
-              pricepool=''
+              pricepool='None'
               />
               {/* <EventCard
                 day="ASME LNMIIT"
@@ -444,7 +444,7 @@ function Competitions() {
                 badaDescription='Prepare for an electrifying showdown at the RC Monster Truck Battle event! This action-packed gathering is all about head-to-head battles featuring remote-controlled monster trucks. Feel the thrill as competitors go wheel-to-wheel in intense one-on-one clashes, showcasing power, strategy, and skill. Join fellow enthusiasts for a day of adrenaline-fueled excitement, where the ultimate champion will emerge victorious in this epic display of RC monster truck prowess. Do not miss out on the excitement and fierce competition!'
                 googleform=''
                 rulebook=''
-              pricepool=''
+              pricepool='None'
               /> */}
 
               <EventCard
@@ -455,7 +455,7 @@ function Competitions() {
                 badaDescription='Midnight Chronicles promises an unforgettable and discreet murder mystery adventure, challenging participants detective skills and strategic thinking. The dynamic storytelling, engaging puzzles, and unexpected twists ensure a thrilling experience for all participants.'
                 googleform=''
                 rulebook=''
-              pricepool=''
+              pricepool='None'
               />
 
               <EventCard
@@ -466,7 +466,7 @@ function Competitions() {
                 badaDescription='The "DIY Glider Challenge" is an exhilarating and hands-on event that seamlessly blends creativity, engineering, and friendly competition. Participants are provided with origami paper to craft a paper plane within a specified time frame. The highlight of the challenge is the thrilling moment when the handmade gliders are launched from an elevated platform. The distance each glider covers is a key factor, but this challenge goes beyond distance, incorporating elements of aerodynamic stability, knowledge, and creativity into the judging criteria'
                 googleform=''
                 rulebook=''
-              pricepool=''
+              pricepool='None'
               />
             </TabPanel>
 
@@ -489,7 +489,7 @@ function Competitions() {
                 badaDescription='A riveting, real-time crime scene investigation challenge designed to test your observational prowess and deductive reasoning. Immerse yourself in a meticulously crafted crime scene, rich with clues and evidence waiting to be discovered. Work alongside fellow participants, analyze the evidence, and piece together the narrative. Sharpen your investigative skills as you embark on a thrilling journey to solve the enigma lurking within the scene. Are you ready to crack the case and identify the culprit? The challenge awaits at Plinth!'
                 googleform=''
                 rulebook=''
-              pricepool=''
+              pricepool='None'
               />
               <EventCard
                 day="ASME LNMIIT"
