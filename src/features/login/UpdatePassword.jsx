@@ -31,7 +31,7 @@ const UpdatePassword = () => {
           Choose New Password
         </h1>
         <p className="my-4 text-[1.125rem] leading-[1.625rem] text-richblack-100">
-          Almost done. Enter your new password and youre all set.
+          Almost done. Enter your new password and your all set.
         </p>
         <form onSubmit={submitHandler}>
           <label className="relative">
