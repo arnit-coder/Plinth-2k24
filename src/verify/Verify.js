@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import "./verify.css";
 import { Link } from "react-router-dom";
 const MobileOTPForm = () => {
+  
   const [otpValues, setOtpValues] = useState(["", "", "", "", "", ""]);
   const inputRefs = useRef([0, 1, 2, 3, 4, 5].map(() => React.createRef()));
 
