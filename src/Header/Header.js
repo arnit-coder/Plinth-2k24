@@ -57,6 +57,7 @@ function Header() {
       { to: "/accomodation" , text: "Accomodation" , icon: room},
       { to: "/campus-ambassador" , text: "Ambassador" , icon: ambassador},
       { to: "/Team" , text: "Our Team" , icon: ambassador},
+      // { to: "/merch" , text:"Merchandise", icon: home},
       { to: "/signup" , text: "Sign Up" , icon: signup}
     ];
     
