@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@chakra-ui/react": "^2.8.2",
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
     "@react-oauth/google": "^0.11.1",
     "@splinetool/react-spline": "^2.2.6",
     "@splinetool/runtime": "^1.0.17",
@@ -12,7 +15,7 @@
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.0.3",
     "axios": "^1.6.1",
-    "framer-motion": "^10.16.16",
+    "framer-motion": "^10.17.9",
     "jwt-decode": "^4.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -23,7 +26,6 @@
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.18.0",
     "react-scripts": "5.0.1",
-    "react-slick": "^0.29.0",
     "react-tabs": "^6.0.2",
     "vanilla-tilt": "^1.8.1",
     "web-vitals": "^2.1.4"
