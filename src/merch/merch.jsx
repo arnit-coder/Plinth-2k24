@@ -7,7 +7,7 @@ import silder2 from "../Team/imageex.jpg";
 import silder3 from "../Team/imageex.jpg";
 import silder4 from "../Team/imageex.jpg";
 import ParticleComponent from "../Particle/ParticleComponent";
-
+import Header1 from '../Header/Header';
 
 const cards = [
   silder1,
@@ -48,6 +48,7 @@ const CustomCarousel = () => {
 
   return (
     <div style={{ position: 'relative', height: '500px', margin: 'auto', marginTop: '5%', width: '98%' }}>
+     <div className="Header1"><Header1 /></div>
      <ParticleComponent />
       {/* Left Icon */}
       <button
