@@ -47,7 +47,7 @@ const ForgotPassword = () => {
           An OTP (One Time Password) will be sent.
         </h6>
         {!otpSent ? (
-       <Link to='/verifyPass' className="forgot-login-button">   <button type="submit" className="forgot-login-button">
+       <Link to='/verifyPass' className="forgot-login-button">   <button onClick={submitHandler} className="forgot-login-button">
           Send OTP
         </button></Link>
         ) : (
