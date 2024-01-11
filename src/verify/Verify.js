@@ -1,10 +1,14 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect, useContext } from "react";
 import "./verify.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { SignUP } from "../services/operations/authAPI";
+import UserContext from "../ContextApi/UserContext";
 const MobileOTPForm = () => {
   
   const [otpValues, setOtpValues] = useState(["", "", "", "", "", ""]);
   const inputRefs = useRef([0, 1, 2, 3, 4, 5].map(() => React.createRef()));
+  const navigate = useNavigate()
+  const { signData, setUser, user } = useContext(UserContext);
 
   const handlePaste = (ev) => {
     const clip = ev.clipboardData.getData("text").trim();
@@ -61,13 +65,24 @@ const MobileOTPForm = () => {
 
   useEffect(() => {
     const otpValue = otpValues.join("");
-    console.log("Verification Code:", otpValue);
   }, [otpValues]);
+
+  const submitHandler = async () => {
+    const { firstName, lastName, email, password } = signData;
+    const otp = otpValues.join("")
+    const body = { firstName, lastName, email, password, otp };
+    console.log(body)
+    const response = await SignUP(body, navigate);
+    if (response) {
+      setUser(response.data.user);
+      console.log(user);
+    }
+  };
 
   return (
     <div className="verify-main">
       <div className="verify-section">
-        <form className="mobile-otp">
+        <form className="mobile-otp" onSubmit={submitHandler}>
           <div className="verify-right-1">
             <h2>Verify Email</h2>
             <div className="verify-dot">.</div>
@@ -91,7 +106,7 @@ const MobileOTPForm = () => {
               />
             ))}
           </div>
-        <Link to='/'> <button type="submit" className="verify-login-button">
+        <Link to='/login'> <button onClick={submitHandler} type="submit" className="verify-login-button">
               Verify
             </button></Link> 
         </form>
