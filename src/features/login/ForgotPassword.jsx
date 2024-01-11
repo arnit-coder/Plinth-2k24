@@ -15,6 +15,7 @@ const ForgotPassword = () => {
   };
   const submitHandler = async (event) => {
     event.preventDefault();
+    console.log(email);
     await getResetPasswordToken(email, setEmailSent);
   };
 
