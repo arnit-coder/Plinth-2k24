@@ -35,9 +35,64 @@ import Testing from "./Explore/Testing";
 import MobileOTPForm from "./features/Verify";
 import ChangePassVerify from './changePass/Verify'
 import Merch from './merch/merch';
+import React, { useState, useEffect } from 'react';
 function App() {
+    const [cursorPosition, setCursorPosition] = useState({ left: 0, top: 0 });
+  
+    const handleMouseMove = (e) => {
+      setCursorPosition({ left: e.pageX, top: e.pageY });
+    };
+  
+    useEffect(() => {
+      const cursor = document.querySelector('.cursor');
+      document.addEventListener('mousemove', handleMouseMove);
+  
+      
+    }, []); 
   return (
-    <UserContextProvider>
+    <>
+    
+
+<style>
+  {`
+    body {
+      cursor: none;
+      text-align: center;
+      font-size: 16px;
+      background: #222;
+    }
+
+    .cursor {
+      position: absolute;
+      z-index: 5000;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background: #fff;
+      transform: translate(-50%, -50%);
+      transition: transform 0.2s ease;
+      pointer-events: none;
+      mix-blend-mode: difference;
+    }
+
+    body div:hover ~ .cursor {
+      transform: scale(6);
+      box-shadow: 0 0 10px #fff;
+      color: #000;
+    }
+    h1:hover ~ .cursor {
+      transform: scale(6);
+      box-shadow: 0 0 10px #fff;
+      color: #000;
+    }
+    p:hover ~ .cursor {
+      transform: scale(6);
+      box-shadow: 0 0 10px #fff;
+      color: #000;
+    }
+  `}
+</style>
+        <UserContextProvider>
       <Toaster />
 
       <Preloader />
@@ -69,6 +124,8 @@ function App() {
       </Routes>
       {/* <Header />  */}
     </UserContextProvider>
+    <div className="cursor" style={{ left: cursorPosition.left, top: cursorPosition.top }}></div>
+    </>
   );
 }
 
