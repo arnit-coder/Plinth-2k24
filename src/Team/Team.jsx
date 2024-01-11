@@ -142,7 +142,7 @@ const Team = () => {
     },
     {
         image:img1,
-        namex:"Mani Bajpai",
+        namex:"Manvi Gupta",
         role:"PR Head",
         phone:"+91 123456789",
         mail:"",
@@ -554,6 +554,23 @@ return (
           ))}
         </div>
         </div>
+        {/* Event (3 cards) */}
+        <div className='team-m'>
+        <h2>Event</h2>
+        <div className="team-section">
+          
+          {TeamData.slice(18, 21).map((member, index) => (
+            <TeamCard
+              key={index}
+              image={member.image}
+              namex={member.namex}
+              role={member.role}
+              phone={member.phone}
+              mail={member.mail}
+            />
+          ))}
+        </div>
+        </div>
 
         {/* Content (2 cards) */}
         <div className='team-m'>
@@ -607,29 +624,7 @@ return (
             />
           ))}
         </div>
-        </div>
-
-        
-
-        {/* Event (3 cards) */}
-        <div className='team-m'>
-        <h2>Event</h2>
-        <div className="team-section">
-          
-          {TeamData.slice(18, 21).map((member, index) => (
-            <TeamCard
-              key={index}
-              image={member.image}
-              namex={member.namex}
-              role={member.role}
-              phone={member.phone}
-              mail={member.mail}
-            />
-          ))}
-        </div>
-        </div>
-
-        
+        </div>       
 
         {/* Social Media (5 cards) */}
         <div className='team-m'>
