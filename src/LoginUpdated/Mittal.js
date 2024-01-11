@@ -9,7 +9,7 @@ import "./Mittal.css";
 import { Link, useNavigate } from "react-router-dom";
 import { useGoogleLogin } from "@react-oauth/google";
 import toast from "react-hot-toast";
-// import { signinGoogle } from "../../services/operations/googleLogin";
+import { signinGoogle } from "../services/operations/googleLogin";
 import { LogIN } from "../services/operations/authAPI";
 import UserContext from "../ContextApi/UserContext";
 
@@ -27,17 +27,17 @@ function Mittal() {
     setShowPassword(!showPassword);
   };
 
-  //   const handleGoogleLoginSuccess = async (tokenResponse) => {
-  //     try {
-  //       const accessToken = tokenResponse.access_token;
-  //       console.log(accessToken);
-  //       await signinGoogle(accessToken,navigate,users);
+    const handleGoogleLoginSuccess = async (tokenResponse) => {
+      try {
+        const accessToken = tokenResponse.access_token;
+        console.log(accessToken);
+        await signinGoogle(accessToken,navigate,users);
 
-  //     } catch (error) {
-  //       toast.error("error while signing in with google");
-  //     }
-  // 	};
-  // 	const login = useGoogleLogin({ onSuccess: handleGoogleLoginSuccess });
+      } catch (error) {
+        toast.error("error while signing in with google");
+      }
+  	};
+  	const login = useGoogleLogin({ onSuccess: handleGoogleLoginSuccess });
     const submitHandler = async (e) => {
       e.preventDefault();
       const data = {email, password};
@@ -98,7 +98,9 @@ function Mittal() {
             <button type="submit" className="mittal-login-button">
               Login
             </button>
-            
+            <div className="mittal-login-button" onClick={login}>
+              Google
+            </div>
 
             <div className="mittal-hrtag">
               
