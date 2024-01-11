@@ -100,10 +100,10 @@ function Mittal() {
           Login
         </button>
             <div className="signupDiv">
+            <FcGoogle className="logo3" />
           <div className="sign" onClick={login}>
             Login with Google
           </div>
-          <FcGoogle className="logo3" />
         </div>
 
             <div className="mittal-hrtag">

@@ -112,10 +112,10 @@ const Signup = () => {
         <div className={SignupCss.line}></div>
 
         <div className={SignupCss.signupDiv}>
+        <FcGoogle className={SignupCss.logo3} />
           <div className={SignupCss.sign} onClick={signUp}>
             Sign up with Google
           </div>
-          <FcGoogle className={SignupCss.logo3} />
         </div>
       </div>
     </form>

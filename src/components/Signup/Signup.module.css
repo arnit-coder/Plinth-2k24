@@ -160,6 +160,7 @@
   
   .logo3 {
     /* position: absolute; */
+    margin-right: 10px;
     top: 0.6rem;
     right: 0.6rem;
     height: 1.7rem;
