@@ -5,20 +5,20 @@ import eye_icon from "./images/eye.svg";
 import google_icon from "./images/google.svg";
 import rectangle from "./images/Rectangle 166 (1).png";
 import "./Mittal.css";
-import { Link } from "react-router-dom";
-// import { Link, useNavigate } from "react-router-dom";
-// import { useGoogleLogin } from "@react-oauth/google";
-// import toast from "react-hot-toast";
+// import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useGoogleLogin } from "@react-oauth/google";
+import toast from "react-hot-toast";
 // import { signinGoogle } from "../../services/operations/googleLogin";
-// import { LogIN } from "../../services/operations/authAPI";
-// import UserContext from "../../ContextApi/UserContext";
+import { LogIN } from "../services/operations/authAPI";
+import UserContext from "../ContextApi/UserContext";
 
 function Mittal() {
 
   
-  //     const users = useContext(UserContext);
-  //   const navigate = useNavigate();
-  //   const {user, setUser} = useContext(UserContext);
+      const users = useContext(UserContext);
+    const navigate = useNavigate();
+    const {user, setUser} = useContext(UserContext);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
@@ -38,19 +38,19 @@ function Mittal() {
   //     }
   // 	};
   // 	const login = useGoogleLogin({ onSuccess: handleGoogleLoginSuccess });
-  //   const submitHandler = async (e) => {
-  //     e.preventDefault();
-  //     const data = {email, password};
-  //     const response = await LogIN(data, navigate,users);
-  //     setUser(response?.data.user)
-  //     if(response){
-  //       toast.success("Login Successful!")
-  //       const date = new Date();
-  //       date.setDate(date.getDate() + 30)
+    const submitHandler = async (e) => {
+      e.preventDefault();
+      const data = {email, password};
+      const response = await LogIN(data, navigate,users);
+      setUser(response?.data.user)
+      if(response){
+        toast.success("Login Successful!")
+        const date = new Date();
+        date.setDate(date.getDate() + 30)
   // const token = response.data.userToReturn.token;
   // setCookie("token", token, {path:'/', expires:date});
-  //     }
-  //   }
+      }
+    }
   return (
     <div className="mittal-main">
       <div className="mittal-left">
@@ -63,7 +63,7 @@ function Mittal() {
           <div className="mittal-dot">.</div>
         </div>
         <div className="mittal-right-2">
-          <form className="mittal-loginContainer" id="login">
+          <form onSubmit={submitHandler} className="mittal-loginContainer" id="login">
             <div className="mittal-input">
               <input
                 id="mittal-email"
@@ -98,8 +98,10 @@ function Mittal() {
             <button type="submit" className="mittal-login-button">
               Login
             </button>
+            
 
             <div className="mittal-hrtag">
+              
               <hr />
             </div>
           </form>
