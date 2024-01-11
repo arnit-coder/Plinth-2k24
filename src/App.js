@@ -55,7 +55,7 @@ function App() {
         <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route path="/reset-password/:id" element={<UpdatePassword />} />
         <Route path="/verify-email" element={<VerifyEmail />} />
-        {/* <Route path="/Profile" element={<Profile />} /> */}
+        <Route path="/Profile" element={<Profile />} />
         <Route path="/events" element={<Events />} /> 
         <Route path="/competitions" element={<Competitions />} /> 
         <Route path="/campus-ambassador" element={<Campus />} /> 
