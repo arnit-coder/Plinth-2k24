@@ -75,7 +75,7 @@ function App() {
       mix-blend-mode: difference;
     }
 
-    body div:hover ~ .cursor {
+    img:hover ~ .cursor {
       transform: scale(6);
       box-shadow: 0 0 10px #fff;
       color: #000;
