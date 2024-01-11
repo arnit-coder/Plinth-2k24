@@ -117,20 +117,65 @@
 }
 
 .mittal-right form .mittal-login-button {
-  margin-top: 25px;
-  width: 95%;
-  height: 73px;
-  flex-shrink: 0;
+  font-size: 1.3rem;
+  padding: 0.6rem;
+  font-weight: 650;
+  border-radius: 0.8125rem;
+  background-color: #FFF;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.signupDiv{
+
+  font-size: 1.3rem;
+  padding: 0.6rem;
+  font-weight: 650;
+  border-radius: 0.8125rem;
+  background-color: #FFF;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.account {
+  border-radius: 0.8125rem;
   background: #7c00c1;
-  border: none;
-  border-radius: 13px;
   color: #fff;
   text-align: center;
-  font-family: Poppins;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+  font-size: 1.3rem;
+  padding: 0.6rem;
+  font-weight: 650;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  white-space: nowrap;
+}
+.account:hover {
+  cursor: pointer;
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .account {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .account {
+    font-size: 1.1rem;
+  }
+}
+
+
+.logo3 {
+  /* position: absolute; */
+  top: 0.6rem;
+  right: 0.6rem;
+  height: 1.7rem;
+  width: 1.7rem;
 }
 
 .mittal-hrtag {

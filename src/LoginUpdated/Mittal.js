@@ -1,6 +1,7 @@
 import React, { useContext, useState } from "react";
 import loginRobot from "./images/img1.png";
 import mail_icon from "./images/gmail.svg";
+import { FcGoogle } from "react-icons/fc";
 import eye_icon from "./images/eye.svg";
 import google_icon from "./images/google.svg";
 import rectangle from "./images/Rectangle 166 (1).png";
@@ -95,12 +96,15 @@ function Mittal() {
             <div className="mittal-forget">Forget Password?</div>
             </Link>
 
-            <button type="submit" className="mittal-login-button">
-              Login
-            </button>
-            <div className="mittal-login-button" onClick={login}>
-              Google
-            </div>
+            <button type="submit" className="account">
+          Login
+        </button>
+            <div className="signupDiv">
+          <div className="sign" onClick={login}>
+            Login with Google
+          </div>
+          <FcGoogle className="logo3" />
+        </div>
 
             <div className="mittal-hrtag">
               
