@@ -95,10 +95,14 @@ export const resetPassword = async (
   }
 };
 
-export const Logout = async (navigate) => {
+export const Logout = async (navigate, setUser, setSignData) => {
   const toastId = toast.loading("Loading...");
+  console.log("first")
   try {
-    localStorage.removeItem("token");
+    setUser(null)
+    setSignData(null)
+    localStorage.setItem("token", null);
+    console.log(localStorage.getItem("token"))
     toast.success("Logged Out Successfully");
     toast.dismiss(toastId);
     navigate("/");

@@ -17,15 +17,19 @@ import users from "./asset/users.svg";
 import document from "./asset/file-text.svg";
 import login from "./asset/icons8-login-100.png";
 import signup from "./asset/icons8-sign-up-64.png";
+import logout from "./asset/logout_icon_151219.png";
 import ambassador from "./asset/ambassador.png";
 import room from "./asset/room.png";
 import UserContext from "../ContextApi/UserContext";
 import { calcLength } from "framer-motion";
 import { MdLineAxis } from "react-icons/md";
 import toast from 'react-hot-toast'
+import { BiLogOut } from "react-icons/bi";
+import { Logout } from "../services/operations/authAPI";
 function Header() {
   const navigate=useNavigate();
   const user = useContext(UserContext);
+  const {signData, setSignData, setUser} = useContext(UserContext)
   const handleLogout = () => {
     localStorage.removeItem("token");
     user.setUser(null);
@@ -50,16 +54,32 @@ function Header() {
 
       
     };
-    const navLinks = [
-      { to: "/", text: "Home", icon: home },
-      { to: "/competitions", text: "Competitions", icon: document },
-      { to: "/lnm-hacks" , text: "LnmHacks" , icon: ambassador},
-      { to: "/accomodation" , text: "Accomodation" , icon: room},
-      { to: "/campus-ambassador" , text: "Ambassador" , icon: ambassador},
-      { to: "/Team" , text: "Our Team" , icon: ambassador},
-      // { to: "/merch" , text:"Merchandise", icon: home},
-      { to: "/signup" , text: "Sign Up" , icon: signup}
-    ];
+    let navLinks;
+    if(signData){
+      navLinks = [
+        { to: "/", text: "Home", icon: home },
+        { to: "/competitions", text: "Competitions", icon: document },
+        { to: "/lnm-hacks" , text: "LnmHacks" , icon: ambassador},
+        { to: "/accomodation" , text: "Accomodation" , icon: room},
+        { to: "/campus-ambassador" , text: "Ambassador" , icon: ambassador},
+        { to: "/Team" , text: "Our Team" , icon: ambassador},
+        // { to: "/merch" , text:"Merchandise", icon: home},
+        { to: "/" , text: "Log Out" , icon: logout},
+      ];
+    } else{
+      navLinks = [
+        { to: "/", text: "Home", icon: home },
+        { to: "/competitions", text: "Competitions", icon: document },
+        { to: "/lnm-hacks" , text: "LnmHacks" , icon: ambassador},
+        { to: "/accomodation" , text: "Accomodation" , icon: room},
+        { to: "/campus-ambassador" , text: "Ambassador" , icon: ambassador},
+        { to: "/Team" , text: "Our Team" , icon: ambassador},
+        // { to: "/merch" , text:"Merchandise", icon: home},
+        { to: "/signup" , text: "Sign Up" , icon: signup},
+        { to: "/login" , text: "Login" , icon: login},
+      ];
+    }
+    
     
     // const authLinks = user.user ? (
     //   <div style={{ position: "absolute", bottom: "0" }}>
@@ -86,8 +106,13 @@ function Header() {
     // );
 
     // const combinedLinks = user.user ? [...navLinks, authLinks] : navLinks;
-
-
+    const logoutHandler = () => {
+      setUser(null)
+      setSignData(null)
+      localStorage.removeItem("token");
+      toast.success("Logged Out Successfully");
+      navigate("/");
+    }
   return (
       <div style={mainDivNav}  >
         <div className="hamburger"  onClick={handleNavbar}>
@@ -123,7 +148,9 @@ function Header() {
               <ul className="ul1" key={index} >
                 <NavLink className="ul1"  to={link.to} activeClassName="active-link">
                   <img className="test" src={link.icon} alt="" />
-                  <p className="linkName">{link.text}</p>
+                  {
+                    link.text === "Log Out" ? (<p className="ml-[20px] text-white" onClick={logoutHandler}>{link.text}</p>) : (<p className="linkName">{link.text}</p>)
+                  }
                 </NavLink>
               </ul>
             ))}
